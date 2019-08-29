@@ -1,0 +1,34 @@
+Qga1ik0on7CDJEnsk/7hIYQ4td4xQqYD4ZMoEA== 掉接口获取的
+
+//haskey
+[AGUtils hmacFromData:Qga1ik0on7CDJEnsk/7hIYQ4td4xQqYD4ZMoEA== secret:6lpA7VjGjYAncIBYljlCc/qOJv2N4NtDqrWY+A==] = yXa9XyGNkONbB6N5mq6D3jbHmIBhuCKUv8NOnA==
+
+
+
+
+[AGUtils computeHashWithData:入参 hashKey:yXa9XyGNkONbB6N5mq6D3jbHmIBhuCKUv8NOnA== uuid:AEweg3ZsAQAAwt4eAlVXilJ29iLzm85jeL4qZUKZNAznp9H5pkxG1c2pb8Qt] = aYZGbuD5qk1PhOBab24ZUu1o7MqO4JD5ejRBygBMHoN2bAEAAMLeHgJVV4pSdvYi85vOY3i-KmVCmTQM56fR-aZMRtXNqW_ELQ==
+
+//signature
+[AGUtils hmacFromData:入参 secret:yXa9XyGNkONbB6N5mq6D3jbHmIBhuCKUv8NOnA==] = aYZGbuD5qk1PhOBab24ZUu1o7MqO4JD5ejRByg==
+
+
+[AGUtils computeSignature:aYZGbuD5qk1PhOBab24ZUu1o7MqO4JD5ejRByg== uuid:AEweg3ZsAQAAwt4eAlVXilJ29iLzm85jeL4qZUKZNAznp9H5pkxG1c2pb8Qt] = aYZGbuD5qk1PhOBab24ZUu1o7MqO4JD5ejRBygBMHoN2bAEAAMLeHgJVV4pSdvYi85vOY3i-KmVCmTQM56fR-aZMRtXNqW_ELQ==
+
+
+
+uuid = AEweg3ZsAQAAwt4eAlVXilJ29iLzm85jeL4qZUKZNAznp9H5pkxG1c2pb8Qt
+signature = aYZGbuD5qk1PhOBab24ZUu1o7MqO4JD5ejRByg==
+haskey = yXa9XyGNkONbB6N5mq6D3jbHmIBhuCKUv8NOnA==
+
+1.入参+ haskey + uuid  掉方法computeHashWithData
+2.1的方法内部掉 hmacFromData，把入参 + haskey 加密得到 Signatre
+3.掉computeSignature ，Signatre + uuid 得到 结果   
+
+那么haskey怎么来的
+7-_hVWg0_h8JUYUXB_EbjFbzDMXYbun8Rn-ofQ== 初始化接口  再加上secret: 得到的
+[AGUtils hmacFromData:7+/hVWg0/h8JUYUXB/EbjFbzDMXYbun8Rn+ofQ== secret:RxFDjRgwtgIWav7Q+tFipY+InftaSpsUL5s94w==] = jvPFHGHOyut+FFpyqjeXRXsSUkQVf2QHCNFT5A==
+[AGUtils hmacFromData:yqIBLWSoNSr/IZR7YGeydmj6msLSTJK5LMp2ng== secret:ys/IE5rlT/SoZ/oGyQlEic6tDvNHQgMdsTjiDA==] = 4eFsNUoghxV2fpHrhbsRZ255WFU5BN5sHEWwVA==
+
+
+1.把入参 + haskey 进行hmac得到 Signatre
+2.把Signatre + uuid 进行hmac得到 x-cbt 

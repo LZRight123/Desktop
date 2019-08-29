@@ -1,0 +1,67 @@
+YwkDE1LOcKGO6eRsaqmVOWSoujPRe42SoYoLnQD2vIN1bAEAAD8r6gsvCsm35jEnjwE8pqHr_C-wcd4UyabgsPHy3B1Zzu2Q0w==;ATIuNi4xAAAAADBGRjEw
+
+
+fzzbSfodYiK7w6ab97CfSezxTQs5wjgJlA1ABQD2vIN1bAEAAD8r6gsvCsm35jEnjwE8pqHr_C-wcd4UyabgsPHy3B1Zzu2Q0w==;ATIuNi4xAAAAADEyMDEw
+
+PuOIg_iIbnUJkWKXMudbo1cOFEfKYa9v5JFEEACAzaV1bAEAAPlT3GJwIa3B0CpU4tool6jvv7mMzwcqk5GoC7jYnQnZJSTmsg==;ATIuNi4xAAAAADBGRjEw
+
+k7uylm8f8C1pf_xR5wY6F1fM-9roa-MVgS3mvACAzaV1bAEAAPlT3GJwIa3B0CpU4tool6jvv7mMzwcqk5GoC7jYnQnZJSTmsg==;ATIuNi4xAAAAADEyMTEw
+
+0PO3P025qtOYPWY-9hVT3HV29dnF3a-VSbXJdgDqDK51bAEAACBlOCaygx9kyOjBwEtaWWrxBHCkfE3c9wSIbsKUkwynyhb3og==;ATIuNi4xAAAAADBGRjEw
+
+
+
+https://gatewaydsapprd.marriott.com/v2/oauth2/token
+
+
+[AGNetworkManager addXCbtExtension:] 37行 stringWithFormat
+
+AGStatusBlock 
+uuid <007ab0dd 756c0100 0055e8d3 daebabc6 8f99b00a cf0cd271 baa92c90 d77e26e4 2a071fe1 c739c98c c0b928de dc>
+skey <2d60aba2 4063827d 077012c9 f343519b 04fae3f6 7761196b 64a784c9>
+
+
+[AGNetworkManager transformRequest:arg1] arg1.HTTPBody
+<7b227573 65726e61 6d65223a 22313233 222c2270 61737377 6f726422 3a223132 33222c22 73636f70 65223a22 52454144 5f434f4e 53554d45 52532057 52495445 5f434f4e 53554d45 52532052 4541445f 4c4f4341 54494f4e 53205752 4954455f 54524950 53205245 41445f54 52495053 20524541 445f5354 41595320 57524954 455f5354 41595322 2c226672 6f6e7444 6f6f7222 3a7b2263 6f646522 3a224847 41227d2c 22677261 6e745f74 79706522 3a227061 7373776f 7264227d>
+
+
+
+[AGUtils computeSignature] <c100fd0f 9b831531 df2f7540 548a5949 e0d7540a a03c13cb aa61b530>  uuid
+[AGUtils computeHashWithData: hashkey: uuid:] arg1.HTTPBody  skey uuid
+
+
+CCHMAC(kCCHmacAlgSHA224, )
+
+
+AGStateBlock 
+uuid <0048ebe7 756c0100 0054c510 16b5ce37 101c304d e21f0372 5b11ecb5 fbf3a364 190351e2 1e8fdc59 148522ad 98>
+skey <6940896f 7917037a 2905a957 6432110b 64127d01 3d4ca7cc 97bb51d4>
+
+
+Marriott`___lldb_unnamed_symbol8254$$Marriott  sbr 0x100518744
+50行 ->  JSONObjectWithData
+{
+	ik = 1iWgZ9mqH0WKwmsyArpNloYiQLY0bcGiz0Xs-A==
+}
+
+1iWgZ9mqH0WKwmsyArpNloYiQLY0bcGiz0Xs-A==
+1iWgZ9mqH0WKwmsyArpNloYiQLY0bcGiz0Xs+A==  106行
+124  NSData *data = [[NSData alloc] initWithBase64EncodedString:@"1iWgZ9mqH0WKwmsyArpNloYiQLY0bcGiz0Xs+A==" options:0];
+133 对这个data进行  [AGUtils hmacFromData:secret:<6350fbc9 85f5c7d6 4b800437 04856ac1 36dd4120 c05bca48 f321bd6d>
+] =  <ad362c8c 2686f308 ec76ada3 088519d7 3a61fa05 320b9372 4303d65a> // haskey
+ po [[NSString alloc] initWithData:[[NSData alloc] initWithBase64EncodedData:encodeData options:0] encoding:4];
+
+
+154 initWithProperties:keyData
+uuid = <007ed814 766c0100 008ce839 e9ea6170 1cfb1d3f 4fd7441d 95378cac 380d5446 f85e0fe0 5718c508 e6a1a4e8 d3>
+key = <ad362c8c 2686f308 ec76ada3 088519d7 3a61fa05 320b9372 4303d65a>
+
+
+
+https://gatewaydsapprd.marriott.com/v1/native-app/initialize
+{
+	"ik": "U9mwPwuY35aKAD09x6IG4EA-VZBUyEua-SGuHg=="
+}
+U9mwPwuY35aKAD09x6IG4EA+VZBUyEua+SGuHg==
+
+
