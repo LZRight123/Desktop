@@ -1,0 +1,18 @@
+#import "/Users/liangze/Documents/安全防护/classdump/symbols.h"
+//
+//  asmuserlogin-PrefixHeader.pch
+//  asmuserlogin
+//
+//  Created by 梁泽 on 2019/5/29.
+//  Copyright © 2019 梁泽. All rights reserved.
+//
+
+#ifndef asmuserlogin_PrefixHeader_pch
+#define asmuserlogin_PrefixHeader_pch
+#import <objc/runtime.h>
+#import "Security.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* asmuserlogin_PrefixHeader_pch */

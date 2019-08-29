@@ -1,0 +1,19 @@
+{
+  "name": "CCTweakTool",
+  "version": "1.0.0",
+  "license": "MIT",
+  "summary": "内部使用的一些无聊工具.",
+  "homepage": "https://github.com/LZRight123/CCTweakTool.git",
+  "authors": {
+    "梁泽": "350442340@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/LZRight123/CCTweakTool.git",
+    "tag": "1.0.0",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CCTweakTool/*.{h,m,mm,xm}"
+}

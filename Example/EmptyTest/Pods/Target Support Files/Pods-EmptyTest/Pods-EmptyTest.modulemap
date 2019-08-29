@@ -1,0 +1,6 @@
+framework module Pods_EmptyTest {
+  umbrella header "Pods-EmptyTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

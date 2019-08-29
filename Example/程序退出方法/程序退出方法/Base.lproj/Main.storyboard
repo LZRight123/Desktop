@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="nBz-C0-9sE">
+                                <rect key="frame" x="76.5" y="223" width="261" height="450"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euj-YG-Zb4">
+                                        <rect key="frame" x="108" y="0.0" width="45" height="30"/>
+                                        <state key="normal" title="exit(0)"/>
+                                        <connections>
+                                            <action selector="clickExit0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSj-Wp-ZwV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bju-pV-Uv3">
+                                        <rect key="frame" x="109" y="70" width="43" height="30"/>
+                                        <state key="normal" title="exit(1)"/>
+                                        <connections>
+                                            <action selector="clickExit1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dw9-yP-dmE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-5d-ArC">
+                                        <rect key="frame" x="76" y="140" width="109" height="30"/>
+                                        <state key="normal" title="[NSThread exit]"/>
+                                        <connections>
+                                            <action selector="clickNSThreadexit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="94h-w8-zIv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-be-oUK">
+                                        <rect key="frame" x="99" y="210" width="63" height="30"/>
+                                        <state key="normal" title="assert(0)"/>
+                                        <connections>
+                                            <action selector="clickAssert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u0r-5A-vRI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdM-gG-NK3">
+                                        <rect key="frame" x="0.0" y="280" width="261" height="30"/>
+                                        <state key="normal" title="[UIApplication terminateWithSuccess]"/>
+                                        <connections>
+                                            <action selector="clickTerminateWithSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJP-sv-MxU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIa-Lb-jB4">
+                                        <rect key="frame" x="106.5" y="350" width="48" height="30"/>
+                                        <state key="normal" title="abort()"/>
+                                        <connections>
+                                            <action selector="clickAbort:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cEB-hV-Ebm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usm-Ln-vGd">
+                                        <rect key="frame" x="114" y="420" width="33" height="30"/>
+                                        <state key="normal" title="ASM"/>
+                                        <connections>
+                                            <action selector="clickAssembly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6N-b9-hrZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nBz-C0-9sE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jeS-qw-nLu"/>
+                            <constraint firstItem="nBz-C0-9sE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xdc-FT-msh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
