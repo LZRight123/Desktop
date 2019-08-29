@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF99DCF522DF3CA4005B424B /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF99DCF422DF3CA4005B424B /* MDConfig.plist */; };
+		DF99DCFF22DF3CA4005B424B /* libMifengDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF99DCFE22DF3CA4005B424B /* libMifengDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DF99DD0422DF3CA4005B424B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF99DD0322DF3CA4005B424B /* JavaScriptCore.framework */; };
+		DF99DD0622DF3CA4005B424B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF99DD0522DF3CA4005B424B /* Foundation.framework */; };
+		DF99DD0822DF3CA4005B424B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF99DD0722DF3CA4005B424B /* UIKit.framework */; };
+		DF99DD0D22DF3CA4005B424B /* MifengDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD0C22DF3CA4005B424B /* MifengDylib.mm */; };
+		DF99DD1022DF3CA4005B424B /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD0F22DF3CA4005B424B /* MDConfigManager.h */; };
+		DF99DD1222DF3CA4005B424B /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD1122DF3CA4005B424B /* MDConfigManager.m */; };
+		DF99DD1422DF3CA4005B424B /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD1322DF3CA4005B424B /* MDCycriptManager.h */; };
+		DF99DD1622DF3CA4005B424B /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD1522DF3CA4005B424B /* MDCycriptManager.m */; };
+		DF99DD1822DF3CA4005B424B /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD1722DF3CA4005B424B /* MDMethodTrace.h */; };
+		DF99DD1A22DF3CA4005B424B /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD1922DF3CA4005B424B /* MDMethodTrace.m */; };
+		DF99DD1D22DF3CA4005B424B /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD1C22DF3CA4005B424B /* a1a2-selectortramps-arm.s */; };
+		DF99DD1F22DF3CA4005B424B /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD1E22DF3CA4005B424B /* a1a2-selectortramps-arm64.s */; };
+		DF99DD2122DF3CA4005B424B /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2022DF3CA4005B424B /* a1a2-selectortramps-i386.s */; };
+		DF99DD2322DF3CA4005B424B /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2222DF3CA4005B424B /* a1a2-selectortramps-x86_64.s */; };
+		DF99DD2522DF3CA4005B424B /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2422DF3CA4005B424B /* a2a3-selectortramps-arm.s */; };
+		DF99DD2722DF3CA4005B424B /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2622DF3CA4005B424B /* a2a3-selectortramps-i386.s */; };
+		DF99DD2922DF3CA4005B424B /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2822DF3CA4005B424B /* a2a3-selectortramps-x86_64.s */; };
+		DF99DD2B22DF3CA4005B424B /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD2A22DF3CA4005B424B /* OCMethodTrace.h */; };
+		DF99DD2D22DF3CA4005B424B /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD2C22DF3CA4005B424B /* OCMethodTrace.m */; };
+		DF99DD2F22DF3CA4005B424B /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD2E22DF3CA4005B424B /* OCSelectorTrampolines.h */; };
+		DF99DD3122DF3CA4005B424B /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD3022DF3CA4005B424B /* OCSelectorTrampolines.mm */; };
+		DF99DD3522DF3CA4005B424B /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD3422DF3CA4005B424B /* LLDBTools.h */; };
+		DF99DD3722DF3CA4005B424B /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD3622DF3CA4005B424B /* LLDBTools.mm */; };
+		DF99DD3C22DF3CA4005B424B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD3B22DF3CA4005B424B /* fishhook.c */; };
+		DF99DD3E22DF3CA4005B424B /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD3D22DF3CA4005B424B /* fishhook.h */; };
+		DF99DD4022DF3CA4005B424B /* MifengDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD3F22DF3CA4005B424B /* MifengDylib.h */; };
+		DF99DD4222DF3CA4005B424B /* MifengDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD4122DF3CA4005B424B /* MifengDylib.m */; };
+		DF99DD5B22DF3DE0005B424B /* CCHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD4C22DF3DE0005B424B /* CCHelpTool.m */; };
+		DF99DD5C22DF3DE0005B424B /* CC_Object-C.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD4D22DF3DE0005B424B /* CC_Object-C.mm */; };
+		DF99DD5D22DF3DE0005B424B /* CC_CFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD4E22DF3DE0005B424B /* CC_CFunction.m */; };
+		DF99DD5E22DF3DE0005B424B /* CCHelpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD5022DF3DE0005B424B /* CCHelpTool.h */; };
+		DF99DD5F22DF3DE0005B424B /* __MCMContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD5222DF3DE0005B424B /* __MCMContainer.h */; };
+		DF99DD6022DF3DE0005B424B /* __AADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD5322DF3DE0005B424B /* __AADevice.h */; };
+		DF99DD6122DF3DE0005B424B /* __LSApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = DF99DD5422DF3DE0005B424B /* __LSApplication.h */; };
+		DF99DD6222DF3DE0005B424B /* __LSApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD5522DF3DE0005B424B /* __LSApplication.mm */; };
+		DF99DD6322DF3DE0005B424B /* __MCMContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD5922DF3DE0005B424B /* __MCMContainer.mm */; };
+		DF99DD6422DF3DE0005B424B /* __AADevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF99DD5A22DF3DE0005B424B /* __AADevice.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF99DD0022DF3CA4005B424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF99DCE222DF3CA4005B424B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF99DCFD22DF3CA4005B424B;
+			remoteInfo = MifengDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF99DCEA22DF3CA4005B424B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF99DCFF22DF3CA4005B424B /* libMifengDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF99DCED22DF3CA4005B424B /* Mifeng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mifeng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF99DCF022DF3CA4005B424B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DF99DCF222DF3CA4005B424B /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DF99DCF422DF3CA4005B424B /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DF99DCF722DF3CA4005B424B /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DF99DCF822DF3CA4005B424B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF99DCFE22DF3CA4005B424B /* libMifengDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMifengDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF99DD0322DF3CA4005B424B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DF99DD0522DF3CA4005B424B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF99DD0722DF3CA4005B424B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF99DD0B22DF3CA4005B424B /* MifengDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = MifengDylib.xm; path = Logos/MifengDylib.xm; sourceTree = "<group>"; };
+		DF99DD0C22DF3CA4005B424B /* MifengDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MifengDylib.mm; path = Logos/MifengDylib.mm; sourceTree = "<group>"; };
+		DF99DD0F22DF3CA4005B424B /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DF99DD1122DF3CA4005B424B /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DF99DD1322DF3CA4005B424B /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DF99DD1522DF3CA4005B424B /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DF99DD1722DF3CA4005B424B /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DF99DD1922DF3CA4005B424B /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DF99DD1C22DF3CA4005B424B /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF99DD1E22DF3CA4005B424B /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DF99DD2022DF3CA4005B424B /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF99DD2222DF3CA4005B424B /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF99DD2422DF3CA4005B424B /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF99DD2622DF3CA4005B424B /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF99DD2822DF3CA4005B424B /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF99DD2A22DF3CA4005B424B /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DF99DD2C22DF3CA4005B424B /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DF99DD2E22DF3CA4005B424B /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DF99DD3022DF3CA4005B424B /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DF99DD3222DF3CA4005B424B /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DF99DD3422DF3CA4005B424B /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DF99DD3622DF3CA4005B424B /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DF99DD3922DF3CA4005B424B /* MifengDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MifengDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DF99DD3B22DF3CA4005B424B /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DF99DD3D22DF3CA4005B424B /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DF99DD3F22DF3CA4005B424B /* MifengDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MifengDylib.h; sourceTree = "<group>"; };
+		DF99DD4122DF3CA4005B424B /* MifengDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MifengDylib.m; sourceTree = "<group>"; };
+		DF99DD4C22DF3DE0005B424B /* CCHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHelpTool.m; sourceTree = "<group>"; };
+		DF99DD4D22DF3DE0005B424B /* CC_Object-C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CC_Object-C.mm"; sourceTree = "<group>"; };
+		DF99DD4E22DF3DE0005B424B /* CC_CFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC_CFunction.m; sourceTree = "<group>"; };
+		DF99DD4F22DF3DE0005B424B /* CC_Object-C.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CC_Object-C.xm"; sourceTree = "<group>"; };
+		DF99DD5022DF3DE0005B424B /* CCHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHelpTool.h; sourceTree = "<group>"; };
+		DF99DD5222DF3DE0005B424B /* __MCMContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __MCMContainer.h; sourceTree = "<group>"; };
+		DF99DD5322DF3DE0005B424B /* __AADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __AADevice.h; sourceTree = "<group>"; };
+		DF99DD5422DF3DE0005B424B /* __LSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __LSApplication.h; sourceTree = "<group>"; };
+		DF99DD5522DF3DE0005B424B /* __LSApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __LSApplication.mm; sourceTree = "<group>"; };
+		DF99DD5622DF3DE0005B424B /* __AADevice.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __AADevice.xm; sourceTree = "<group>"; };
+		DF99DD5722DF3DE0005B424B /* __MCMContainer.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __MCMContainer.xm; sourceTree = "<group>"; };
+		DF99DD5822DF3DE0005B424B /* __LSApplication.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __LSApplication.xm; sourceTree = "<group>"; };
+		DF99DD5922DF3DE0005B424B /* __MCMContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __MCMContainer.mm; sourceTree = "<group>"; };
+		DF99DD5A22DF3DE0005B424B /* __AADevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __AADevice.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF99DCE722DF3CA4005B424B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF99DCFB22DF3CA4005B424B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99DD0422DF3CA4005B424B /* JavaScriptCore.framework in Frameworks */,
+				DF99DD0822DF3CA4005B424B /* UIKit.framework in Frameworks */,
+				DF99DD0622DF3CA4005B424B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF99DCE122DF3CA4005B424B = {
+			isa = PBXGroup;
+			children = (
+				DF99DCEF22DF3CA4005B424B /* Mifeng */,
+				DF99DD0922DF3CA4005B424B /* MifengDylib */,
+				DF99DD0222DF3CA4005B424B /* Frameworks */,
+				DF99DCEE22DF3CA4005B424B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF99DCEE22DF3CA4005B424B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DCED22DF3CA4005B424B /* Mifeng.app */,
+				DF99DCFE22DF3CA4005B424B /* libMifengDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF99DCEF22DF3CA4005B424B /* Mifeng */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DCF022DF3CA4005B424B /* icon.png */,
+				DF99DCF822DF3CA4005B424B /* Info.plist */,
+				DF99DCF122DF3CA4005B424B /* Scripts */,
+				DF99DCF322DF3CA4005B424B /* Config */,
+				DF99DCF622DF3CA4005B424B /* TargetApp */,
+			);
+			path = Mifeng;
+			sourceTree = "<group>";
+		};
+		DF99DCF122DF3CA4005B424B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DCF222DF3CA4005B424B /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DF99DCF322DF3CA4005B424B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DCF422DF3CA4005B424B /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF99DCF622DF3CA4005B424B /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DCF722DF3CA4005B424B /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DF99DD0222DF3CA4005B424B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD0322DF3CA4005B424B /* JavaScriptCore.framework */,
+				DF99DD0522DF3CA4005B424B /* Foundation.framework */,
+				DF99DD0722DF3CA4005B424B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF99DD0922DF3CA4005B424B /* MifengDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD4B22DF3DE0005B424B /* CCTweakTool */,
+				DF99DD3F22DF3CA4005B424B /* MifengDylib.h */,
+				DF99DD4122DF3CA4005B424B /* MifengDylib.m */,
+				DF99DD0A22DF3CA4005B424B /* Logos */,
+				DF99DD0E22DF3CA4005B424B /* Config */,
+				DF99DD1B22DF3CA4005B424B /* Trace */,
+				DF99DD3322DF3CA4005B424B /* Tools */,
+				DF99DD3A22DF3CA4005B424B /* fishhook */,
+				DF99DD3822DF3CA4005B424B /* Supporting Files */,
+			);
+			path = MifengDylib;
+			sourceTree = "<group>";
+		};
+		DF99DD0A22DF3CA4005B424B /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD0B22DF3CA4005B424B /* MifengDylib.xm */,
+				DF99DD0C22DF3CA4005B424B /* MifengDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DF99DD0E22DF3CA4005B424B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD0F22DF3CA4005B424B /* MDConfigManager.h */,
+				DF99DD1122DF3CA4005B424B /* MDConfigManager.m */,
+				DF99DD1322DF3CA4005B424B /* MDCycriptManager.h */,
+				DF99DD1522DF3CA4005B424B /* MDCycriptManager.m */,
+				DF99DD1722DF3CA4005B424B /* MDMethodTrace.h */,
+				DF99DD1922DF3CA4005B424B /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF99DD1B22DF3CA4005B424B /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD1C22DF3CA4005B424B /* a1a2-selectortramps-arm.s */,
+				DF99DD1E22DF3CA4005B424B /* a1a2-selectortramps-arm64.s */,
+				DF99DD2022DF3CA4005B424B /* a1a2-selectortramps-i386.s */,
+				DF99DD2222DF3CA4005B424B /* a1a2-selectortramps-x86_64.s */,
+				DF99DD2422DF3CA4005B424B /* a2a3-selectortramps-arm.s */,
+				DF99DD2622DF3CA4005B424B /* a2a3-selectortramps-i386.s */,
+				DF99DD2822DF3CA4005B424B /* a2a3-selectortramps-x86_64.s */,
+				DF99DD2A22DF3CA4005B424B /* OCMethodTrace.h */,
+				DF99DD2C22DF3CA4005B424B /* OCMethodTrace.m */,
+				DF99DD2E22DF3CA4005B424B /* OCSelectorTrampolines.h */,
+				DF99DD3022DF3CA4005B424B /* OCSelectorTrampolines.mm */,
+				DF99DD3222DF3CA4005B424B /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DF99DD3322DF3CA4005B424B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD3422DF3CA4005B424B /* LLDBTools.h */,
+				DF99DD3622DF3CA4005B424B /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DF99DD3822DF3CA4005B424B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD3922DF3CA4005B424B /* MifengDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF99DD3A22DF3CA4005B424B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD3B22DF3CA4005B424B /* fishhook.c */,
+				DF99DD3D22DF3CA4005B424B /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		DF99DD4B22DF3DE0005B424B /* CCTweakTool */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD4C22DF3DE0005B424B /* CCHelpTool.m */,
+				DF99DD4D22DF3DE0005B424B /* CC_Object-C.mm */,
+				DF99DD4E22DF3DE0005B424B /* CC_CFunction.m */,
+				DF99DD4F22DF3DE0005B424B /* CC_Object-C.xm */,
+				DF99DD5022DF3DE0005B424B /* CCHelpTool.h */,
+				DF99DD5122DF3DE0005B424B /* privateApis */,
+			);
+			path = CCTweakTool;
+			sourceTree = "<group>";
+		};
+		DF99DD5122DF3DE0005B424B /* privateApis */ = {
+			isa = PBXGroup;
+			children = (
+				DF99DD5222DF3DE0005B424B /* __MCMContainer.h */,
+				DF99DD5322DF3DE0005B424B /* __AADevice.h */,
+				DF99DD5422DF3DE0005B424B /* __LSApplication.h */,
+				DF99DD5522DF3DE0005B424B /* __LSApplication.mm */,
+				DF99DD5622DF3DE0005B424B /* __AADevice.xm */,
+				DF99DD5722DF3DE0005B424B /* __MCMContainer.xm */,
+				DF99DD5822DF3DE0005B424B /* __LSApplication.xm */,
+				DF99DD5922DF3DE0005B424B /* __MCMContainer.mm */,
+				DF99DD5A22DF3DE0005B424B /* __AADevice.mm */,
+			);
+			path = privateApis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF99DCFC22DF3CA4005B424B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99DD1422DF3CA4005B424B /* MDCycriptManager.h in Headers */,
+				DF99DD1822DF3CA4005B424B /* MDMethodTrace.h in Headers */,
+				DF99DD3E22DF3CA4005B424B /* fishhook.h in Headers */,
+				DF99DD5E22DF3DE0005B424B /* CCHelpTool.h in Headers */,
+				DF99DD6122DF3DE0005B424B /* __LSApplication.h in Headers */,
+				DF99DD6022DF3DE0005B424B /* __AADevice.h in Headers */,
+				DF99DD3522DF3CA4005B424B /* LLDBTools.h in Headers */,
+				DF99DD1022DF3CA4005B424B /* MDConfigManager.h in Headers */,
+				DF99DD4022DF3CA4005B424B /* MifengDylib.h in Headers */,
+				DF99DD2F22DF3CA4005B424B /* OCSelectorTrampolines.h in Headers */,
+				DF99DD5F22DF3DE0005B424B /* __MCMContainer.h in Headers */,
+				DF99DD2B22DF3CA4005B424B /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF99DCEC22DF3CA4005B424B /* Mifeng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF99DD4822DF3CA4005B424B /* Build configuration list for PBXNativeTarget "Mifeng" */;
+			buildPhases = (
+				DF99DCE622DF3CA4005B424B /* Sources */,
+				DF99DCE722DF3CA4005B424B /* Frameworks */,
+				DF99DCE822DF3CA4005B424B /* ShellScript */,
+				DF99DCE922DF3CA4005B424B /* Resources */,
+				DF99DCEA22DF3CA4005B424B /* CopyFiles */,
+				DF99DCEB22DF3CA4005B424B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF99DD0122DF3CA4005B424B /* PBXTargetDependency */,
+			);
+			name = Mifeng;
+			productName = Mifeng;
+			productReference = DF99DCED22DF3CA4005B424B /* Mifeng.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF99DCFD22DF3CA4005B424B /* MifengDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF99DD4522DF3CA4005B424B /* Build configuration list for PBXNativeTarget "MifengDylib" */;
+			buildPhases = (
+				DF99DCF922DF3CA4005B424B /* ShellScript */,
+				DF99DCFA22DF3CA4005B424B /* Sources */,
+				DF99DCFB22DF3CA4005B424B /* Frameworks */,
+				DF99DCFC22DF3CA4005B424B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MifengDylib;
+			productName = MifengDylib;
+			productReference = DF99DCFE22DF3CA4005B424B /* libMifengDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF99DCE222DF3CA4005B424B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DF99DCEC22DF3CA4005B424B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DF99DCFD22DF3CA4005B424B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DF99DCE522DF3CA4005B424B /* Build configuration list for PBXProject "Mifeng" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF99DCE122DF3CA4005B424B;
+			productRefGroup = DF99DCEE22DF3CA4005B424B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF99DCEC22DF3CA4005B424B /* Mifeng */,
+				DF99DCFD22DF3CA4005B424B /* MifengDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF99DCE922DF3CA4005B424B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99DCF522DF3CA4005B424B /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF99DCE822DF3CA4005B424B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DF99DCEB22DF3CA4005B424B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DF99DCF922DF3CA4005B424B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF99DCE622DF3CA4005B424B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF99DCFA22DF3CA4005B424B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF99DD1622DF3CA4005B424B /* MDCycriptManager.m in Sources */,
+				DF99DD3C22DF3CA4005B424B /* fishhook.c in Sources */,
+				DF99DD4222DF3CA4005B424B /* MifengDylib.m in Sources */,
+				DF99DD6222DF3DE0005B424B /* __LSApplication.mm in Sources */,
+				DF99DD1F22DF3CA4005B424B /* a1a2-selectortramps-arm64.s in Sources */,
+				DF99DD1D22DF3CA4005B424B /* a1a2-selectortramps-arm.s in Sources */,
+				DF99DD2322DF3CA4005B424B /* a1a2-selectortramps-x86_64.s in Sources */,
+				DF99DD2D22DF3CA4005B424B /* OCMethodTrace.m in Sources */,
+				DF99DD1222DF3CA4005B424B /* MDConfigManager.m in Sources */,
+				DF99DD3122DF3CA4005B424B /* OCSelectorTrampolines.mm in Sources */,
+				DF99DD2122DF3CA4005B424B /* a1a2-selectortramps-i386.s in Sources */,
+				DF99DD2722DF3CA4005B424B /* a2a3-selectortramps-i386.s in Sources */,
+				DF99DD5B22DF3DE0005B424B /* CCHelpTool.m in Sources */,
+				DF99DD5D22DF3DE0005B424B /* CC_CFunction.m in Sources */,
+				DF99DD2522DF3CA4005B424B /* a2a3-selectortramps-arm.s in Sources */,
+				DF99DD0D22DF3CA4005B424B /* MifengDylib.mm in Sources */,
+				DF99DD5C22DF3DE0005B424B /* CC_Object-C.mm in Sources */,
+				DF99DD3722DF3CA4005B424B /* LLDBTools.mm in Sources */,
+				DF99DD2922DF3CA4005B424B /* a2a3-selectortramps-x86_64.s in Sources */,
+				DF99DD6422DF3DE0005B424B /* __AADevice.mm in Sources */,
+				DF99DD6322DF3DE0005B424B /* __MCMContainer.mm in Sources */,
+				DF99DD1A22DF3CA4005B424B /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF99DD0122DF3CA4005B424B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF99DCFD22DF3CA4005B424B /* MifengDylib */;
+			targetProxy = DF99DD0022DF3CA4005B424B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF99DD4322DF3CA4005B424B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF99DD4422DF3CA4005B424B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF99DD4622DF3CA4005B424B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MifengDylib/MifengDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMifengDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MifengDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DF99DD4722DF3CA4005B424B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MifengDylib/MifengDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMifengDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MifengDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF99DD4922DF3CA4005B424B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Mifeng/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axe.ylyfbeeplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF99DD4A22DF3CA4005B424B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Mifeng/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.axe.ylyfbeeplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF99DCE522DF3CA4005B424B /* Build configuration list for PBXProject "Mifeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF99DD4322DF3CA4005B424B /* Debug */,
+				DF99DD4422DF3CA4005B424B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF99DD4522DF3CA4005B424B /* Build configuration list for PBXNativeTarget "MifengDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF99DD4622DF3CA4005B424B /* Debug */,
+				DF99DD4722DF3CA4005B424B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF99DD4822DF3CA4005B424B /* Build configuration list for PBXNativeTarget "Mifeng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF99DD4922DF3CA4005B424B /* Debug */,
+				DF99DD4A22DF3CA4005B424B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF99DCE222DF3CA4005B424B /* Project object */;
+}

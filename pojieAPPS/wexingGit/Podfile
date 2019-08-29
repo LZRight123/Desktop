@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'  #依赖官方的pod需要加，比如WeChatPod
+source 'https://github.com/AloneMonkey/MonkeyDevSpecs.git'  #不可少
+#target 'wexingGit' do
+#  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+#  # use_frameworks!
+#
+#  # Pods for wexingGit
+#
+#end
+
+target 'wexingGitDylib' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+
+  # Pods for wexingGitDylib
+  pod 'MBProgressHUD'
+  pod 'Masonry'
+  pod 'YYKit'
+  pod 'FLEX'
+  pod 'MDSettingCenter'
+end

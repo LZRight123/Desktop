@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D74D2185859D9016D1879DC /* Pods_wexingGitDylib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32142B65F426537B4FB79D5 /* Pods_wexingGitDylib.framework */; };
+		DF0D9580229170AE001633A2 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF0D957F229170AE001633A2 /* MDConfig.plist */; };
+		DF0D958A229170AE001633A2 /* libwexingGitDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF0D9589229170AE001633A2 /* libwexingGitDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DF0D958F229170AE001633A2 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0D958E229170AE001633A2 /* JavaScriptCore.framework */; };
+		DF0D9591229170AE001633A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0D9590229170AE001633A2 /* Foundation.framework */; };
+		DF0D9593229170AE001633A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0D9592229170AE001633A2 /* UIKit.framework */; };
+		DF0D959B229170AE001633A2 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D959A229170AE001633A2 /* MDConfigManager.h */; };
+		DF0D959D229170AE001633A2 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D959C229170AE001633A2 /* MDConfigManager.m */; };
+		DF0D959F229170AE001633A2 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D959E229170AE001633A2 /* MDCycriptManager.h */; };
+		DF0D95A1229170AE001633A2 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95A0229170AE001633A2 /* MDCycriptManager.m */; };
+		DF0D95A3229170AE001633A2 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95A2229170AE001633A2 /* MDMethodTrace.h */; };
+		DF0D95A5229170AE001633A2 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95A4229170AE001633A2 /* MDMethodTrace.m */; };
+		DF0D95A8229170AE001633A2 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95A7229170AE001633A2 /* a1a2-selectortramps-arm.s */; };
+		DF0D95AA229170AE001633A2 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95A9229170AE001633A2 /* a1a2-selectortramps-arm64.s */; };
+		DF0D95AC229170AE001633A2 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95AB229170AE001633A2 /* a1a2-selectortramps-i386.s */; };
+		DF0D95AE229170AE001633A2 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95AD229170AE001633A2 /* a1a2-selectortramps-x86_64.s */; };
+		DF0D95B0229170AE001633A2 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95AF229170AE001633A2 /* a2a3-selectortramps-arm.s */; };
+		DF0D95B2229170AE001633A2 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95B1229170AE001633A2 /* a2a3-selectortramps-i386.s */; };
+		DF0D95B4229170AE001633A2 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95B3229170AE001633A2 /* a2a3-selectortramps-x86_64.s */; };
+		DF0D95B6229170AE001633A2 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95B5229170AE001633A2 /* OCMethodTrace.h */; };
+		DF0D95B8229170AE001633A2 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95B7229170AE001633A2 /* OCMethodTrace.m */; };
+		DF0D95BA229170AE001633A2 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95B9229170AE001633A2 /* OCSelectorTrampolines.h */; };
+		DF0D95BC229170AE001633A2 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95BB229170AE001633A2 /* OCSelectorTrampolines.mm */; };
+		DF0D95C0229170AE001633A2 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95BF229170AE001633A2 /* LLDBTools.h */; };
+		DF0D95C2229170AE001633A2 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95C1229170AE001633A2 /* LLDBTools.mm */; };
+		DF0D95C7229170AE001633A2 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95C6229170AE001633A2 /* AntiAntiDebug.m */; };
+		DF0D95CA229170AE001633A2 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95C9229170AE001633A2 /* fishhook.c */; };
+		DF0D95CC229170AE001633A2 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95CB229170AE001633A2 /* fishhook.h */; };
+		DF0D95CE229170AE001633A2 /* wexingGitDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DF0D95CD229170AE001633A2 /* wexingGitDylib.h */; };
+		DF0D95D0229170AE001633A2 /* wexingGitDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D95CF229170AE001633A2 /* wexingGitDylib.m */; };
+		DF3569FB2296893C006929C4 /* LZRedPageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3569F92296893C006929C4 /* LZRedPageModel.h */; };
+		DF3569FC2296893C006929C4 /* LZRedPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3569FA2296893C006929C4 /* LZRedPageModel.m */; };
+		DF3569FF22968981006929C4 /* LZRedPageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF3569FD22968981006929C4 /* LZRedPageManager.h */; };
+		DF356A0022968981006929C4 /* LZRedPageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3569FE22968981006929C4 /* LZRedPageManager.m */; };
+		DF356A0322968B4A006929C4 /* Tweak.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF356A0122968B4A006929C4 /* Tweak.mm */; };
+		DF356A0622968B85006929C4 /* WeChatClassDumpHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A0422968B85006929C4 /* WeChatClassDumpHelp.h */; };
+		DF356A0722968B85006929C4 /* WeChatClassDumpHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A0522968B85006929C4 /* WeChatClassDumpHelp.m */; };
+		DF356A0A22968DC3006929C4 /* HookMessage.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF356A0822968DC2006929C4 /* HookMessage.mm */; };
+		DF356A0E22968F2E006929C4 /* SwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A0C22968F2E006929C4 /* SwitchCell.h */; };
+		DF356A0F22968F2E006929C4 /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A0D22968F2E006929C4 /* SwitchCell.m */; };
+		DF356A1722969242006929C4 /* GlobalHeaderFile.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A1522969242006929C4 /* GlobalHeaderFile.h */; };
+		DF356A1822969242006929C4 /* GlobalHeaderFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A1622969242006929C4 /* GlobalHeaderFile.m */; };
+		DF356A1B22969965006929C4 /* ImitateWechatCell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A1922969965006929C4 /* ImitateWechatCell.h */; };
+		DF356A1C22969965006929C4 /* ImitateWechatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A1A22969965006929C4 /* ImitateWechatCell.m */; };
+		DF356A2122969F9E006929C4 /* LZBaseWebVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A1F22969F9E006929C4 /* LZBaseWebVC.h */; };
+		DF356A2222969F9E006929C4 /* LZBaseWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A2022969F9E006929C4 /* LZBaseWebVC.m */; };
+		DF356A2522969FB2006929C4 /* LZPDFVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF356A2322969FB2006929C4 /* LZPDFVC.h */; };
+		DF356A2622969FB2006929C4 /* LZPDFVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF356A2422969FB2006929C4 /* LZPDFVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF0D958B229170AE001633A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0D956D229170AE001633A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0D9588229170AE001633A2;
+			remoteInfo = wexingGitDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF0D9575229170AE001633A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF0D958A229170AE001633A2 /* libwexingGitDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C71DC2BB2BB54EDD18532F2 /* Pods-wexingGitDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wexingGitDylib.release.xcconfig"; path = "Target Support Files/Pods-wexingGitDylib/Pods-wexingGitDylib.release.xcconfig"; sourceTree = "<group>"; };
+		99A41828D354C00C87BA3359 /* Pods-wexingGitDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wexingGitDylib.debug.xcconfig"; path = "Target Support Files/Pods-wexingGitDylib/Pods-wexingGitDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		A32142B65F426537B4FB79D5 /* Pods_wexingGitDylib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wexingGitDylib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0D9578229170AE001633A2 /* wexingGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wexingGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0D957B229170AE001633A2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DF0D957D229170AE001633A2 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DF0D957F229170AE001633A2 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DF0D9582229170AE001633A2 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DF0D9583229170AE001633A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF0D9589229170AE001633A2 /* libwexingGitDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libwexingGitDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF0D958E229170AE001633A2 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DF0D9590229170AE001633A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF0D9592229170AE001633A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF0D959A229170AE001633A2 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DF0D959C229170AE001633A2 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DF0D959E229170AE001633A2 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DF0D95A0229170AE001633A2 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DF0D95A2229170AE001633A2 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DF0D95A4229170AE001633A2 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DF0D95A7229170AE001633A2 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF0D95A9229170AE001633A2 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DF0D95AB229170AE001633A2 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF0D95AD229170AE001633A2 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF0D95AF229170AE001633A2 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF0D95B1229170AE001633A2 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF0D95B3229170AE001633A2 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF0D95B5229170AE001633A2 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DF0D95B7229170AE001633A2 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DF0D95B9229170AE001633A2 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DF0D95BB229170AE001633A2 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DF0D95BD229170AE001633A2 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DF0D95BF229170AE001633A2 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DF0D95C1229170AE001633A2 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DF0D95C4229170AE001633A2 /* wexingGitDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wexingGitDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DF0D95C6229170AE001633A2 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		DF0D95C9229170AE001633A2 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DF0D95CB229170AE001633A2 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DF0D95CD229170AE001633A2 /* wexingGitDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wexingGitDylib.h; sourceTree = "<group>"; };
+		DF0D95CF229170AE001633A2 /* wexingGitDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wexingGitDylib.m; sourceTree = "<group>"; };
+		DF3569F92296893C006929C4 /* LZRedPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZRedPageModel.h; sourceTree = "<group>"; };
+		DF3569FA2296893C006929C4 /* LZRedPageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZRedPageModel.m; sourceTree = "<group>"; };
+		DF3569FD22968981006929C4 /* LZRedPageManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZRedPageManager.h; sourceTree = "<group>"; };
+		DF3569FE22968981006929C4 /* LZRedPageManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZRedPageManager.m; sourceTree = "<group>"; };
+		DF356A0122968B4A006929C4 /* Tweak.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tweak.mm; sourceTree = "<group>"; };
+		DF356A0222968B4A006929C4 /* Tweak.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tweak.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DF356A0422968B85006929C4 /* WeChatClassDumpHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatClassDumpHelp.h; sourceTree = "<group>"; };
+		DF356A0522968B85006929C4 /* WeChatClassDumpHelp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatClassDumpHelp.m; sourceTree = "<group>"; };
+		DF356A0822968DC2006929C4 /* HookMessage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HookMessage.mm; sourceTree = "<group>"; };
+		DF356A0922968DC3006929C4 /* HookMessage.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = HookMessage.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.logos; };
+		DF356A0C22968F2E006929C4 /* SwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchCell.h; sourceTree = "<group>"; };
+		DF356A0D22968F2E006929C4 /* SwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchCell.m; sourceTree = "<group>"; };
+		DF356A1522969242006929C4 /* GlobalHeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalHeaderFile.h; sourceTree = "<group>"; };
+		DF356A1622969242006929C4 /* GlobalHeaderFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalHeaderFile.m; sourceTree = "<group>"; };
+		DF356A1922969965006929C4 /* ImitateWechatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImitateWechatCell.h; sourceTree = "<group>"; };
+		DF356A1A22969965006929C4 /* ImitateWechatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImitateWechatCell.m; sourceTree = "<group>"; };
+		DF356A1F22969F9E006929C4 /* LZBaseWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBaseWebVC.h; sourceTree = "<group>"; };
+		DF356A2022969F9E006929C4 /* LZBaseWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBaseWebVC.m; sourceTree = "<group>"; };
+		DF356A2322969FB2006929C4 /* LZPDFVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZPDFVC.h; sourceTree = "<group>"; };
+		DF356A2422969FB2006929C4 /* LZPDFVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZPDFVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0D9572229170AE001633A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0D9586229170AE001633A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0D958F229170AE001633A2 /* JavaScriptCore.framework in Frameworks */,
+				DF0D9593229170AE001633A2 /* UIKit.framework in Frameworks */,
+				DF0D9591229170AE001633A2 /* Foundation.framework in Frameworks */,
+				9D74D2185859D9016D1879DC /* Pods_wexingGitDylib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60F596B82404AF1BF2C5EABF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A41828D354C00C87BA3359 /* Pods-wexingGitDylib.debug.xcconfig */,
+				6C71DC2BB2BB54EDD18532F2 /* Pods-wexingGitDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF0D956C229170AE001633A2 = {
+			isa = PBXGroup;
+			children = (
+				DF0D957A229170AE001633A2 /* wexingGit */,
+				DF0D9594229170AE001633A2 /* wexingGitDylib */,
+				DF0D958D229170AE001633A2 /* Frameworks */,
+				DF0D9579229170AE001633A2 /* Products */,
+				60F596B82404AF1BF2C5EABF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DF0D9579229170AE001633A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D9578229170AE001633A2 /* wexingGit.app */,
+				DF0D9589229170AE001633A2 /* libwexingGitDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF0D957A229170AE001633A2 /* wexingGit */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D957B229170AE001633A2 /* icon.png */,
+				DF0D9583229170AE001633A2 /* Info.plist */,
+				DF0D957C229170AE001633A2 /* Scripts */,
+				DF0D957E229170AE001633A2 /* Config */,
+				DF0D9581229170AE001633A2 /* TargetApp */,
+			);
+			path = wexingGit;
+			sourceTree = "<group>";
+		};
+		DF0D957C229170AE001633A2 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D957D229170AE001633A2 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DF0D957E229170AE001633A2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D957F229170AE001633A2 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF0D9581229170AE001633A2 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D9582229170AE001633A2 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DF0D958D229170AE001633A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D958E229170AE001633A2 /* JavaScriptCore.framework */,
+				DF0D9590229170AE001633A2 /* Foundation.framework */,
+				DF0D9592229170AE001633A2 /* UIKit.framework */,
+				A32142B65F426537B4FB79D5 /* Pods_wexingGitDylib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF0D9594229170AE001633A2 /* wexingGitDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DF356A1522969242006929C4 /* GlobalHeaderFile.h */,
+				DF356A1622969242006929C4 /* GlobalHeaderFile.m */,
+				DF356A102296919A006929C4 /* Model */,
+				DF356A0B22968F0A006929C4 /* View */,
+				DF356A1E22969F78006929C4 /* ViewController */,
+				DF356A1D22969E8B006929C4 /* CaptainHook */,
+				DF0D9595229170AE001633A2 /* Logos */,
+				DF0D9599229170AE001633A2 /* Config */,
+				DF0D95A6229170AE001633A2 /* Trace */,
+				DF0D95BE229170AE001633A2 /* Tools */,
+				DF0D95C5229170AE001633A2 /* AntiAntiDebug */,
+				DF0D95C8229170AE001633A2 /* fishhook */,
+				DF0D95C3229170AE001633A2 /* Supporting Files */,
+			);
+			path = wexingGitDylib;
+			sourceTree = "<group>";
+		};
+		DF0D9595229170AE001633A2 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DF356A0822968DC2006929C4 /* HookMessage.mm */,
+				DF356A0922968DC3006929C4 /* HookMessage.xm */,
+				DF356A0122968B4A006929C4 /* Tweak.mm */,
+				DF356A0222968B4A006929C4 /* Tweak.xm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DF0D9599229170AE001633A2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D959A229170AE001633A2 /* MDConfigManager.h */,
+				DF0D959C229170AE001633A2 /* MDConfigManager.m */,
+				DF0D959E229170AE001633A2 /* MDCycriptManager.h */,
+				DF0D95A0229170AE001633A2 /* MDCycriptManager.m */,
+				DF0D95A2229170AE001633A2 /* MDMethodTrace.h */,
+				DF0D95A4229170AE001633A2 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF0D95A6229170AE001633A2 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95A7229170AE001633A2 /* a1a2-selectortramps-arm.s */,
+				DF0D95A9229170AE001633A2 /* a1a2-selectortramps-arm64.s */,
+				DF0D95AB229170AE001633A2 /* a1a2-selectortramps-i386.s */,
+				DF0D95AD229170AE001633A2 /* a1a2-selectortramps-x86_64.s */,
+				DF0D95AF229170AE001633A2 /* a2a3-selectortramps-arm.s */,
+				DF0D95B1229170AE001633A2 /* a2a3-selectortramps-i386.s */,
+				DF0D95B3229170AE001633A2 /* a2a3-selectortramps-x86_64.s */,
+				DF0D95B5229170AE001633A2 /* OCMethodTrace.h */,
+				DF0D95B7229170AE001633A2 /* OCMethodTrace.m */,
+				DF0D95B9229170AE001633A2 /* OCSelectorTrampolines.h */,
+				DF0D95BB229170AE001633A2 /* OCSelectorTrampolines.mm */,
+				DF0D95BD229170AE001633A2 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DF0D95BE229170AE001633A2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95BF229170AE001633A2 /* LLDBTools.h */,
+				DF0D95C1229170AE001633A2 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DF0D95C3229170AE001633A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95C4229170AE001633A2 /* wexingGitDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF0D95C5229170AE001633A2 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95C6229170AE001633A2 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		DF0D95C8229170AE001633A2 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95C9229170AE001633A2 /* fishhook.c */,
+				DF0D95CB229170AE001633A2 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		DF356A0B22968F0A006929C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF356A1922969965006929C4 /* ImitateWechatCell.h */,
+				DF356A1A22969965006929C4 /* ImitateWechatCell.m */,
+				DF356A0C22968F2E006929C4 /* SwitchCell.h */,
+				DF356A0D22968F2E006929C4 /* SwitchCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DF356A102296919A006929C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF356A0422968B85006929C4 /* WeChatClassDumpHelp.h */,
+				DF356A0522968B85006929C4 /* WeChatClassDumpHelp.m */,
+				DF3569F92296893C006929C4 /* LZRedPageModel.h */,
+				DF3569FA2296893C006929C4 /* LZRedPageModel.m */,
+				DF3569FD22968981006929C4 /* LZRedPageManager.h */,
+				DF3569FE22968981006929C4 /* LZRedPageManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DF356A1D22969E8B006929C4 /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				DF0D95CD229170AE001633A2 /* wexingGitDylib.h */,
+				DF0D95CF229170AE001633A2 /* wexingGitDylib.m */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		DF356A1E22969F78006929C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF356A1F22969F9E006929C4 /* LZBaseWebVC.h */,
+				DF356A2022969F9E006929C4 /* LZBaseWebVC.m */,
+				DF356A2322969FB2006929C4 /* LZPDFVC.h */,
+				DF356A2422969FB2006929C4 /* LZPDFVC.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF0D9587229170AE001633A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0D95CE229170AE001633A2 /* wexingGitDylib.h in Headers */,
+				DF3569FB2296893C006929C4 /* LZRedPageModel.h in Headers */,
+				DF356A2122969F9E006929C4 /* LZBaseWebVC.h in Headers */,
+				DF356A1722969242006929C4 /* GlobalHeaderFile.h in Headers */,
+				DF0D959F229170AE001633A2 /* MDCycriptManager.h in Headers */,
+				DF0D95A3229170AE001633A2 /* MDMethodTrace.h in Headers */,
+				DF356A0622968B85006929C4 /* WeChatClassDumpHelp.h in Headers */,
+				DF3569FF22968981006929C4 /* LZRedPageManager.h in Headers */,
+				DF356A2522969FB2006929C4 /* LZPDFVC.h in Headers */,
+				DF0D95CC229170AE001633A2 /* fishhook.h in Headers */,
+				DF356A0E22968F2E006929C4 /* SwitchCell.h in Headers */,
+				DF0D95C0229170AE001633A2 /* LLDBTools.h in Headers */,
+				DF0D959B229170AE001633A2 /* MDConfigManager.h in Headers */,
+				DF356A1B22969965006929C4 /* ImitateWechatCell.h in Headers */,
+				DF0D95BA229170AE001633A2 /* OCSelectorTrampolines.h in Headers */,
+				DF0D95B6229170AE001633A2 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF0D9577229170AE001633A2 /* wexingGit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0D95D6229170AE001633A2 /* Build configuration list for PBXNativeTarget "wexingGit" */;
+			buildPhases = (
+				DF0D9571229170AE001633A2 /* Sources */,
+				DF0D9572229170AE001633A2 /* Frameworks */,
+				DF0D9573229170AE001633A2 /* ShellScript */,
+				DF0D9574229170AE001633A2 /* Resources */,
+				DF0D9575229170AE001633A2 /* CopyFiles */,
+				DF0D9576229170AE001633A2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF0D958C229170AE001633A2 /* PBXTargetDependency */,
+			);
+			name = wexingGit;
+			productName = wexingGit;
+			productReference = DF0D9578229170AE001633A2 /* wexingGit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF0D9588229170AE001633A2 /* wexingGitDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF0D95D3229170AE001633A2 /* Build configuration list for PBXNativeTarget "wexingGitDylib" */;
+			buildPhases = (
+				84B43D0D8B99A5EF80871D7E /* [CP] Check Pods Manifest.lock */,
+				DF0D9584229170AE001633A2 /* ShellScript */,
+				DF0D9585229170AE001633A2 /* Sources */,
+				DF0D9586229170AE001633A2 /* Frameworks */,
+				DF0D9587229170AE001633A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wexingGitDylib;
+			productName = wexingGitDylib;
+			productReference = DF0D9589229170AE001633A2 /* libwexingGitDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF0D956D229170AE001633A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DF0D9577229170AE001633A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DF0D9588229170AE001633A2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DF0D9570229170AE001633A2 /* Build configuration list for PBXProject "wexingGit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF0D956C229170AE001633A2;
+			productRefGroup = DF0D9579229170AE001633A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0D9577229170AE001633A2 /* wexingGit */,
+				DF0D9588229170AE001633A2 /* wexingGitDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0D9574229170AE001633A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0D9580229170AE001633A2 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84B43D0D8B99A5EF80871D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wexingGitDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0D9573229170AE001633A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DF0D9576229170AE001633A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DF0D9584229170AE001633A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0D9571229170AE001633A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0D9585229170AE001633A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0D95A1229170AE001633A2 /* MDCycriptManager.m in Sources */,
+				DF356A0F22968F2E006929C4 /* SwitchCell.m in Sources */,
+				DF0D95AA229170AE001633A2 /* a1a2-selectortramps-arm64.s in Sources */,
+				DF356A0022968981006929C4 /* LZRedPageManager.m in Sources */,
+				DF0D95A8229170AE001633A2 /* a1a2-selectortramps-arm.s in Sources */,
+				DF0D95AE229170AE001633A2 /* a1a2-selectortramps-x86_64.s in Sources */,
+				DF356A1C22969965006929C4 /* ImitateWechatCell.m in Sources */,
+				DF0D95B8229170AE001633A2 /* OCMethodTrace.m in Sources */,
+				DF0D95D0229170AE001633A2 /* wexingGitDylib.m in Sources */,
+				DF0D959D229170AE001633A2 /* MDConfigManager.m in Sources */,
+				DF0D95CA229170AE001633A2 /* fishhook.c in Sources */,
+				DF0D95C7229170AE001633A2 /* AntiAntiDebug.m in Sources */,
+				DF0D95BC229170AE001633A2 /* OCSelectorTrampolines.mm in Sources */,
+				DF0D95AC229170AE001633A2 /* a1a2-selectortramps-i386.s in Sources */,
+				DF356A0322968B4A006929C4 /* Tweak.mm in Sources */,
+				DF0D95B2229170AE001633A2 /* a2a3-selectortramps-i386.s in Sources */,
+				DF356A1822969242006929C4 /* GlobalHeaderFile.m in Sources */,
+				DF3569FC2296893C006929C4 /* LZRedPageModel.m in Sources */,
+				DF0D95B0229170AE001633A2 /* a2a3-selectortramps-arm.s in Sources */,
+				DF356A0A22968DC3006929C4 /* HookMessage.mm in Sources */,
+				DF356A0722968B85006929C4 /* WeChatClassDumpHelp.m in Sources */,
+				DF356A2622969FB2006929C4 /* LZPDFVC.m in Sources */,
+				DF0D95C2229170AE001633A2 /* LLDBTools.mm in Sources */,
+				DF356A2222969F9E006929C4 /* LZBaseWebVC.m in Sources */,
+				DF0D95B4229170AE001633A2 /* a2a3-selectortramps-x86_64.s in Sources */,
+				DF0D95A5229170AE001633A2 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF0D958C229170AE001633A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0D9588229170AE001633A2 /* wexingGitDylib */;
+			targetProxy = DF0D958B229170AE001633A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF0D95D1229170AE001633A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF0D95D2229170AE001633A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF0D95D4229170AE001633A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A41828D354C00C87BA3359 /* Pods-wexingGitDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wexingGitDylib/wexingGitDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libwexingGitDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"wexingGitDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DF0D95D5229170AE001633A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C71DC2BB2BB54EDD18532F2 /* Pods-wexingGitDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wexingGitDylib/wexingGitDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libwexingGitDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"wexingGitDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF0D95D7229170AE001633A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wexingGit/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbbc.wexingGit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF0D95D8229170AE001633A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = wexingGit/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbbc.wexingGit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0D9570229170AE001633A2 /* Build configuration list for PBXProject "wexingGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0D95D1229170AE001633A2 /* Debug */,
+				DF0D95D2229170AE001633A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0D95D3229170AE001633A2 /* Build configuration list for PBXNativeTarget "wexingGitDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0D95D4229170AE001633A2 /* Debug */,
+				DF0D95D5229170AE001633A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF0D95D6229170AE001633A2 /* Build configuration list for PBXNativeTarget "wexingGit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF0D95D7229170AE001633A2 /* Debug */,
+				DF0D95D8229170AE001633A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF0D956D229170AE001633A2 /* Project object */;
+}

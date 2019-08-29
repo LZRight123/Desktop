@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF25EBB322E4006800A8C290 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF25EBB222E4006800A8C290 /* UIKit.framework */; };
+		DF25EBB522E4006800A8C290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF25EBB422E4006800A8C290 /* Foundation.framework */; };
+		DF25EBB722E4006800A8C290 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF25EBB622E4006800A8C290 /* CydiaSubstrate.framework */; };
+		DF25EBC022E4006800A8C290 /* mifengdeb.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBBF22E4006800A8C290 /* mifengdeb.mm */; };
+		DF25EBDA22E4007B00A8C290 /* CCHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBCB22E4007B00A8C290 /* CCHelpTool.m */; };
+		DF25EBDB22E4007B00A8C290 /* CC_Object-C.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBCC22E4007B00A8C290 /* CC_Object-C.mm */; };
+		DF25EBDC22E4007B00A8C290 /* CC_CFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBCD22E4007B00A8C290 /* CC_CFunction.m */; };
+		DF25EBDD22E4007B00A8C290 /* CCHelpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25EBCF22E4007B00A8C290 /* CCHelpTool.h */; };
+		DF25EBDE22E4007B00A8C290 /* __MCMContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25EBD122E4007B00A8C290 /* __MCMContainer.h */; };
+		DF25EBDF22E4007B00A8C290 /* __AADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25EBD222E4007B00A8C290 /* __AADevice.h */; };
+		DF25EBE022E4007B00A8C290 /* __LSApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25EBD322E4007B00A8C290 /* __LSApplication.h */; };
+		DF25EBE122E4007B00A8C290 /* __LSApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBD422E4007B00A8C290 /* __LSApplication.mm */; };
+		DF25EBE222E4007B00A8C290 /* __MCMContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBD822E4007B00A8C290 /* __MCMContainer.mm */; };
+		DF25EBE322E4007B00A8C290 /* __AADevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBD922E4007B00A8C290 /* __AADevice.mm */; };
+		DF25EBE722E4009C00A8C290 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DF25EBE522E4009C00A8C290 /* fishhook.c */; };
+		DF25EBE822E4009C00A8C290 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF25EBE622E4009C00A8C290 /* fishhook.h */; };
+		DF25EBEA22E400A800A8C290 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF25EBE922E400A800A8C290 /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF25EBAF22E4006800A8C290 /* mifengdeb.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = mifengdeb.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF25EBB222E4006800A8C290 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF25EBB422E4006800A8C290 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF25EBB622E4006800A8C290 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		DF25EBBB22E4006800A8C290 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		DF25EBBD22E4006800A8C290 /* mifengdeb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mifengdeb-Prefix.pch"; sourceTree = "<group>"; };
+		DF25EBBE22E4006800A8C290 /* mifengdeb.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = mifengdeb.xm; sourceTree = "<group>"; };
+		DF25EBBF22E4006800A8C290 /* mifengdeb.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = mifengdeb.mm; sourceTree = "<group>"; };
+		DF25EBC422E4006800A8C290 /* mifengdeb.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = mifengdeb.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/mifengdeb.plist; sourceTree = "<group>"; };
+		DF25EBCB22E4007B00A8C290 /* CCHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHelpTool.m; sourceTree = "<group>"; };
+		DF25EBCC22E4007B00A8C290 /* CC_Object-C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CC_Object-C.mm"; sourceTree = "<group>"; };
+		DF25EBCD22E4007B00A8C290 /* CC_CFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC_CFunction.m; sourceTree = "<group>"; };
+		DF25EBCE22E4007B00A8C290 /* CC_Object-C.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CC_Object-C.xm"; sourceTree = "<group>"; };
+		DF25EBCF22E4007B00A8C290 /* CCHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHelpTool.h; sourceTree = "<group>"; };
+		DF25EBD122E4007B00A8C290 /* __MCMContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __MCMContainer.h; sourceTree = "<group>"; };
+		DF25EBD222E4007B00A8C290 /* __AADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __AADevice.h; sourceTree = "<group>"; };
+		DF25EBD322E4007B00A8C290 /* __LSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __LSApplication.h; sourceTree = "<group>"; };
+		DF25EBD422E4007B00A8C290 /* __LSApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __LSApplication.mm; sourceTree = "<group>"; };
+		DF25EBD522E4007B00A8C290 /* __AADevice.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __AADevice.xm; sourceTree = "<group>"; };
+		DF25EBD622E4007B00A8C290 /* __MCMContainer.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __MCMContainer.xm; sourceTree = "<group>"; };
+		DF25EBD722E4007B00A8C290 /* __LSApplication.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __LSApplication.xm; sourceTree = "<group>"; };
+		DF25EBD822E4007B00A8C290 /* __MCMContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __MCMContainer.mm; sourceTree = "<group>"; };
+		DF25EBD922E4007B00A8C290 /* __AADevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __AADevice.mm; sourceTree = "<group>"; };
+		DF25EBE522E4009C00A8C290 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		DF25EBE622E4009C00A8C290 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		DF25EBE922E400A800A8C290 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF25EBAB22E4006800A8C290 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF25EBEA22E400A800A8C290 /* CFNetwork.framework in Frameworks */,
+				DF25EBB322E4006800A8C290 /* UIKit.framework in Frameworks */,
+				DF25EBB522E4006800A8C290 /* Foundation.framework in Frameworks */,
+				DF25EBB722E4006800A8C290 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF25EBA422E4006800A8C290 = {
+			isa = PBXGroup;
+			children = (
+				DF25EBB822E4006800A8C290 /* mifengdeb */,
+				DF25EBB122E4006800A8C290 /* Frameworks */,
+				DF25EBB022E4006800A8C290 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF25EBB022E4006800A8C290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBAF22E4006800A8C290 /* mifengdeb.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF25EBB122E4006800A8C290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBE922E400A800A8C290 /* CFNetwork.framework */,
+				DF25EBB222E4006800A8C290 /* UIKit.framework */,
+				DF25EBB422E4006800A8C290 /* Foundation.framework */,
+				DF25EBB622E4006800A8C290 /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF25EBB822E4006800A8C290 /* mifengdeb */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBE422E4009C00A8C290 /* fishhook */,
+				DF25EBCA22E4007B00A8C290 /* CCTweakTool */,
+				DF25EBBE22E4006800A8C290 /* mifengdeb.xm */,
+				DF25EBBF22E4006800A8C290 /* mifengdeb.mm */,
+				DF25EBB922E4006800A8C290 /* Package */,
+				DF25EBBC22E4006800A8C290 /* Supporting Files */,
+			);
+			path = mifengdeb;
+			sourceTree = "<group>";
+		};
+		DF25EBB922E4006800A8C290 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBBA22E4006800A8C290 /* DEBIAN */,
+				DF25EBC122E4006800A8C290 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		DF25EBBA22E4006800A8C290 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBBB22E4006800A8C290 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		DF25EBBC22E4006800A8C290 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBBD22E4006800A8C290 /* mifengdeb-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF25EBC122E4006800A8C290 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBC222E4006800A8C290 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		DF25EBC222E4006800A8C290 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBC322E4006800A8C290 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		DF25EBC322E4006800A8C290 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBC422E4006800A8C290 /* mifengdeb.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		DF25EBCA22E4007B00A8C290 /* CCTweakTool */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBCB22E4007B00A8C290 /* CCHelpTool.m */,
+				DF25EBCC22E4007B00A8C290 /* CC_Object-C.mm */,
+				DF25EBCD22E4007B00A8C290 /* CC_CFunction.m */,
+				DF25EBCE22E4007B00A8C290 /* CC_Object-C.xm */,
+				DF25EBCF22E4007B00A8C290 /* CCHelpTool.h */,
+				DF25EBD022E4007B00A8C290 /* privateApis */,
+			);
+			path = CCTweakTool;
+			sourceTree = "<group>";
+		};
+		DF25EBD022E4007B00A8C290 /* privateApis */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBD122E4007B00A8C290 /* __MCMContainer.h */,
+				DF25EBD222E4007B00A8C290 /* __AADevice.h */,
+				DF25EBD322E4007B00A8C290 /* __LSApplication.h */,
+				DF25EBD422E4007B00A8C290 /* __LSApplication.mm */,
+				DF25EBD522E4007B00A8C290 /* __AADevice.xm */,
+				DF25EBD622E4007B00A8C290 /* __MCMContainer.xm */,
+				DF25EBD722E4007B00A8C290 /* __LSApplication.xm */,
+				DF25EBD822E4007B00A8C290 /* __MCMContainer.mm */,
+				DF25EBD922E4007B00A8C290 /* __AADevice.mm */,
+			);
+			path = privateApis;
+			sourceTree = "<group>";
+		};
+		DF25EBE422E4009C00A8C290 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DF25EBE522E4009C00A8C290 /* fishhook.c */,
+				DF25EBE622E4009C00A8C290 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF25EBAC22E4006800A8C290 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF25EBE022E4007B00A8C290 /* __LSApplication.h in Headers */,
+				DF25EBE822E4009C00A8C290 /* fishhook.h in Headers */,
+				DF25EBDF22E4007B00A8C290 /* __AADevice.h in Headers */,
+				DF25EBDE22E4007B00A8C290 /* __MCMContainer.h in Headers */,
+				DF25EBDD22E4007B00A8C290 /* CCHelpTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF25EBAE22E4006800A8C290 /* mifengdeb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF25EBC722E4006800A8C290 /* Build configuration list for PBXNativeTarget "mifengdeb" */;
+			buildPhases = (
+				DF25EBA922E4006800A8C290 /* ShellScript */,
+				DF25EBAA22E4006800A8C290 /* Sources */,
+				DF25EBAB22E4006800A8C290 /* Frameworks */,
+				DF25EBAC22E4006800A8C290 /* Headers */,
+				DF25EBAD22E4006800A8C290 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mifengdeb;
+			productName = mifengdeb;
+			productReference = DF25EBAF22E4006800A8C290 /* mifengdeb.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF25EBA522E4006800A8C290 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					DF25EBAE22E4006800A8C290 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DF25EBA822E4006800A8C290 /* Build configuration list for PBXProject "mifengdeb" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF25EBA422E4006800A8C290;
+			productRefGroup = DF25EBB022E4006800A8C290 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF25EBAE22E4006800A8C290 /* mifengdeb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF25EBA922E4006800A8C290 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		DF25EBAD22E4006800A8C290 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF25EBAA22E4006800A8C290 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF25EBDA22E4007B00A8C290 /* CCHelpTool.m in Sources */,
+				DF25EBE222E4007B00A8C290 /* __MCMContainer.mm in Sources */,
+				DF25EBC022E4006800A8C290 /* mifengdeb.mm in Sources */,
+				DF25EBE322E4007B00A8C290 /* __AADevice.mm in Sources */,
+				DF25EBDB22E4007B00A8C290 /* CC_Object-C.mm in Sources */,
+				DF25EBE122E4007B00A8C290 /* __LSApplication.mm in Sources */,
+				DF25EBE722E4009C00A8C290 /* fishhook.c in Sources */,
+				DF25EBDC22E4007B00A8C290 /* CC_CFunction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF25EBC522E4006800A8C290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"mifengdeb\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF25EBC622E4006800A8C290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"mifengdeb\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DF25EBC822E4006800A8C290 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X886EQT7VF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mifengdeb/mifengdeb-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF25EBC922E4006800A8C290 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X886EQT7VF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mifengdeb/mifengdeb-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF25EBA822E4006800A8C290 /* Build configuration list for PBXProject "mifengdeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF25EBC522E4006800A8C290 /* Release */,
+				DF25EBC622E4006800A8C290 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF25EBC722E4006800A8C290 /* Build configuration list for PBXNativeTarget "mifengdeb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF25EBC822E4006800A8C290 /* Release */,
+				DF25EBC922E4006800A8C290 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF25EBA522E4006800A8C290 /* Project object */;
+}

@@ -1,0 +1,35 @@
+PODS:
+  - FLEX (3.0.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MDSettingCenter (1.1.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - FLEX
+  - Masonry
+  - MBProgressHUD
+  - MDSettingCenter
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/AloneMonkey/MonkeyDevSpecs.git:
+    - MDSettingCenter
+  https://github.com/cocoapods/specs.git:
+    - FLEX
+    - Masonry
+    - MBProgressHUD
+    - YYKit
+
+SPEC CHECKSUMS:
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MDSettingCenter: 41b910206cd1d826e11247413cd48a068d38e274
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 9a8c5aaadf8ca258596a1cec6a76eb1458d77fdb
+
+COCOAPODS: 1.6.1
