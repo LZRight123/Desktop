@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFCC45D12313C7B300ECEF18 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFCC45D02313C7B300ECEF18 /* MDConfig.plist */; };
+		DFCC45DB2313C7B400ECEF18 /* libfoufouleidaDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFCC45DA2313C7B400ECEF18 /* libfoufouleidaDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DFCC45E02313C7B400ECEF18 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCC45DF2313C7B400ECEF18 /* JavaScriptCore.framework */; };
+		DFCC45E22313C7B400ECEF18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCC45E12313C7B400ECEF18 /* Foundation.framework */; };
+		DFCC45E42313C7B400ECEF18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCC45E32313C7B400ECEF18 /* UIKit.framework */; };
+		DFCC45E92313C7B400ECEF18 /* foufouleidaDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45E82313C7B400ECEF18 /* foufouleidaDylib.mm */; };
+		DFCC45EC2313C7B400ECEF18 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC45EB2313C7B400ECEF18 /* MDConfigManager.h */; };
+		DFCC45EE2313C7B400ECEF18 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45ED2313C7B400ECEF18 /* MDConfigManager.m */; };
+		DFCC45F02313C7B400ECEF18 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC45EF2313C7B400ECEF18 /* MDCycriptManager.h */; };
+		DFCC45F22313C7B400ECEF18 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45F12313C7B400ECEF18 /* MDCycriptManager.m */; };
+		DFCC45F42313C7B400ECEF18 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC45F32313C7B400ECEF18 /* MDMethodTrace.h */; };
+		DFCC45F62313C7B400ECEF18 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45F52313C7B400ECEF18 /* MDMethodTrace.m */; };
+		DFCC45F92313C7B400ECEF18 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45F82313C7B400ECEF18 /* a1a2-selectortramps-arm.s */; };
+		DFCC45FB2313C7B400ECEF18 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45FA2313C7B400ECEF18 /* a1a2-selectortramps-arm64.s */; };
+		DFCC45FD2313C7B400ECEF18 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45FC2313C7B400ECEF18 /* a1a2-selectortramps-i386.s */; };
+		DFCC45FF2313C7B400ECEF18 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC45FE2313C7B400ECEF18 /* a1a2-selectortramps-x86_64.s */; };
+		DFCC46012313C7B400ECEF18 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46002313C7B400ECEF18 /* a2a3-selectortramps-arm.s */; };
+		DFCC46032313C7B400ECEF18 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46022313C7B400ECEF18 /* a2a3-selectortramps-i386.s */; };
+		DFCC46052313C7B400ECEF18 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46042313C7B400ECEF18 /* a2a3-selectortramps-x86_64.s */; };
+		DFCC46072313C7B400ECEF18 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC46062313C7B400ECEF18 /* OCMethodTrace.h */; };
+		DFCC46092313C7B400ECEF18 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46082313C7B400ECEF18 /* OCMethodTrace.m */; };
+		DFCC460B2313C7B400ECEF18 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC460A2313C7B400ECEF18 /* OCSelectorTrampolines.h */; };
+		DFCC460D2313C7B400ECEF18 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFCC460C2313C7B400ECEF18 /* OCSelectorTrampolines.mm */; };
+		DFCC46112313C7B400ECEF18 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC46102313C7B400ECEF18 /* LLDBTools.h */; };
+		DFCC46132313C7B400ECEF18 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46122313C7B400ECEF18 /* LLDBTools.mm */; };
+		DFCC46182313C7B400ECEF18 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DFCC46172313C7B400ECEF18 /* fishhook.c */; };
+		DFCC461A2313C7B400ECEF18 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC46192313C7B400ECEF18 /* fishhook.h */; };
+		DFCC461C2313C7B400ECEF18 /* foufouleidaDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DFCC461B2313C7B400ECEF18 /* foufouleidaDylib.h */; };
+		DFCC461E2313C7B400ECEF18 /* foufouleidaDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC461D2313C7B400ECEF18 /* foufouleidaDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFCC45DC2313C7B400ECEF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFCC45BE2313C7B300ECEF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFCC45D92313C7B400ECEF18;
+			remoteInfo = foufouleidaDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFCC45C62313C7B300ECEF18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFCC45DB2313C7B400ECEF18 /* libfoufouleidaDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFCC45C92313C7B300ECEF18 /* foufouleida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foufouleida.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC45CC2313C7B300ECEF18 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DFCC45CE2313C7B300ECEF18 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DFCC45D02313C7B300ECEF18 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DFCC45D32313C7B300ECEF18 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DFCC45D42313C7B300ECEF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFCC45DA2313C7B400ECEF18 /* libfoufouleidaDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libfoufouleidaDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFCC45DF2313C7B400ECEF18 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DFCC45E12313C7B400ECEF18 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFCC45E32313C7B400ECEF18 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFCC45E72313C7B400ECEF18 /* foufouleidaDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; name = foufouleidaDylib.xm; path = Logos/foufouleidaDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.logos; };
+		DFCC45E82313C7B400ECEF18 /* foufouleidaDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = foufouleidaDylib.mm; path = Logos/foufouleidaDylib.mm; sourceTree = "<group>"; };
+		DFCC45EB2313C7B400ECEF18 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DFCC45ED2313C7B400ECEF18 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DFCC45EF2313C7B400ECEF18 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DFCC45F12313C7B400ECEF18 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DFCC45F32313C7B400ECEF18 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DFCC45F52313C7B400ECEF18 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DFCC45F82313C7B400ECEF18 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DFCC45FA2313C7B400ECEF18 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DFCC45FC2313C7B400ECEF18 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DFCC45FE2313C7B400ECEF18 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DFCC46002313C7B400ECEF18 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DFCC46022313C7B400ECEF18 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DFCC46042313C7B400ECEF18 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DFCC46062313C7B400ECEF18 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DFCC46082313C7B400ECEF18 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DFCC460A2313C7B400ECEF18 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DFCC460C2313C7B400ECEF18 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DFCC460E2313C7B400ECEF18 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DFCC46102313C7B400ECEF18 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DFCC46122313C7B400ECEF18 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DFCC46152313C7B400ECEF18 /* foufouleidaDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "foufouleidaDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DFCC46172313C7B400ECEF18 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DFCC46192313C7B400ECEF18 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DFCC461B2313C7B400ECEF18 /* foufouleidaDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = foufouleidaDylib.h; sourceTree = "<group>"; };
+		DFCC461D2313C7B400ECEF18 /* foufouleidaDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = foufouleidaDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFCC45C32313C7B300ECEF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC45D72313C7B400ECEF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC45E02313C7B400ECEF18 /* JavaScriptCore.framework in Frameworks */,
+				DFCC45E42313C7B400ECEF18 /* UIKit.framework in Frameworks */,
+				DFCC45E22313C7B400ECEF18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFCC45BD2313C7B300ECEF18 = {
+			isa = PBXGroup;
+			children = (
+				DFCC45CB2313C7B300ECEF18 /* foufouleida */,
+				DFCC45E52313C7B400ECEF18 /* foufouleidaDylib */,
+				DFCC45DE2313C7B400ECEF18 /* Frameworks */,
+				DFCC45CA2313C7B300ECEF18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFCC45CA2313C7B300ECEF18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45C92313C7B300ECEF18 /* foufouleida.app */,
+				DFCC45DA2313C7B400ECEF18 /* libfoufouleidaDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFCC45CB2313C7B300ECEF18 /* foufouleida */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45CC2313C7B300ECEF18 /* icon.png */,
+				DFCC45D42313C7B300ECEF18 /* Info.plist */,
+				DFCC45CD2313C7B300ECEF18 /* Scripts */,
+				DFCC45CF2313C7B300ECEF18 /* Config */,
+				DFCC45D22313C7B300ECEF18 /* TargetApp */,
+			);
+			path = foufouleida;
+			sourceTree = "<group>";
+		};
+		DFCC45CD2313C7B300ECEF18 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45CE2313C7B300ECEF18 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DFCC45CF2313C7B300ECEF18 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45D02313C7B300ECEF18 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DFCC45D22313C7B300ECEF18 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45D32313C7B300ECEF18 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DFCC45DE2313C7B400ECEF18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45DF2313C7B400ECEF18 /* JavaScriptCore.framework */,
+				DFCC45E12313C7B400ECEF18 /* Foundation.framework */,
+				DFCC45E32313C7B400ECEF18 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFCC45E52313C7B400ECEF18 /* foufouleidaDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC461B2313C7B400ECEF18 /* foufouleidaDylib.h */,
+				DFCC461D2313C7B400ECEF18 /* foufouleidaDylib.m */,
+				DFCC45E62313C7B400ECEF18 /* Logos */,
+				DFCC45EA2313C7B400ECEF18 /* Config */,
+				DFCC45F72313C7B400ECEF18 /* Trace */,
+				DFCC460F2313C7B400ECEF18 /* Tools */,
+				DFCC46162313C7B400ECEF18 /* fishhook */,
+				DFCC46142313C7B400ECEF18 /* Supporting Files */,
+			);
+			path = foufouleidaDylib;
+			sourceTree = "<group>";
+		};
+		DFCC45E62313C7B400ECEF18 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45E72313C7B400ECEF18 /* foufouleidaDylib.xm */,
+				DFCC45E82313C7B400ECEF18 /* foufouleidaDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DFCC45EA2313C7B400ECEF18 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45EB2313C7B400ECEF18 /* MDConfigManager.h */,
+				DFCC45ED2313C7B400ECEF18 /* MDConfigManager.m */,
+				DFCC45EF2313C7B400ECEF18 /* MDCycriptManager.h */,
+				DFCC45F12313C7B400ECEF18 /* MDCycriptManager.m */,
+				DFCC45F32313C7B400ECEF18 /* MDMethodTrace.h */,
+				DFCC45F52313C7B400ECEF18 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DFCC45F72313C7B400ECEF18 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC45F82313C7B400ECEF18 /* a1a2-selectortramps-arm.s */,
+				DFCC45FA2313C7B400ECEF18 /* a1a2-selectortramps-arm64.s */,
+				DFCC45FC2313C7B400ECEF18 /* a1a2-selectortramps-i386.s */,
+				DFCC45FE2313C7B400ECEF18 /* a1a2-selectortramps-x86_64.s */,
+				DFCC46002313C7B400ECEF18 /* a2a3-selectortramps-arm.s */,
+				DFCC46022313C7B400ECEF18 /* a2a3-selectortramps-i386.s */,
+				DFCC46042313C7B400ECEF18 /* a2a3-selectortramps-x86_64.s */,
+				DFCC46062313C7B400ECEF18 /* OCMethodTrace.h */,
+				DFCC46082313C7B400ECEF18 /* OCMethodTrace.m */,
+				DFCC460A2313C7B400ECEF18 /* OCSelectorTrampolines.h */,
+				DFCC460C2313C7B400ECEF18 /* OCSelectorTrampolines.mm */,
+				DFCC460E2313C7B400ECEF18 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DFCC460F2313C7B400ECEF18 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC46102313C7B400ECEF18 /* LLDBTools.h */,
+				DFCC46122313C7B400ECEF18 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DFCC46142313C7B400ECEF18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC46152313C7B400ECEF18 /* foufouleidaDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFCC46162313C7B400ECEF18 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC46172313C7B400ECEF18 /* fishhook.c */,
+				DFCC46192313C7B400ECEF18 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFCC45D82313C7B400ECEF18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC45F02313C7B400ECEF18 /* MDCycriptManager.h in Headers */,
+				DFCC45F42313C7B400ECEF18 /* MDMethodTrace.h in Headers */,
+				DFCC461A2313C7B400ECEF18 /* fishhook.h in Headers */,
+				DFCC46112313C7B400ECEF18 /* LLDBTools.h in Headers */,
+				DFCC45EC2313C7B400ECEF18 /* MDConfigManager.h in Headers */,
+				DFCC460B2313C7B400ECEF18 /* OCSelectorTrampolines.h in Headers */,
+				DFCC46072313C7B400ECEF18 /* OCMethodTrace.h in Headers */,
+				DFCC461C2313C7B400ECEF18 /* foufouleidaDylib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFCC45C82313C7B300ECEF18 /* foufouleida */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCC46242313C7B400ECEF18 /* Build configuration list for PBXNativeTarget "foufouleida" */;
+			buildPhases = (
+				DFCC45C22313C7B300ECEF18 /* Sources */,
+				DFCC45C32313C7B300ECEF18 /* Frameworks */,
+				DFCC45C42313C7B300ECEF18 /* ShellScript */,
+				DFCC45C52313C7B300ECEF18 /* Resources */,
+				DFCC45C62313C7B300ECEF18 /* CopyFiles */,
+				DFCC45C72313C7B300ECEF18 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFCC45DD2313C7B400ECEF18 /* PBXTargetDependency */,
+			);
+			name = foufouleida;
+			productName = foufouleida;
+			productReference = DFCC45C92313C7B300ECEF18 /* foufouleida.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFCC45D92313C7B400ECEF18 /* foufouleidaDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFCC46212313C7B400ECEF18 /* Build configuration list for PBXNativeTarget "foufouleidaDylib" */;
+			buildPhases = (
+				DFCC45D52313C7B400ECEF18 /* ShellScript */,
+				DFCC45D62313C7B400ECEF18 /* Sources */,
+				DFCC45D72313C7B400ECEF18 /* Frameworks */,
+				DFCC45D82313C7B400ECEF18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foufouleidaDylib;
+			productName = foufouleidaDylib;
+			productReference = DFCC45DA2313C7B400ECEF18 /* libfoufouleidaDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFCC45BE2313C7B300ECEF18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DFCC45C82313C7B300ECEF18 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					DFCC45D92313C7B400ECEF18 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = DFCC45C12313C7B300ECEF18 /* Build configuration list for PBXProject "foufouleida" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFCC45BD2313C7B300ECEF18;
+			productRefGroup = DFCC45CA2313C7B300ECEF18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFCC45C82313C7B300ECEF18 /* foufouleida */,
+				DFCC45D92313C7B400ECEF18 /* foufouleidaDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFCC45C52313C7B300ECEF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC45D12313C7B300ECEF18 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFCC45C42313C7B300ECEF18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DFCC45C72313C7B300ECEF18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DFCC45D52313C7B400ECEF18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFCC45C22313C7B300ECEF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFCC45D62313C7B400ECEF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFCC45F22313C7B400ECEF18 /* MDCycriptManager.m in Sources */,
+				DFCC46182313C7B400ECEF18 /* fishhook.c in Sources */,
+				DFCC45FB2313C7B400ECEF18 /* a1a2-selectortramps-arm64.s in Sources */,
+				DFCC45F92313C7B400ECEF18 /* a1a2-selectortramps-arm.s in Sources */,
+				DFCC461E2313C7B400ECEF18 /* foufouleidaDylib.m in Sources */,
+				DFCC45FF2313C7B400ECEF18 /* a1a2-selectortramps-x86_64.s in Sources */,
+				DFCC46092313C7B400ECEF18 /* OCMethodTrace.m in Sources */,
+				DFCC45EE2313C7B400ECEF18 /* MDConfigManager.m in Sources */,
+				DFCC460D2313C7B400ECEF18 /* OCSelectorTrampolines.mm in Sources */,
+				DFCC45FD2313C7B400ECEF18 /* a1a2-selectortramps-i386.s in Sources */,
+				DFCC46032313C7B400ECEF18 /* a2a3-selectortramps-i386.s in Sources */,
+				DFCC46012313C7B400ECEF18 /* a2a3-selectortramps-arm.s in Sources */,
+				DFCC45E92313C7B400ECEF18 /* foufouleidaDylib.mm in Sources */,
+				DFCC46132313C7B400ECEF18 /* LLDBTools.mm in Sources */,
+				DFCC46052313C7B400ECEF18 /* a2a3-selectortramps-x86_64.s in Sources */,
+				DFCC45F62313C7B400ECEF18 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFCC45DD2313C7B400ECEF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFCC45D92313C7B400ECEF18 /* foufouleidaDylib */;
+			targetProxy = DFCC45DC2313C7B400ECEF18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFCC461F2313C7B400ECEF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFCC46202313C7B400ECEF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFCC46222313C7B400ECEF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "foufouleidaDylib/foufouleidaDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libfoufouleidaDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"foufouleidaDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DFCC46232313C7B400ECEF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "foufouleidaDylib/foufouleidaDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libfoufouleidaDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"foufouleidaDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFCC46252313C7B400ECEF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = foufouleida/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foufouleida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFCC46262313C7B400ECEF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = foufouleida/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.foufouleida;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFCC45C12313C7B300ECEF18 /* Build configuration list for PBXProject "foufouleida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC461F2313C7B400ECEF18 /* Debug */,
+				DFCC46202313C7B400ECEF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFCC46212313C7B400ECEF18 /* Build configuration list for PBXNativeTarget "foufouleidaDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC46222313C7B400ECEF18 /* Debug */,
+				DFCC46232313C7B400ECEF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFCC46242313C7B400ECEF18 /* Build configuration list for PBXNativeTarget "foufouleida" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFCC46252313C7B400ECEF18 /* Debug */,
+				DFCC46262313C7B400ECEF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFCC45BE2313C7B300ECEF18 /* Project object */;
+}

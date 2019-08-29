@@ -1,0 +1,1913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1346A222B103B8008E659C /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF1346A122B103B8008E659C /* MDConfig.plist */; };
+		DF1346AC22B103B8008E659C /* libweichatHahaDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF1346AB22B103B8008E659C /* libweichatHahaDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DF1346B122B103B8008E659C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1346B022B103B8008E659C /* JavaScriptCore.framework */; };
+		DF1346B322B103B8008E659C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1346B222B103B8008E659C /* Foundation.framework */; };
+		DF1346B522B103B8008E659C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1346B422B103B8008E659C /* UIKit.framework */; };
+		DF1346BA22B103B8008E659C /* weichatHahaDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF1346B922B103B8008E659C /* weichatHahaDylib.mm */; };
+		DF1346BD22B103B8008E659C /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346BC22B103B8008E659C /* MDConfigManager.h */; };
+		DF1346BF22B103B8008E659C /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346BE22B103B8008E659C /* MDConfigManager.m */; };
+		DF1346C122B103B8008E659C /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346C022B103B8008E659C /* MDCycriptManager.h */; };
+		DF1346C322B103B8008E659C /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346C222B103B8008E659C /* MDCycriptManager.m */; };
+		DF1346C522B103B8008E659C /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346C422B103B8008E659C /* MDMethodTrace.h */; };
+		DF1346C722B103B8008E659C /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346C622B103B8008E659C /* MDMethodTrace.m */; };
+		DF1346CA22B103B8008E659C /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346C922B103B8008E659C /* a1a2-selectortramps-arm.s */; };
+		DF1346CC22B103B8008E659C /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346CB22B103B8008E659C /* a1a2-selectortramps-arm64.s */; };
+		DF1346CE22B103B8008E659C /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346CD22B103B8008E659C /* a1a2-selectortramps-i386.s */; };
+		DF1346D022B103B8008E659C /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346CF22B103B8008E659C /* a1a2-selectortramps-x86_64.s */; };
+		DF1346D222B103B8008E659C /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346D122B103B8008E659C /* a2a3-selectortramps-arm.s */; };
+		DF1346D422B103B8008E659C /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346D322B103B8008E659C /* a2a3-selectortramps-i386.s */; };
+		DF1346D622B103B8008E659C /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF1346D522B103B8008E659C /* a2a3-selectortramps-x86_64.s */; };
+		DF1346D822B103B8008E659C /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346D722B103B8008E659C /* OCMethodTrace.h */; };
+		DF1346DA22B103B8008E659C /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346D922B103B8008E659C /* OCMethodTrace.m */; };
+		DF1346DC22B103B8008E659C /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346DB22B103B8008E659C /* OCSelectorTrampolines.h */; };
+		DF1346DE22B103B8008E659C /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF1346DD22B103B8008E659C /* OCSelectorTrampolines.mm */; };
+		DF1346E222B103B8008E659C /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346E122B103B8008E659C /* LLDBTools.h */; };
+		DF1346E422B103B8008E659C /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF1346E322B103B8008E659C /* LLDBTools.mm */; };
+		DF1346E922B103B8008E659C /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346E822B103B8008E659C /* AntiAntiDebug.m */; };
+		DF1346EC22B103B8008E659C /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DF1346EB22B103B8008E659C /* fishhook.c */; };
+		DF1346EE22B103B8008E659C /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346ED22B103B8008E659C /* fishhook.h */; };
+		DF1346F022B103B8008E659C /* weichatHahaDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1346EF22B103B8008E659C /* weichatHahaDylib.h */; };
+		DF1346F222B103B8008E659C /* weichatHahaDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1346F122B103B8008E659C /* weichatHahaDylib.m */; };
+		DF134F0122B1118F008E659C /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0322B1118D008E659C /* CaptainHook.h */; };
+		DF134F0222B1118F008E659C /* niuniuRobotGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E0422B1118D008E659C /* niuniuRobotGameViewController.m */; };
+		DF134F0322B1118F008E659C /* ycButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E0522B1118D008E659C /* ycButtonView.m */; };
+		DF134F0422B1118F008E659C /* niuniuRobotAdminsVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0622B1118D008E659C /* niuniuRobotAdminsVC.h */; };
+		DF134F0522B1118F008E659C /* wxFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0722B1118D008E659C /* wxFunction.h */; };
+		DF134F0622B1118F008E659C /* toolManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134E0822B1118D008E659C /* toolManager.mm */; };
+		DF134F0722B1118F008E659C /* niuniuRobotCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0922B1118D008E659C /* niuniuRobotCommand.h */; };
+		DF134F0822B1118F008E659C /* longhu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E0A22B1118D008E659C /* longhu.m */; };
+		DF134F0922B1118F008E659C /* toolWindows.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0B22B1118D008E659C /* toolWindows.h */; };
+		DF134F0A22B1118F008E659C /* niuniuRobotFuliBankerSettingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0C22B1118D008E659C /* niuniuRobotFuliBankerSettingView.h */; };
+		DF134F0B22B1118F008E659C /* niuniuRobotMemberDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E0D22B1118D008E659C /* niuniuRobotMemberDetailView.m */; };
+		DF134F0C22B1118F008E659C /* niuniuRobotNormalView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0E22B1118D008E659C /* niuniuRobotNormalView.h */; };
+		DF134F0D22B1118F008E659C /* niuniuRobotViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E0F22B1118D008E659C /* niuniuRobotViewController.h */; };
+		DF134F0E22B11190008E659C /* ycInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1022B1118D008E659C /* ycInputView.h */; };
+		DF134F0F22B11190008E659C /* ForgeIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1122B1118D008E659C /* ForgeIdentifier.m */; };
+		DF134F1022B11190008E659C /* toolManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1222B1118D008E659C /* toolManager.h */; };
+		DF134F1122B11190008E659C /* toolWindows.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1322B1118D008E659C /* toolWindows.mm */; };
+		DF134F1222B11190008E659C /* ycFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1422B1118D008E659C /* ycFunction.h */; };
+		DF134F1322B11190008E659C /* niuniuRobotLashouHeadsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1522B1118D008E659C /* niuniuRobotLashouHeadsVC.m */; };
+		DF134F1422B11190008E659C /* robotSettingBillColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1622B1118D008E659C /* robotSettingBillColorView.m */; };
+		DF134F1522B11190008E659C /* niuniuRobotLashouHead.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1722B1118D008E659C /* niuniuRobotLashouHead.h */; };
+		DF134F1622B11190008E659C /* niuniu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1822B1118D008E659C /* niuniu.m */; };
+		DF134F1722B11190008E659C /* niuniuRobotRework.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1922B1118D008E659C /* niuniuRobotRework.m */; };
+		DF134F1822B11190008E659C /* niuniuRobotResultView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1A22B1118D008E659C /* niuniuRobotResultView.h */; };
+		DF134F1922B11190008E659C /* robotSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E1B22B1118D008E659C /* robotSettingView.m */; };
+		DF134F1A22B11190008E659C /* wechatHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1C22B1118D008E659C /* wechatHeaders.h */; };
+		DF134F1B22B11190008E659C /* baijiale.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1D22B1118D008E659C /* baijiale.h */; };
+		DF134F1C22B11190008E659C /* niuniuMembersGroupView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E1F22B1118D008E659C /* niuniuMembersGroupView.h */; };
+		DF134F1D22B11190008E659C /* niuniuRobotData.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2022B1118D008E659C /* niuniuRobotData.mm */; };
+		DF134F1E22B11190008E659C /* niuniuRobotDayInfos.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2122B1118D008E659C /* niuniuRobotDayInfos.m */; };
+		DF134F1F22B11190008E659C /* niuniuRobotResultBill.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2222B1118D008E659C /* niuniuRobotResultBill.m */; };
+		DF134F2022B11190008E659C /* niuniuRobotLashousVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2322B1118D008E659C /* niuniuRobotLashousVC.m */; };
+		DF134F2122B11190008E659C /* niuniuSupportDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2422B1118D008E659C /* niuniuSupportDragView.m */; };
+		DF134F2222B11190008E659C /* niuniuRobotTuos.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2522B1118D008E659C /* niuniuRobotTuos.m */; };
+		DF134F2322B11190008E659C /* niuniuRobotSendMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2622B1118D008E659C /* niuniuRobotSendMsg.m */; };
+		DF134F2422B11190008E659C /* niuniuRobotBackroundVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E2722B1118D008E659C /* niuniuRobotBackroundVC.h */; };
+		DF134F2522B11190008E659C /* niuniuRobotMembersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2822B1118D008E659C /* niuniuRobotMembersVC.m */; };
+		DF134F2622B11190008E659C /* docsumminfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2B22B1118D008E659C /* docsumminfo.cpp */; };
+		DF134F2722B11190008E659C /* index.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E2C22B1118D008E659C /* index.h */; };
+		DF134F2822B11190008E659C /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E2D22B1118D008E659C /* workbook.h */; };
+		DF134F2922B11190008E659C /* extformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E2E22B1118D008E659C /* extformat.cpp */; };
+		DF134F2A22B11190008E659C /* err.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E2F22B1118D008E659C /* err.h */; };
+		DF134F2B22B11190008E659C /* merged.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3022B1118D008E659C /* merged.cpp */; };
+		DF134F2C22B11190008E659C /* formula.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3122B1118D008E659C /* formula.h */; };
+		DF134F2D22B11190008E659C /* err.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3222B1118D008E659C /* err.cpp */; };
+		DF134F2E22B11190008E659C /* range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3322B1118D008E659C /* range.cpp */; };
+		DF134F2F22B11190008E659C /* formula_const.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3422B1118D008E659C /* formula_const.h */; };
+		DF134F3022B11190008E659C /* range.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3522B1118D008E659C /* range.h */; };
+		DF134F3122B11190008E659C /* label.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3722B1118D008E659C /* label.h */; };
+		DF134F3222B11190008E659C /* rectypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3822B1118D008E659C /* rectypes.h */; };
+		DF134F3322B11190008E659C /* format.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3922B1118D008E659C /* format.cpp */; };
+		DF134F3422B11190008E659C /* summinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3A22B1118D008E659C /* summinfo.h */; };
+		DF134F3522B11190008E659C /* globalrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3B22B1118D008E659C /* globalrec.h */; };
+		DF134F3622B11190008E659C /* cell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3C22B1118D008E659C /* cell.h */; };
+		DF134F3722B11190008E659C /* summinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3D22B1118D008E659C /* summinfo.cpp */; };
+		DF134F3822B11190008E659C /* formula_cell.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E3E22B1118D008E659C /* formula_cell.h */; };
+		DF134F3922B11190008E659C /* row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E3F22B1118D008E659C /* row.cpp */; };
+		DF134F3A22B11190008E659C /* record.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4022B1118D008E659C /* record.h */; };
+		DF134F3B22B11190008E659C /* font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4122B1118D008E659C /* font.cpp */; };
+		DF134F3C22B11190008E659C /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4222B1118D008E659C /* cell.cpp */; };
+		DF134F3D22B11190008E659C /* recdef.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4322B1118D008E659C /* recdef.h */; };
+		DF134F3E22B11190008E659C /* biffsection.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4422B1118D008E659C /* biffsection.h */; };
+		DF134F3F22B11190008E659C /* unit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4522B1118D008E659C /* unit.h */; };
+		DF134F4022B11190008E659C /* colors.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4622B1118D008E659C /* colors.h */; };
+		DF134F4122B11190008E659C /* formula_expr.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4722B1118D008E659C /* formula_expr.h */; };
+		DF134F4222B11190008E659C /* formtags.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4822B1118D008E659C /* formtags.h */; };
+		DF134F4322B11190008E659C /* recdef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4922B1118D008E659C /* recdef.cpp */; };
+		DF134F4422B11190008E659C /* assert_assist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4A22B1118D008E659C /* assert_assist.cpp */; };
+		DF134F4522B11190008E659C /* boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4B22B1118D008E659C /* boolean.h */; };
+		DF134F4622B11190008E659C /* formula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4C22B1118D008E659C /* formula.cpp */; };
+		DF134F4722B11190008E659C /* formula_estimate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4D22B1118D008E659C /* formula_estimate.h */; };
+		DF134F4822B11190008E659C /* label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E4E22B1118D008E659C /* label.cpp */; };
+		DF134F4922B11190008E659C /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E4F22B1118D008E659C /* common.h */; };
+		DF134F4A22B11190008E659C /* blank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5022B1118D008E659C /* blank.cpp */; };
+		DF134F4B22B11190008E659C /* cbridge.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5122B1118D008E659C /* cbridge.h */; };
+		DF134F4C22B11190008E659C /* merged.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5222B1118D008E659C /* merged.h */; };
+		DF134F4D22B11190008E659C /* unit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5322B1118D008E659C /* unit.cpp */; };
+		DF134F4E22B11190008E659C /* extformat.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5422B1118D008E659C /* extformat.h */; };
+		DF134F4F22B11190008E659C /* colinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5522B1118D008E659C /* colinfo.h */; };
+		DF134F5022B11190008E659C /* sheetrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5622B1118D008E659C /* sheetrec.cpp */; };
+		DF134F5122B11190008E659C /* tostr.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5722B1118D008E659C /* tostr.h */; };
+		DF134F5222B11190008E659C /* font.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5822B1118D008E659C /* font.h */; };
+		DF134F5322B11190008E659C /* workbook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5922B1118D008E659C /* workbook.cpp */; };
+		DF134F5422B11190008E659C /* colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5A22B1118D008E659C /* colors.cpp */; };
+		DF134F5522B11191008E659C /* number.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5B22B1118D008E659C /* number.h */; };
+		DF134F5622B11191008E659C /* continue.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5C22B1118D008E659C /* continue.h */; };
+		DF134F5722B11191008E659C /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5D22B1118E008E659C /* record.cpp */; };
+		DF134F5822B11191008E659C /* docsumminfo.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E5E22B1118E008E659C /* docsumminfo.h */; };
+		DF134F5922B11191008E659C /* boolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E5F22B1118E008E659C /* boolean.cpp */; };
+		DF134F5A22B11191008E659C /* datast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6022B1118E008E659C /* datast.cpp */; };
+		DF134F5B22B11191008E659C /* globalrec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6122B1118E008E659C /* globalrec.cpp */; };
+		DF134F5C22B11191008E659C /* HPSF.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6222B1118E008E659C /* HPSF.h */; };
+		DF134F5D22B11191008E659C /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6322B1118E008E659C /* format.h */; };
+		DF134F5E22B11191008E659C /* colinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6422B1118E008E659C /* colinfo.cpp */; };
+		DF134F5F22B11191008E659C /* blank.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6522B1118E008E659C /* blank.h */; };
+		DF134F6022B11191008E659C /* formula_cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6622B1118E008E659C /* formula_cell.cpp */; };
+		DF134F6122B11191008E659C /* datast.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6722B1118E008E659C /* datast.h */; };
+		DF134F6222B11191008E659C /* formula_expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6822B1118E008E659C /* formula_expr.cpp */; };
+		DF134F6322B11191008E659C /* HPSF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6922B1118E008E659C /* HPSF.cpp */; };
+		DF134F6422B11191008E659C /* sheetrec.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6A22B1118E008E659C /* sheetrec.h */; };
+		DF134F6522B11191008E659C /* formula_estimate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6B22B1118E008E659C /* formula_estimate.cpp */; };
+		DF134F6622B11191008E659C /* cbridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6C22B1118E008E659C /* cbridge.cpp */; };
+		DF134F6722B11191008E659C /* note.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E6D22B1118E008E659C /* note.h */; };
+		DF134F6822B11191008E659C /* number.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6E22B1118E008E659C /* number.cpp */; };
+		DF134F6922B11191008E659C /* index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E6F22B1118E008E659C /* index.cpp */; };
+		DF134F6A22B11191008E659C /* row.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7022B1118E008E659C /* row.h */; };
+		DF134F6B22B11191008E659C /* note.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E7122B1118E008E659C /* note.cpp */; };
+		DF134F6C22B11191008E659C /* continue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E7222B1118E008E659C /* continue.cpp */; };
+		DF134F6D22B11191008E659C /* xlslib.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7322B1118E008E659C /* xlslib.h */; };
+		DF134F6E22B11191008E659C /* overnew.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7522B1118E008E659C /* overnew.h */; };
+		DF134F6F22B11191008E659C /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7622B1118E008E659C /* xlstypes.h */; };
+		DF134F7022B11191008E659C /* xls_pshpack4.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7722B1118E008E659C /* xls_pshpack4.h */; };
+		DF134F7122B11191008E659C /* overnew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E7822B1118E008E659C /* overnew.cpp */; };
+		DF134F7222B11191008E659C /* systype.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7922B1118E008E659C /* systype.h */; };
+		DF134F7322B11191008E659C /* stringtok.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7A22B1118E008E659C /* stringtok.h */; };
+		DF134F7422B11191008E659C /* xls_poppack.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7B22B1118E008E659C /* xls_poppack.h */; };
+		DF134F7522B11191008E659C /* xls_pshpack1.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7C22B1118E008E659C /* xls_pshpack1.h */; };
+		DF134F7622B11191008E659C /* xlsys.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7D22B1118E008E659C /* xlsys.h */; };
+		DF134F7722B11191008E659C /* xlconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7E22B1118E008E659C /* xlconfig.h */; };
+		DF134F7822B11191008E659C /* timespan.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E7F22B1118E008E659C /* timespan.h */; };
+		DF134F7922B11191008E659C /* xls_pshpack2.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8022B1118E008E659C /* xls_pshpack2.h */; };
+		DF134F7A22B11191008E659C /* olefs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8222B1118E008E659C /* olefs.cpp */; };
+		DF134F7B22B11191008E659C /* oledoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8322B1118E008E659C /* oledoc.cpp */; };
+		DF134F7C22B11191008E659C /* binfile.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8422B1118E008E659C /* binfile.h */; };
+		DF134F7D22B11191008E659C /* oleprop.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8522B1118E008E659C /* oleprop.h */; };
+		DF134F7E22B11191008E659C /* oleprop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8622B1118E008E659C /* oleprop.cpp */; };
+		DF134F7F22B11191008E659C /* oledoc.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8722B1118E008E659C /* oledoc.h */; };
+		DF134F8022B11191008E659C /* olefs.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8822B1118E008E659C /* olefs.h */; };
+		DF134F8122B11191008E659C /* binfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8922B1118E008E659C /* binfile.cpp */; };
+		DF134F8222B11191008E659C /* robotSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8A22B1118E008E659C /* robotSettingVC.m */; };
+		DF134F8322B11191008E659C /* niuniuRobotAdmins.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E8B22B1118E008E659C /* niuniuRobotAdmins.m */; };
+		DF134F8422B11191008E659C /* niuniuRobotPlayerCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8C22B1118E008E659C /* niuniuRobotPlayerCmd.h */; };
+		DF134F8522B11191008E659C /* niuniuRobotBet.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8D22B1118E008E659C /* niuniuRobotBet.h */; };
+		DF134F8622B11191008E659C /* niuniuRobotTuoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8E22B1118E008E659C /* niuniuRobotTuoVC.h */; };
+		DF134F8722B11191008E659C /* niuniuRobotResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E8F22B1118E008E659C /* niuniuRobotResult.h */; };
+		DF134F8822B11191008E659C /* niuniuRobotResultSettingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9022B1118E008E659C /* niuniuRobotResultSettingView.h */; };
+		DF134F8922B11191008E659C /* niuniuRobotLashou.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9122B1118E008E659C /* niuniuRobotLashou.m */; };
+		DF134F8A22B11191008E659C /* niuniuRobotMembers.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9222B1118E008E659C /* niuniuRobotMembers.m */; };
+		DF134F8B22B11191008E659C /* niuniuRobot.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9322B1118E008E659C /* niuniuRobot.h */; };
+		DF134F8C22B11191008E659C /* ycDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9422B1118E008E659C /* ycDefine.h */; };
+		DF134F8D22B11191008E659C /* tema.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9522B1118E008E659C /* tema.m */; };
+		DF134F8E22B11191008E659C /* niuniuRobotBackgroundSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9622B1118E008E659C /* niuniuRobotBackgroundSetting.h */; };
+		DF134F8F22B11191008E659C /* niuniuRobotTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9722B1118E008E659C /* niuniuRobotTimer.m */; };
+		DF134F9022B11191008E659C /* niuniuRobotAdminPowerView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9822B1118E008E659C /* niuniuRobotAdminPowerView.h */; };
+		DF134F9122B11191008E659C /* niuniuRobotChatRoomInviteCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9922B1118E008E659C /* niuniuRobotChatRoomInviteCheck.h */; };
+		DF134F9222B11191008E659C /* niuniuRobotBetView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9A22B1118E008E659C /* niuniuRobotBetView.m */; };
+		DF134F9322B11191008E659C /* ycInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9B22B1118E008E659C /* ycInputView.m */; };
+		DF134F9422B11191008E659C /* niuniuRobotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9C22B1118E008E659C /* niuniuRobotViewController.m */; };
+		DF134F9522B11191008E659C /* niuniuRobotNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9D22B1118E008E659C /* niuniuRobotNormalView.m */; };
+		DF134F9622B11191008E659C /* niuniuRobotFuliBankerSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134E9E22B1118E008E659C /* niuniuRobotFuliBankerSettingView.m */; };
+		DF134F9722B11191008E659C /* niuniuRobotMemberDetailView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134E9F22B1118E008E659C /* niuniuRobotMemberDetailView.h */; };
+		DF134F9822B11191008E659C /* niuniuRobotCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EA022B1118E008E659C /* niuniuRobotCommand.m */; };
+		DF134F9922B11191008E659C /* longhu.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EA122B1118E008E659C /* longhu.h */; };
+		DF134F9A22B11191008E659C /* wechatHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134EA222B1118E008E659C /* wechatHook.mm */; };
+		DF134F9B22B11191008E659C /* wechatHook-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DF134EA322B1118E008E659C /* wechatHook-Prefix.pch */; };
+		DF134F9C22B11191008E659C /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EA522B1118E008E659C /* NSObject+SBJSON.m */; };
+		DF134F9D22B11192008E659C /* SBJsonBase.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EA622B1118E008E659C /* SBJsonBase.h */; };
+		DF134F9E22B11192008E659C /* SBJsonWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EA722B1118E008E659C /* SBJsonWriter.h */; };
+		DF134F9F22B11192008E659C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EA822B1118E008E659C /* SBJsonParser.m */; };
+		DF134FA022B11192008E659C /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EA922B1118E008E659C /* SBJSON.m */; };
+		DF134FA122B11192008E659C /* NSString+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EAA22B1118E008E659C /* NSString+SBJSON.h */; };
+		DF134FA222B11192008E659C /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EAB22B1118E008E659C /* SBJsonBase.m */; };
+		DF134FA322B11192008E659C /* NSObject+SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EAC22B1118E008E659C /* NSObject+SBJSON.h */; };
+		DF134FA422B11192008E659C /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EAD22B1118E008E659C /* JSON.h */; };
+		DF134FA522B11192008E659C /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EAE22B1118E008E659C /* SBJsonWriter.m */; };
+		DF134FA622B11192008E659C /* SBJsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EAF22B1118E008E659C /* SBJsonParser.h */; };
+		DF134FA722B11192008E659C /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EB022B1118E008E659C /* NSString+SBJSON.m */; };
+		DF134FA822B11192008E659C /* SBJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB122B1118E008E659C /* SBJSON.h */; };
+		DF134FA922B11192008E659C /* wxFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EB222B1118E008E659C /* wxFunction.m */; };
+		DF134FAA22B11192008E659C /* niuniuRobotAdminsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EB322B1118E008E659C /* niuniuRobotAdminsVC.m */; };
+		DF134FAB22B11192008E659C /* ycButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB422B1118E008E659C /* ycButtonView.h */; };
+		DF134FAC22B11192008E659C /* niuniuRobotGameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB522B1118E008E659C /* niuniuRobotGameViewController.h */; };
+		DF134FAD22B11192008E659C /* niuniuRobotData.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB622B1118E008E659C /* niuniuRobotData.h */; };
+		DF134FAE22B11192008E659C /* niuniuRobotDayInfos.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB722B1118E008E659C /* niuniuRobotDayInfos.h */; };
+		DF134FAF22B11192008E659C /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EB922B1118E008E659C /* ZipArchive.h */; };
+		DF134FB022B11192008E659C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = DF134EBB22B1118E008E659C /* unzip.c */; };
+		DF134FB122B11192008E659C /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = DF134EBC22B1118E008E659C /* zip.c */; };
+		DF134FB222B11192008E659C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DF134EBD22B1118E008E659C /* ioapi.c */; };
+		DF134FB322B11192008E659C /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DF134EBE22B1118E008E659C /* mztools.c */; };
+		DF134FB422B11192008E659C /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EBF22B1118E008E659C /* crypt.h */; };
+		DF134FB522B11192008E659C /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EC022B1118E008E659C /* zip.h */; };
+		DF134FB622B11192008E659C /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EC122B1118E008E659C /* unzip.h */; };
+		DF134FB722B11192008E659C /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EC222B1118E008E659C /* mztools.h */; };
+		DF134FB822B11192008E659C /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EC322B1118E008E659C /* ioapi.h */; };
+		DF134FB922B11192008E659C /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134EC422B1118E008E659C /* ZipArchive.mm */; };
+		DF134FBA22B11192008E659C /* niuniuMembersGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EC522B1118E008E659C /* niuniuMembersGroupView.m */; };
+		DF134FBB22B11192008E659C /* baijiale.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EC622B1118E008E659C /* baijiale.m */; };
+		DF134FBC22B11192008E659C /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EC822B1118E008E659C /* ASIDataCompressor.m */; };
+		DF134FBD22B11192008E659C /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EC922B1118E008E659C /* ASIHTTPRequest.m */; };
+		DF134FBE22B11192008E659C /* ASIHTTPRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ECA22B1118E008E659C /* ASIHTTPRequestDelegate.h */; };
+		DF134FBF22B11192008E659C /* ASINetworkQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ECB22B1118E008E659C /* ASINetworkQueue.h */; };
+		DF134FC022B11192008E659C /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ECC22B1118E008E659C /* ASIFormDataRequest.m */; };
+		DF134FC122B11192008E659C /* ASIHTTPRequestConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ECD22B1118E008E659C /* ASIHTTPRequestConfig.h */; };
+		DF134FC222B11192008E659C /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ECE22B1118E008E659C /* ASIDataDecompressor.m */; };
+		DF134FC322B11192008E659C /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ECF22B1118E008E659C /* ASIAuthenticationDialog.m */; };
+		DF134FC422B11192008E659C /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ED022B1118E008E659C /* ASIInputStream.m */; };
+		DF134FC522B11192008E659C /* ASIDownloadCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED122B1118E008E659C /* ASIDownloadCache.h */; };
+		DF134FC622B11192008E659C /* ASIHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED222B1118E008E659C /* ASIHTTPRequest.h */; };
+		DF134FC722B11192008E659C /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED322B1118E008E659C /* ASICacheDelegate.h */; };
+		DF134FC822B11192008E659C /* ASIDataCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED422B1118E008E659C /* ASIDataCompressor.h */; };
+		DF134FC922B11192008E659C /* ASIProgressDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED522B1118E008E659C /* ASIProgressDelegate.h */; };
+		DF134FCA22B11192008E659C /* ASIFormDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED622B1118E008E659C /* ASIFormDataRequest.h */; };
+		DF134FCB22B11192008E659C /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ED722B1118E008E659C /* ASINetworkQueue.m */; };
+		DF134FCC22B11192008E659C /* ASIDataDecompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134ED822B1118E008E659C /* ASIDataDecompressor.h */; };
+		DF134FCD22B11192008E659C /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134ED922B1118E008E659C /* ASIDownloadCache.m */; };
+		DF134FCE22B11192008E659C /* ASIInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EDA22B1118E008E659C /* ASIInputStream.h */; };
+		DF134FCF22B11192008E659C /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EDB22B1118E008E659C /* ASIAuthenticationDialog.h */; };
+		DF134FD022B11192008E659C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EDD22B1118E008E659C /* Reachability.m */; };
+		DF134FD122B11192008E659C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EDE22B1118E008E659C /* Reachability.h */; };
+		DF134FD222B11192008E659C /* robotSettingView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EDF22B1118E008E659C /* robotSettingView.h */; };
+		DF134FD322B11192008E659C /* niuniuRobotResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EE022B1118E008E659C /* niuniuRobotResultView.m */; };
+		DF134FD422B11192008E659C /* niuniuRobotRework.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EE122B1118F008E659C /* niuniuRobotRework.h */; };
+		DF134FD522B11192008E659C /* robotSettingBillColorView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EE222B1118F008E659C /* robotSettingBillColorView.h */; };
+		DF134FD622B11192008E659C /* niuniuRobotLashouHeadsVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EE322B1118F008E659C /* niuniuRobotLashouHeadsVC.h */; };
+		DF134FD722B11192008E659C /* niuniuRobotLashouHead.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EE422B1118F008E659C /* niuniuRobotLashouHead.m */; };
+		DF134FD822B11192008E659C /* niuniu.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EE522B1118F008E659C /* niuniu.h */; };
+		DF134FD922B11192008E659C /* ycFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EE622B1118F008E659C /* ycFunction.m */; };
+		DF134FDA22B11192008E659C /* ForgeIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EE722B1118F008E659C /* ForgeIdentifier.h */; };
+		DF134FDB22B11192008E659C /* niuniuRobotTuoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EE822B1118F008E659C /* niuniuRobotTuoVC.m */; };
+		DF134FDC22B11192008E659C /* niuniuRobotBet.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EE922B1118F008E659C /* niuniuRobotBet.m */; };
+		DF134FDD22B11192008E659C /* niuniuRobotPlayerCmd.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EEA22B1118F008E659C /* niuniuRobotPlayerCmd.m */; };
+		DF134FDE22B11192008E659C /* robotSettingVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EEB22B1118F008E659C /* robotSettingVC.h */; };
+		DF134FDF22B11192008E659C /* niuniuRobotAdmins.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EEC22B1118F008E659C /* niuniuRobotAdmins.h */; };
+		DF134FE022B11192008E659C /* niuniuRobotMembersVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EED22B1118F008E659C /* niuniuRobotMembersVC.h */; };
+		DF134FE122B11192008E659C /* niuniuRobotTuos.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EEE22B1118F008E659C /* niuniuRobotTuos.h */; };
+		DF134FE222B11192008E659C /* niuniuRobotSendMsg.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EEF22B1118F008E659C /* niuniuRobotSendMsg.h */; };
+		DF134FE322B11192008E659C /* niuniuRobotExcelHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF134EF022B1118F008E659C /* niuniuRobotExcelHelper.mm */; };
+		DF134FE422B11192008E659C /* niuniuRobotBackroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EF122B1118F008E659C /* niuniuRobotBackroundVC.m */; };
+		DF134FE522B11193008E659C /* niuniuRobotResultBill.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EF222B1118F008E659C /* niuniuRobotResultBill.h */; };
+		DF134FE622B11193008E659C /* niuniuSupportDragView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EF322B1118F008E659C /* niuniuSupportDragView.h */; };
+		DF134FE722B11193008E659C /* niuniuRobotLashousVC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EF422B1118F008E659C /* niuniuRobotLashousVC.h */; };
+		DF134FE822B11193008E659C /* niuniuRobotChatRoomInviteCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EF522B1118F008E659C /* niuniuRobotChatRoomInviteCheck.m */; };
+		DF134FE922B11193008E659C /* niuniuRobotAdminPowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EF622B1118F008E659C /* niuniuRobotAdminPowerView.m */; };
+		DF134FEA22B11193008E659C /* niuniuRobotBetView.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EF722B1118F008E659C /* niuniuRobotBetView.h */; };
+		DF134FEB22B11193008E659C /* niuniuRobotTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EF822B1118F008E659C /* niuniuRobotTimer.h */; };
+		DF134FEC22B11193008E659C /* niuniuRobotBackgroundSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EF922B1118F008E659C /* niuniuRobotBackgroundSetting.m */; };
+		DF134FED22B11193008E659C /* tema.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EFA22B1118F008E659C /* tema.h */; };
+		DF134FEE22B11193008E659C /* niuniuRobotMembers.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EFB22B1118F008E659C /* niuniuRobotMembers.h */; };
+		DF134FEF22B11193008E659C /* niuniuRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EFC22B1118F008E659C /* niuniuRobot.m */; };
+		DF134FF022B11193008E659C /* niuniuRobotResultSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EFD22B1118F008E659C /* niuniuRobotResultSettingView.m */; };
+		DF134FF122B11193008E659C /* niuniuRobotLashou.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134EFE22B1118F008E659C /* niuniuRobotLashou.h */; };
+		DF134FF222B11193008E659C /* niuniuRobotResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DF134EFF22B1118F008E659C /* niuniuRobotResult.m */; };
+		DF134FF322B11193008E659C /* niuniuRobotExcelHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = DF134F0022B1118F008E659C /* niuniuRobotExcelHelper.h */; };
+		DF134FF522B113DB008E659C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FF422B113DB008E659C /* SystemConfiguration.framework */; };
+		DF134FF722B113E2008E659C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FF622B113E2008E659C /* CoreTelephony.framework */; };
+		DF134FF922B113EB008E659C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FF822B113EB008E659C /* libresolv.tbd */; };
+		DF134FFB22B113F1008E659C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FFA22B113F1008E659C /* CFNetwork.framework */; };
+		DF134FFD22B113FA008E659C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FFC22B113FA008E659C /* MobileCoreServices.framework */; };
+		DF134FFF22B11402008E659C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF134FFE22B11402008E659C /* Security.framework */; };
+		DF13500122B1140D008E659C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500022B1140D008E659C /* libz.tbd */; };
+		DF13500322B11416008E659C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500222B11416008E659C /* ImageIO.framework */; };
+		DF13500522B11421008E659C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500422B11421008E659C /* libiconv.tbd */; };
+		DF13500722B1142B008E659C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500622B1142B008E659C /* AssetsLibrary.framework */; };
+		DF13500922B11433008E659C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500822B11432008E659C /* AdSupport.framework */; };
+		DF13500B22B1143E008E659C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500A22B1143E008E659C /* AudioToolbox.framework */; };
+		DF13500D22B11447008E659C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF13500C22B11447008E659C /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF1346AD22B103B8008E659C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF13468F22B103B8008E659C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF1346AA22B103B8008E659C;
+			remoteInfo = weichatHahaDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF13469722B103B8008E659C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF1346AC22B103B8008E659C /* libweichatHahaDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DF13469A22B103B8008E659C /* weichatHaha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weichatHaha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF13469D22B103B8008E659C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DF13469F22B103B8008E659C /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DF1346A122B103B8008E659C /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DF1346A422B103B8008E659C /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DF1346A522B103B8008E659C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1346AB22B103B8008E659C /* libweichatHahaDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libweichatHahaDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1346B022B103B8008E659C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DF1346B222B103B8008E659C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF1346B422B103B8008E659C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF1346B822B103B8008E659C /* weichatHahaDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = weichatHahaDylib.xm; path = Logos/weichatHahaDylib.xm; sourceTree = "<group>"; };
+		DF1346B922B103B8008E659C /* weichatHahaDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = weichatHahaDylib.mm; path = Logos/weichatHahaDylib.mm; sourceTree = "<group>"; };
+		DF1346BC22B103B8008E659C /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DF1346BE22B103B8008E659C /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DF1346C022B103B8008E659C /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DF1346C222B103B8008E659C /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DF1346C422B103B8008E659C /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DF1346C622B103B8008E659C /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DF1346C922B103B8008E659C /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF1346CB22B103B8008E659C /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DF1346CD22B103B8008E659C /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF1346CF22B103B8008E659C /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF1346D122B103B8008E659C /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF1346D322B103B8008E659C /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF1346D522B103B8008E659C /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF1346D722B103B8008E659C /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DF1346D922B103B8008E659C /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DF1346DB22B103B8008E659C /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DF1346DD22B103B8008E659C /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DF1346DF22B103B8008E659C /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DF1346E122B103B8008E659C /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DF1346E322B103B8008E659C /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DF1346E622B103B8008E659C /* weichatHahaDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "weichatHahaDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DF1346E822B103B8008E659C /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		DF1346EB22B103B8008E659C /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DF1346ED22B103B8008E659C /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DF1346EF22B103B8008E659C /* weichatHahaDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = weichatHahaDylib.h; sourceTree = "<group>"; };
+		DF1346F122B103B8008E659C /* weichatHahaDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weichatHahaDylib.m; sourceTree = "<group>"; };
+		DF134E0322B1118D008E659C /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
+		DF134E0422B1118D008E659C /* niuniuRobotGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotGameViewController.m; sourceTree = "<group>"; };
+		DF134E0522B1118D008E659C /* ycButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ycButtonView.m; sourceTree = "<group>"; };
+		DF134E0622B1118D008E659C /* niuniuRobotAdminsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotAdminsVC.h; sourceTree = "<group>"; };
+		DF134E0722B1118D008E659C /* wxFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wxFunction.h; sourceTree = "<group>"; };
+		DF134E0822B1118D008E659C /* toolManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = toolManager.mm; sourceTree = "<group>"; };
+		DF134E0922B1118D008E659C /* niuniuRobotCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotCommand.h; sourceTree = "<group>"; };
+		DF134E0A22B1118D008E659C /* longhu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = longhu.m; sourceTree = "<group>"; };
+		DF134E0B22B1118D008E659C /* toolWindows.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toolWindows.h; sourceTree = "<group>"; };
+		DF134E0C22B1118D008E659C /* niuniuRobotFuliBankerSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotFuliBankerSettingView.h; sourceTree = "<group>"; };
+		DF134E0D22B1118D008E659C /* niuniuRobotMemberDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotMemberDetailView.m; sourceTree = "<group>"; };
+		DF134E0E22B1118D008E659C /* niuniuRobotNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotNormalView.h; sourceTree = "<group>"; };
+		DF134E0F22B1118D008E659C /* niuniuRobotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotViewController.h; sourceTree = "<group>"; };
+		DF134E1022B1118D008E659C /* ycInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ycInputView.h; sourceTree = "<group>"; };
+		DF134E1122B1118D008E659C /* ForgeIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgeIdentifier.m; sourceTree = "<group>"; };
+		DF134E1222B1118D008E659C /* toolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toolManager.h; sourceTree = "<group>"; };
+		DF134E1322B1118D008E659C /* toolWindows.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = toolWindows.mm; sourceTree = "<group>"; };
+		DF134E1422B1118D008E659C /* ycFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ycFunction.h; sourceTree = "<group>"; };
+		DF134E1522B1118D008E659C /* niuniuRobotLashouHeadsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotLashouHeadsVC.m; sourceTree = "<group>"; };
+		DF134E1622B1118D008E659C /* robotSettingBillColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = robotSettingBillColorView.m; sourceTree = "<group>"; };
+		DF134E1722B1118D008E659C /* niuniuRobotLashouHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotLashouHead.h; sourceTree = "<group>"; };
+		DF134E1822B1118D008E659C /* niuniu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniu.m; sourceTree = "<group>"; };
+		DF134E1922B1118D008E659C /* niuniuRobotRework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotRework.m; sourceTree = "<group>"; };
+		DF134E1A22B1118D008E659C /* niuniuRobotResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotResultView.h; sourceTree = "<group>"; };
+		DF134E1B22B1118D008E659C /* robotSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = robotSettingView.m; sourceTree = "<group>"; };
+		DF134E1C22B1118D008E659C /* wechatHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wechatHeaders.h; sourceTree = "<group>"; };
+		DF134E1D22B1118D008E659C /* baijiale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baijiale.h; sourceTree = "<group>"; };
+		DF134E1E22B1118D008E659C /* PackageVersion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		DF134E1F22B1118D008E659C /* niuniuMembersGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuMembersGroupView.h; sourceTree = "<group>"; };
+		DF134E2022B1118D008E659C /* niuniuRobotData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = niuniuRobotData.mm; sourceTree = "<group>"; };
+		DF134E2122B1118D008E659C /* niuniuRobotDayInfos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotDayInfos.m; sourceTree = "<group>"; };
+		DF134E2222B1118D008E659C /* niuniuRobotResultBill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotResultBill.m; sourceTree = "<group>"; };
+		DF134E2322B1118D008E659C /* niuniuRobotLashousVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotLashousVC.m; sourceTree = "<group>"; };
+		DF134E2422B1118D008E659C /* niuniuSupportDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuSupportDragView.m; sourceTree = "<group>"; };
+		DF134E2522B1118D008E659C /* niuniuRobotTuos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotTuos.m; sourceTree = "<group>"; };
+		DF134E2622B1118D008E659C /* niuniuRobotSendMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotSendMsg.m; sourceTree = "<group>"; };
+		DF134E2722B1118D008E659C /* niuniuRobotBackroundVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotBackroundVC.h; sourceTree = "<group>"; };
+		DF134E2822B1118D008E659C /* niuniuRobotMembersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotMembersVC.m; sourceTree = "<group>"; };
+		DF134E2B22B1118D008E659C /* docsumminfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = docsumminfo.cpp; sourceTree = "<group>"; };
+		DF134E2C22B1118D008E659C /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		DF134E2D22B1118D008E659C /* workbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = workbook.h; sourceTree = "<group>"; };
+		DF134E2E22B1118D008E659C /* extformat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extformat.cpp; sourceTree = "<group>"; };
+		DF134E2F22B1118D008E659C /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		DF134E3022B1118D008E659C /* merged.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = merged.cpp; sourceTree = "<group>"; };
+		DF134E3122B1118D008E659C /* formula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula.h; sourceTree = "<group>"; };
+		DF134E3222B1118D008E659C /* err.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = err.cpp; sourceTree = "<group>"; };
+		DF134E3322B1118D008E659C /* range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = range.cpp; sourceTree = "<group>"; };
+		DF134E3422B1118D008E659C /* formula_const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula_const.h; sourceTree = "<group>"; };
+		DF134E3522B1118D008E659C /* range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
+		DF134E3622B1118D008E659C /* formula.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = formula.txt; sourceTree = "<group>"; };
+		DF134E3722B1118D008E659C /* label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = label.h; sourceTree = "<group>"; };
+		DF134E3822B1118D008E659C /* rectypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rectypes.h; sourceTree = "<group>"; };
+		DF134E3922B1118D008E659C /* format.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = format.cpp; sourceTree = "<group>"; };
+		DF134E3A22B1118D008E659C /* summinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = summinfo.h; sourceTree = "<group>"; };
+		DF134E3B22B1118D008E659C /* globalrec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globalrec.h; sourceTree = "<group>"; };
+		DF134E3C22B1118D008E659C /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
+		DF134E3D22B1118D008E659C /* summinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = summinfo.cpp; sourceTree = "<group>"; };
+		DF134E3E22B1118D008E659C /* formula_cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula_cell.h; sourceTree = "<group>"; };
+		DF134E3F22B1118D008E659C /* row.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = row.cpp; sourceTree = "<group>"; };
+		DF134E4022B1118D008E659C /* record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = record.h; sourceTree = "<group>"; };
+		DF134E4122B1118D008E659C /* font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = font.cpp; sourceTree = "<group>"; };
+		DF134E4222B1118D008E659C /* cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		DF134E4322B1118D008E659C /* recdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recdef.h; sourceTree = "<group>"; };
+		DF134E4422B1118D008E659C /* biffsection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biffsection.h; sourceTree = "<group>"; };
+		DF134E4522B1118D008E659C /* unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unit.h; sourceTree = "<group>"; };
+		DF134E4622B1118D008E659C /* colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colors.h; sourceTree = "<group>"; };
+		DF134E4722B1118D008E659C /* formula_expr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula_expr.h; sourceTree = "<group>"; };
+		DF134E4822B1118D008E659C /* formtags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formtags.h; sourceTree = "<group>"; };
+		DF134E4922B1118D008E659C /* recdef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recdef.cpp; sourceTree = "<group>"; };
+		DF134E4A22B1118D008E659C /* assert_assist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = assert_assist.cpp; sourceTree = "<group>"; };
+		DF134E4B22B1118D008E659C /* boolean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boolean.h; sourceTree = "<group>"; };
+		DF134E4C22B1118D008E659C /* formula.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = formula.cpp; sourceTree = "<group>"; };
+		DF134E4D22B1118D008E659C /* formula_estimate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formula_estimate.h; sourceTree = "<group>"; };
+		DF134E4E22B1118D008E659C /* label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = label.cpp; sourceTree = "<group>"; };
+		DF134E4F22B1118D008E659C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		DF134E5022B1118D008E659C /* blank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blank.cpp; sourceTree = "<group>"; };
+		DF134E5122B1118D008E659C /* cbridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cbridge.h; sourceTree = "<group>"; };
+		DF134E5222B1118D008E659C /* merged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = merged.h; sourceTree = "<group>"; };
+		DF134E5322B1118D008E659C /* unit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unit.cpp; sourceTree = "<group>"; };
+		DF134E5422B1118D008E659C /* extformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extformat.h; sourceTree = "<group>"; };
+		DF134E5522B1118D008E659C /* colinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colinfo.h; sourceTree = "<group>"; };
+		DF134E5622B1118D008E659C /* sheetrec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sheetrec.cpp; sourceTree = "<group>"; };
+		DF134E5722B1118D008E659C /* tostr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tostr.h; sourceTree = "<group>"; };
+		DF134E5822B1118D008E659C /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = font.h; sourceTree = "<group>"; };
+		DF134E5922B1118D008E659C /* workbook.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = workbook.cpp; sourceTree = "<group>"; };
+		DF134E5A22B1118D008E659C /* colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colors.cpp; sourceTree = "<group>"; };
+		DF134E5B22B1118D008E659C /* number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = number.h; sourceTree = "<group>"; };
+		DF134E5C22B1118D008E659C /* continue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = continue.h; sourceTree = "<group>"; };
+		DF134E5D22B1118E008E659C /* record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = record.cpp; sourceTree = "<group>"; };
+		DF134E5E22B1118E008E659C /* docsumminfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = docsumminfo.h; sourceTree = "<group>"; };
+		DF134E5F22B1118E008E659C /* boolean.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boolean.cpp; sourceTree = "<group>"; };
+		DF134E6022B1118E008E659C /* datast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = datast.cpp; sourceTree = "<group>"; };
+		DF134E6122B1118E008E659C /* globalrec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globalrec.cpp; sourceTree = "<group>"; };
+		DF134E6222B1118E008E659C /* HPSF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSF.h; sourceTree = "<group>"; };
+		DF134E6322B1118E008E659C /* format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format.h; sourceTree = "<group>"; };
+		DF134E6422B1118E008E659C /* colinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colinfo.cpp; sourceTree = "<group>"; };
+		DF134E6522B1118E008E659C /* blank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blank.h; sourceTree = "<group>"; };
+		DF134E6622B1118E008E659C /* formula_cell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = formula_cell.cpp; sourceTree = "<group>"; };
+		DF134E6722B1118E008E659C /* datast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = datast.h; sourceTree = "<group>"; };
+		DF134E6822B1118E008E659C /* formula_expr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = formula_expr.cpp; sourceTree = "<group>"; };
+		DF134E6922B1118E008E659C /* HPSF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HPSF.cpp; sourceTree = "<group>"; };
+		DF134E6A22B1118E008E659C /* sheetrec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sheetrec.h; sourceTree = "<group>"; };
+		DF134E6B22B1118E008E659C /* formula_estimate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = formula_estimate.cpp; sourceTree = "<group>"; };
+		DF134E6C22B1118E008E659C /* cbridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cbridge.cpp; sourceTree = "<group>"; };
+		DF134E6D22B1118E008E659C /* note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = note.h; sourceTree = "<group>"; };
+		DF134E6E22B1118E008E659C /* number.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = number.cpp; sourceTree = "<group>"; };
+		DF134E6F22B1118E008E659C /* index.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = index.cpp; sourceTree = "<group>"; };
+		DF134E7022B1118E008E659C /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		DF134E7122B1118E008E659C /* note.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = note.cpp; sourceTree = "<group>"; };
+		DF134E7222B1118E008E659C /* continue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = continue.cpp; sourceTree = "<group>"; };
+		DF134E7322B1118E008E659C /* xlslib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlslib.h; sourceTree = "<group>"; };
+		DF134E7522B1118E008E659C /* overnew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overnew.h; sourceTree = "<group>"; };
+		DF134E7622B1118E008E659C /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		DF134E7722B1118E008E659C /* xls_pshpack4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls_pshpack4.h; sourceTree = "<group>"; };
+		DF134E7822B1118E008E659C /* overnew.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = overnew.cpp; sourceTree = "<group>"; };
+		DF134E7922B1118E008E659C /* systype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = systype.h; sourceTree = "<group>"; };
+		DF134E7A22B1118E008E659C /* stringtok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringtok.h; sourceTree = "<group>"; };
+		DF134E7B22B1118E008E659C /* xls_poppack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls_poppack.h; sourceTree = "<group>"; };
+		DF134E7C22B1118E008E659C /* xls_pshpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls_pshpack1.h; sourceTree = "<group>"; };
+		DF134E7D22B1118E008E659C /* xlsys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsys.h; sourceTree = "<group>"; };
+		DF134E7E22B1118E008E659C /* xlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlconfig.h; sourceTree = "<group>"; };
+		DF134E7F22B1118E008E659C /* timespan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timespan.h; sourceTree = "<group>"; };
+		DF134E8022B1118E008E659C /* xls_pshpack2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls_pshpack2.h; sourceTree = "<group>"; };
+		DF134E8222B1118E008E659C /* olefs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = olefs.cpp; sourceTree = "<group>"; };
+		DF134E8322B1118E008E659C /* oledoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oledoc.cpp; sourceTree = "<group>"; };
+		DF134E8422B1118E008E659C /* binfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binfile.h; sourceTree = "<group>"; };
+		DF134E8522B1118E008E659C /* oleprop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oleprop.h; sourceTree = "<group>"; };
+		DF134E8622B1118E008E659C /* oleprop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = oleprop.cpp; sourceTree = "<group>"; };
+		DF134E8722B1118E008E659C /* oledoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oledoc.h; sourceTree = "<group>"; };
+		DF134E8822B1118E008E659C /* olefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = olefs.h; sourceTree = "<group>"; };
+		DF134E8922B1118E008E659C /* binfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = binfile.cpp; sourceTree = "<group>"; };
+		DF134E8A22B1118E008E659C /* robotSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = robotSettingVC.m; sourceTree = "<group>"; };
+		DF134E8B22B1118E008E659C /* niuniuRobotAdmins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotAdmins.m; sourceTree = "<group>"; };
+		DF134E8C22B1118E008E659C /* niuniuRobotPlayerCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotPlayerCmd.h; sourceTree = "<group>"; };
+		DF134E8D22B1118E008E659C /* niuniuRobotBet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotBet.h; sourceTree = "<group>"; };
+		DF134E8E22B1118E008E659C /* niuniuRobotTuoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotTuoVC.h; sourceTree = "<group>"; };
+		DF134E8F22B1118E008E659C /* niuniuRobotResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotResult.h; sourceTree = "<group>"; };
+		DF134E9022B1118E008E659C /* niuniuRobotResultSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotResultSettingView.h; sourceTree = "<group>"; };
+		DF134E9122B1118E008E659C /* niuniuRobotLashou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotLashou.m; sourceTree = "<group>"; };
+		DF134E9222B1118E008E659C /* niuniuRobotMembers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotMembers.m; sourceTree = "<group>"; };
+		DF134E9322B1118E008E659C /* niuniuRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobot.h; sourceTree = "<group>"; };
+		DF134E9422B1118E008E659C /* ycDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ycDefine.h; sourceTree = "<group>"; };
+		DF134E9522B1118E008E659C /* tema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tema.m; sourceTree = "<group>"; };
+		DF134E9622B1118E008E659C /* niuniuRobotBackgroundSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotBackgroundSetting.h; sourceTree = "<group>"; };
+		DF134E9722B1118E008E659C /* niuniuRobotTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotTimer.m; sourceTree = "<group>"; };
+		DF134E9822B1118E008E659C /* niuniuRobotAdminPowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotAdminPowerView.h; sourceTree = "<group>"; };
+		DF134E9922B1118E008E659C /* niuniuRobotChatRoomInviteCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotChatRoomInviteCheck.h; sourceTree = "<group>"; };
+		DF134E9A22B1118E008E659C /* niuniuRobotBetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotBetView.m; sourceTree = "<group>"; };
+		DF134E9B22B1118E008E659C /* ycInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ycInputView.m; sourceTree = "<group>"; };
+		DF134E9C22B1118E008E659C /* niuniuRobotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotViewController.m; sourceTree = "<group>"; };
+		DF134E9D22B1118E008E659C /* niuniuRobotNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotNormalView.m; sourceTree = "<group>"; };
+		DF134E9E22B1118E008E659C /* niuniuRobotFuliBankerSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotFuliBankerSettingView.m; sourceTree = "<group>"; };
+		DF134E9F22B1118E008E659C /* niuniuRobotMemberDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotMemberDetailView.h; sourceTree = "<group>"; };
+		DF134EA022B1118E008E659C /* niuniuRobotCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotCommand.m; sourceTree = "<group>"; };
+		DF134EA122B1118E008E659C /* longhu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longhu.h; sourceTree = "<group>"; };
+		DF134EA222B1118E008E659C /* wechatHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wechatHook.mm; sourceTree = "<group>"; };
+		DF134EA322B1118E008E659C /* wechatHook-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wechatHook-Prefix.pch"; sourceTree = "<group>"; };
+		DF134EA522B1118E008E659C /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		DF134EA622B1118E008E659C /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		DF134EA722B1118E008E659C /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DF134EA822B1118E008E659C /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DF134EA922B1118E008E659C /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		DF134EAA22B1118E008E659C /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		DF134EAB22B1118E008E659C /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		DF134EAC22B1118E008E659C /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		DF134EAD22B1118E008E659C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		DF134EAE22B1118E008E659C /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		DF134EAF22B1118E008E659C /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DF134EB022B1118E008E659C /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		DF134EB122B1118E008E659C /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		DF134EB222B1118E008E659C /* wxFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wxFunction.m; sourceTree = "<group>"; };
+		DF134EB322B1118E008E659C /* niuniuRobotAdminsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotAdminsVC.m; sourceTree = "<group>"; };
+		DF134EB422B1118E008E659C /* ycButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ycButtonView.h; sourceTree = "<group>"; };
+		DF134EB522B1118E008E659C /* niuniuRobotGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotGameViewController.h; sourceTree = "<group>"; };
+		DF134EB622B1118E008E659C /* niuniuRobotData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotData.h; sourceTree = "<group>"; };
+		DF134EB722B1118E008E659C /* niuniuRobotDayInfos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotDayInfos.h; sourceTree = "<group>"; };
+		DF134EB922B1118E008E659C /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		DF134EBB22B1118E008E659C /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		DF134EBC22B1118E008E659C /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		DF134EBD22B1118E008E659C /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		DF134EBE22B1118E008E659C /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		DF134EBF22B1118E008E659C /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		DF134EC022B1118E008E659C /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		DF134EC122B1118E008E659C /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		DF134EC222B1118E008E659C /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		DF134EC322B1118E008E659C /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		DF134EC422B1118E008E659C /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		DF134EC522B1118E008E659C /* niuniuMembersGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuMembersGroupView.m; sourceTree = "<group>"; };
+		DF134EC622B1118E008E659C /* baijiale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baijiale.m; sourceTree = "<group>"; };
+		DF134EC822B1118E008E659C /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		DF134EC922B1118E008E659C /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		DF134ECA22B1118E008E659C /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		DF134ECB22B1118E008E659C /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		DF134ECC22B1118E008E659C /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		DF134ECD22B1118E008E659C /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		DF134ECE22B1118E008E659C /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		DF134ECF22B1118E008E659C /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		DF134ED022B1118E008E659C /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		DF134ED122B1118E008E659C /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		DF134ED222B1118E008E659C /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		DF134ED322B1118E008E659C /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		DF134ED422B1118E008E659C /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		DF134ED522B1118E008E659C /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		DF134ED622B1118E008E659C /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		DF134ED722B1118E008E659C /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		DF134ED822B1118E008E659C /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		DF134ED922B1118E008E659C /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		DF134EDA22B1118E008E659C /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		DF134EDB22B1118E008E659C /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		DF134EDD22B1118E008E659C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DF134EDE22B1118E008E659C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DF134EDF22B1118E008E659C /* robotSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = robotSettingView.h; sourceTree = "<group>"; };
+		DF134EE022B1118E008E659C /* niuniuRobotResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotResultView.m; sourceTree = "<group>"; };
+		DF134EE122B1118F008E659C /* niuniuRobotRework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotRework.h; sourceTree = "<group>"; };
+		DF134EE222B1118F008E659C /* robotSettingBillColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = robotSettingBillColorView.h; sourceTree = "<group>"; };
+		DF134EE322B1118F008E659C /* niuniuRobotLashouHeadsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotLashouHeadsVC.h; sourceTree = "<group>"; };
+		DF134EE422B1118F008E659C /* niuniuRobotLashouHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotLashouHead.m; sourceTree = "<group>"; };
+		DF134EE522B1118F008E659C /* niuniu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniu.h; sourceTree = "<group>"; };
+		DF134EE622B1118F008E659C /* ycFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ycFunction.m; sourceTree = "<group>"; };
+		DF134EE722B1118F008E659C /* ForgeIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgeIdentifier.h; sourceTree = "<group>"; };
+		DF134EE822B1118F008E659C /* niuniuRobotTuoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotTuoVC.m; sourceTree = "<group>"; };
+		DF134EE922B1118F008E659C /* niuniuRobotBet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotBet.m; sourceTree = "<group>"; };
+		DF134EEA22B1118F008E659C /* niuniuRobotPlayerCmd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotPlayerCmd.m; sourceTree = "<group>"; };
+		DF134EEB22B1118F008E659C /* robotSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = robotSettingVC.h; sourceTree = "<group>"; };
+		DF134EEC22B1118F008E659C /* niuniuRobotAdmins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotAdmins.h; sourceTree = "<group>"; };
+		DF134EED22B1118F008E659C /* niuniuRobotMembersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotMembersVC.h; sourceTree = "<group>"; };
+		DF134EEE22B1118F008E659C /* niuniuRobotTuos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotTuos.h; sourceTree = "<group>"; };
+		DF134EEF22B1118F008E659C /* niuniuRobotSendMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotSendMsg.h; sourceTree = "<group>"; };
+		DF134EF022B1118F008E659C /* niuniuRobotExcelHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = niuniuRobotExcelHelper.mm; sourceTree = "<group>"; };
+		DF134EF122B1118F008E659C /* niuniuRobotBackroundVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotBackroundVC.m; sourceTree = "<group>"; };
+		DF134EF222B1118F008E659C /* niuniuRobotResultBill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotResultBill.h; sourceTree = "<group>"; };
+		DF134EF322B1118F008E659C /* niuniuSupportDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuSupportDragView.h; sourceTree = "<group>"; };
+		DF134EF422B1118F008E659C /* niuniuRobotLashousVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotLashousVC.h; sourceTree = "<group>"; };
+		DF134EF522B1118F008E659C /* niuniuRobotChatRoomInviteCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotChatRoomInviteCheck.m; sourceTree = "<group>"; };
+		DF134EF622B1118F008E659C /* niuniuRobotAdminPowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotAdminPowerView.m; sourceTree = "<group>"; };
+		DF134EF722B1118F008E659C /* niuniuRobotBetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotBetView.h; sourceTree = "<group>"; };
+		DF134EF822B1118F008E659C /* niuniuRobotTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotTimer.h; sourceTree = "<group>"; };
+		DF134EF922B1118F008E659C /* niuniuRobotBackgroundSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotBackgroundSetting.m; sourceTree = "<group>"; };
+		DF134EFA22B1118F008E659C /* tema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tema.h; sourceTree = "<group>"; };
+		DF134EFB22B1118F008E659C /* niuniuRobotMembers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotMembers.h; sourceTree = "<group>"; };
+		DF134EFC22B1118F008E659C /* niuniuRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobot.m; sourceTree = "<group>"; };
+		DF134EFD22B1118F008E659C /* niuniuRobotResultSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotResultSettingView.m; sourceTree = "<group>"; };
+		DF134EFE22B1118F008E659C /* niuniuRobotLashou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotLashou.h; sourceTree = "<group>"; };
+		DF134EFF22B1118F008E659C /* niuniuRobotResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = niuniuRobotResult.m; sourceTree = "<group>"; };
+		DF134F0022B1118F008E659C /* niuniuRobotExcelHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = niuniuRobotExcelHelper.h; sourceTree = "<group>"; };
+		DF134FF422B113DB008E659C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DF134FF622B113E2008E659C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		DF134FF822B113EB008E659C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		DF134FFA22B113F1008E659C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DF134FFC22B113FA008E659C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DF134FFE22B11402008E659C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DF13500022B1140D008E659C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		DF13500222B11416008E659C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DF13500422B11421008E659C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		DF13500622B1142B008E659C /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		DF13500822B11432008E659C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DF13500A22B1143E008E659C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DF13500C22B11447008E659C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF13469422B103B8008E659C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1346A822B103B8008E659C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF13500D22B11447008E659C /* CoreGraphics.framework in Frameworks */,
+				DF13500B22B1143E008E659C /* AudioToolbox.framework in Frameworks */,
+				DF13500922B11433008E659C /* AdSupport.framework in Frameworks */,
+				DF13500722B1142B008E659C /* AssetsLibrary.framework in Frameworks */,
+				DF13500522B11421008E659C /* libiconv.tbd in Frameworks */,
+				DF13500322B11416008E659C /* ImageIO.framework in Frameworks */,
+				DF13500122B1140D008E659C /* libz.tbd in Frameworks */,
+				DF134FFF22B11402008E659C /* Security.framework in Frameworks */,
+				DF134FFD22B113FA008E659C /* MobileCoreServices.framework in Frameworks */,
+				DF134FFB22B113F1008E659C /* CFNetwork.framework in Frameworks */,
+				DF134FF922B113EB008E659C /* libresolv.tbd in Frameworks */,
+				DF134FF722B113E2008E659C /* CoreTelephony.framework in Frameworks */,
+				DF134FF522B113DB008E659C /* SystemConfiguration.framework in Frameworks */,
+				DF1346B122B103B8008E659C /* JavaScriptCore.framework in Frameworks */,
+				DF1346B522B103B8008E659C /* UIKit.framework in Frameworks */,
+				DF1346B322B103B8008E659C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF13468E22B103B8008E659C = {
+			isa = PBXGroup;
+			children = (
+				DF13469C22B103B8008E659C /* weichatHaha */,
+				DF1346B622B103B8008E659C /* weichatHahaDylib */,
+				DF1346AF22B103B8008E659C /* Frameworks */,
+				DF13469B22B103B8008E659C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF13469B22B103B8008E659C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF13469A22B103B8008E659C /* weichatHaha.app */,
+				DF1346AB22B103B8008E659C /* libweichatHahaDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF13469C22B103B8008E659C /* weichatHaha */ = {
+			isa = PBXGroup;
+			children = (
+				DF13469D22B103B8008E659C /* icon.png */,
+				DF1346A522B103B8008E659C /* Info.plist */,
+				DF13469E22B103B8008E659C /* Scripts */,
+				DF1346A022B103B8008E659C /* Config */,
+				DF1346A322B103B8008E659C /* TargetApp */,
+			);
+			path = weichatHaha;
+			sourceTree = "<group>";
+		};
+		DF13469E22B103B8008E659C /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DF13469F22B103B8008E659C /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DF1346A022B103B8008E659C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346A122B103B8008E659C /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF1346A322B103B8008E659C /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346A422B103B8008E659C /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DF1346AF22B103B8008E659C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF13500C22B11447008E659C /* CoreGraphics.framework */,
+				DF13500A22B1143E008E659C /* AudioToolbox.framework */,
+				DF13500822B11432008E659C /* AdSupport.framework */,
+				DF13500622B1142B008E659C /* AssetsLibrary.framework */,
+				DF13500422B11421008E659C /* libiconv.tbd */,
+				DF13500222B11416008E659C /* ImageIO.framework */,
+				DF13500022B1140D008E659C /* libz.tbd */,
+				DF134FFE22B11402008E659C /* Security.framework */,
+				DF134FFC22B113FA008E659C /* MobileCoreServices.framework */,
+				DF134FFA22B113F1008E659C /* CFNetwork.framework */,
+				DF134FF822B113EB008E659C /* libresolv.tbd */,
+				DF134FF622B113E2008E659C /* CoreTelephony.framework */,
+				DF134FF422B113DB008E659C /* SystemConfiguration.framework */,
+				DF1346B022B103B8008E659C /* JavaScriptCore.framework */,
+				DF1346B222B103B8008E659C /* Foundation.framework */,
+				DF1346B422B103B8008E659C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF1346B622B103B8008E659C /* weichatHahaDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E0222B1118D008E659C /* wechatHook */,
+				DF1346EF22B103B8008E659C /* weichatHahaDylib.h */,
+				DF1346F122B103B8008E659C /* weichatHahaDylib.m */,
+				DF1346B722B103B8008E659C /* Logos */,
+				DF1346BB22B103B8008E659C /* Config */,
+				DF1346C822B103B8008E659C /* Trace */,
+				DF1346E022B103B8008E659C /* Tools */,
+				DF1346E722B103B8008E659C /* AntiAntiDebug */,
+				DF1346EA22B103B8008E659C /* fishhook */,
+				DF1346E522B103B8008E659C /* Supporting Files */,
+			);
+			path = weichatHahaDylib;
+			sourceTree = "<group>";
+		};
+		DF1346B722B103B8008E659C /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346B822B103B8008E659C /* weichatHahaDylib.xm */,
+				DF1346B922B103B8008E659C /* weichatHahaDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DF1346BB22B103B8008E659C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346BC22B103B8008E659C /* MDConfigManager.h */,
+				DF1346BE22B103B8008E659C /* MDConfigManager.m */,
+				DF1346C022B103B8008E659C /* MDCycriptManager.h */,
+				DF1346C222B103B8008E659C /* MDCycriptManager.m */,
+				DF1346C422B103B8008E659C /* MDMethodTrace.h */,
+				DF1346C622B103B8008E659C /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF1346C822B103B8008E659C /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346C922B103B8008E659C /* a1a2-selectortramps-arm.s */,
+				DF1346CB22B103B8008E659C /* a1a2-selectortramps-arm64.s */,
+				DF1346CD22B103B8008E659C /* a1a2-selectortramps-i386.s */,
+				DF1346CF22B103B8008E659C /* a1a2-selectortramps-x86_64.s */,
+				DF1346D122B103B8008E659C /* a2a3-selectortramps-arm.s */,
+				DF1346D322B103B8008E659C /* a2a3-selectortramps-i386.s */,
+				DF1346D522B103B8008E659C /* a2a3-selectortramps-x86_64.s */,
+				DF1346D722B103B8008E659C /* OCMethodTrace.h */,
+				DF1346D922B103B8008E659C /* OCMethodTrace.m */,
+				DF1346DB22B103B8008E659C /* OCSelectorTrampolines.h */,
+				DF1346DD22B103B8008E659C /* OCSelectorTrampolines.mm */,
+				DF1346DF22B103B8008E659C /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DF1346E022B103B8008E659C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346E122B103B8008E659C /* LLDBTools.h */,
+				DF1346E322B103B8008E659C /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DF1346E522B103B8008E659C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346E622B103B8008E659C /* weichatHahaDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF1346E722B103B8008E659C /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346E822B103B8008E659C /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		DF1346EA22B103B8008E659C /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DF1346EB22B103B8008E659C /* fishhook.c */,
+				DF1346ED22B103B8008E659C /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		DF134E0222B1118D008E659C /* wechatHook */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E0322B1118D008E659C /* CaptainHook.h */,
+				DF134E0422B1118D008E659C /* niuniuRobotGameViewController.m */,
+				DF134E0522B1118D008E659C /* ycButtonView.m */,
+				DF134E0622B1118D008E659C /* niuniuRobotAdminsVC.h */,
+				DF134E0722B1118D008E659C /* wxFunction.h */,
+				DF134E0822B1118D008E659C /* toolManager.mm */,
+				DF134E0922B1118D008E659C /* niuniuRobotCommand.h */,
+				DF134E0A22B1118D008E659C /* longhu.m */,
+				DF134E0B22B1118D008E659C /* toolWindows.h */,
+				DF134E0C22B1118D008E659C /* niuniuRobotFuliBankerSettingView.h */,
+				DF134E0D22B1118D008E659C /* niuniuRobotMemberDetailView.m */,
+				DF134E0E22B1118D008E659C /* niuniuRobotNormalView.h */,
+				DF134E0F22B1118D008E659C /* niuniuRobotViewController.h */,
+				DF134E1022B1118D008E659C /* ycInputView.h */,
+				DF134E1122B1118D008E659C /* ForgeIdentifier.m */,
+				DF134E1222B1118D008E659C /* toolManager.h */,
+				DF134E1322B1118D008E659C /* toolWindows.mm */,
+				DF134E1422B1118D008E659C /* ycFunction.h */,
+				DF134E1522B1118D008E659C /* niuniuRobotLashouHeadsVC.m */,
+				DF134E1622B1118D008E659C /* robotSettingBillColorView.m */,
+				DF134E1722B1118D008E659C /* niuniuRobotLashouHead.h */,
+				DF134E1822B1118D008E659C /* niuniu.m */,
+				DF134E1922B1118D008E659C /* niuniuRobotRework.m */,
+				DF134E1A22B1118D008E659C /* niuniuRobotResultView.h */,
+				DF134E1B22B1118D008E659C /* robotSettingView.m */,
+				DF134E1C22B1118D008E659C /* wechatHeaders.h */,
+				DF134E1D22B1118D008E659C /* baijiale.h */,
+				DF134E1E22B1118D008E659C /* PackageVersion.plist */,
+				DF134E1F22B1118D008E659C /* niuniuMembersGroupView.h */,
+				DF134E2022B1118D008E659C /* niuniuRobotData.mm */,
+				DF134E2122B1118D008E659C /* niuniuRobotDayInfos.m */,
+				DF134E2222B1118D008E659C /* niuniuRobotResultBill.m */,
+				DF134E2322B1118D008E659C /* niuniuRobotLashousVC.m */,
+				DF134E2422B1118D008E659C /* niuniuSupportDragView.m */,
+				DF134E2522B1118D008E659C /* niuniuRobotTuos.m */,
+				DF134E2622B1118D008E659C /* niuniuRobotSendMsg.m */,
+				DF134E2722B1118D008E659C /* niuniuRobotBackroundVC.h */,
+				DF134E2822B1118D008E659C /* niuniuRobotMembersVC.m */,
+				DF134E2922B1118D008E659C /* xlslib */,
+				DF134E8A22B1118E008E659C /* robotSettingVC.m */,
+				DF134E8B22B1118E008E659C /* niuniuRobotAdmins.m */,
+				DF134E8C22B1118E008E659C /* niuniuRobotPlayerCmd.h */,
+				DF134E8D22B1118E008E659C /* niuniuRobotBet.h */,
+				DF134E8E22B1118E008E659C /* niuniuRobotTuoVC.h */,
+				DF134E8F22B1118E008E659C /* niuniuRobotResult.h */,
+				DF134E9022B1118E008E659C /* niuniuRobotResultSettingView.h */,
+				DF134E9122B1118E008E659C /* niuniuRobotLashou.m */,
+				DF134E9222B1118E008E659C /* niuniuRobotMembers.m */,
+				DF134E9322B1118E008E659C /* niuniuRobot.h */,
+				DF134E9422B1118E008E659C /* ycDefine.h */,
+				DF134E9522B1118E008E659C /* tema.m */,
+				DF134E9622B1118E008E659C /* niuniuRobotBackgroundSetting.h */,
+				DF134E9722B1118E008E659C /* niuniuRobotTimer.m */,
+				DF134E9822B1118E008E659C /* niuniuRobotAdminPowerView.h */,
+				DF134E9922B1118E008E659C /* niuniuRobotChatRoomInviteCheck.h */,
+				DF134E9A22B1118E008E659C /* niuniuRobotBetView.m */,
+				DF134E9B22B1118E008E659C /* ycInputView.m */,
+				DF134E9C22B1118E008E659C /* niuniuRobotViewController.m */,
+				DF134E9D22B1118E008E659C /* niuniuRobotNormalView.m */,
+				DF134E9E22B1118E008E659C /* niuniuRobotFuliBankerSettingView.m */,
+				DF134E9F22B1118E008E659C /* niuniuRobotMemberDetailView.h */,
+				DF134EA022B1118E008E659C /* niuniuRobotCommand.m */,
+				DF134EA122B1118E008E659C /* longhu.h */,
+				DF134EA222B1118E008E659C /* wechatHook.mm */,
+				DF134EA322B1118E008E659C /* wechatHook-Prefix.pch */,
+				DF134EA422B1118E008E659C /* json */,
+				DF134EB222B1118E008E659C /* wxFunction.m */,
+				DF134EB322B1118E008E659C /* niuniuRobotAdminsVC.m */,
+				DF134EB422B1118E008E659C /* ycButtonView.h */,
+				DF134EB522B1118E008E659C /* niuniuRobotGameViewController.h */,
+				DF134EB622B1118E008E659C /* niuniuRobotData.h */,
+				DF134EB722B1118E008E659C /* niuniuRobotDayInfos.h */,
+				DF134EB822B1118E008E659C /* ZipArchive */,
+				DF134EC522B1118E008E659C /* niuniuMembersGroupView.m */,
+				DF134EC622B1118E008E659C /* baijiale.m */,
+				DF134EC722B1118E008E659C /* asi */,
+				DF134EDC22B1118E008E659C /* Reachability */,
+				DF134EDF22B1118E008E659C /* robotSettingView.h */,
+				DF134EE022B1118E008E659C /* niuniuRobotResultView.m */,
+				DF134EE122B1118F008E659C /* niuniuRobotRework.h */,
+				DF134EE222B1118F008E659C /* robotSettingBillColorView.h */,
+				DF134EE322B1118F008E659C /* niuniuRobotLashouHeadsVC.h */,
+				DF134EE422B1118F008E659C /* niuniuRobotLashouHead.m */,
+				DF134EE522B1118F008E659C /* niuniu.h */,
+				DF134EE622B1118F008E659C /* ycFunction.m */,
+				DF134EE722B1118F008E659C /* ForgeIdentifier.h */,
+				DF134EE822B1118F008E659C /* niuniuRobotTuoVC.m */,
+				DF134EE922B1118F008E659C /* niuniuRobotBet.m */,
+				DF134EEA22B1118F008E659C /* niuniuRobotPlayerCmd.m */,
+				DF134EEB22B1118F008E659C /* robotSettingVC.h */,
+				DF134EEC22B1118F008E659C /* niuniuRobotAdmins.h */,
+				DF134EED22B1118F008E659C /* niuniuRobotMembersVC.h */,
+				DF134EEE22B1118F008E659C /* niuniuRobotTuos.h */,
+				DF134EEF22B1118F008E659C /* niuniuRobotSendMsg.h */,
+				DF134EF022B1118F008E659C /* niuniuRobotExcelHelper.mm */,
+				DF134EF122B1118F008E659C /* niuniuRobotBackroundVC.m */,
+				DF134EF222B1118F008E659C /* niuniuRobotResultBill.h */,
+				DF134EF322B1118F008E659C /* niuniuSupportDragView.h */,
+				DF134EF422B1118F008E659C /* niuniuRobotLashousVC.h */,
+				DF134EF522B1118F008E659C /* niuniuRobotChatRoomInviteCheck.m */,
+				DF134EF622B1118F008E659C /* niuniuRobotAdminPowerView.m */,
+				DF134EF722B1118F008E659C /* niuniuRobotBetView.h */,
+				DF134EF822B1118F008E659C /* niuniuRobotTimer.h */,
+				DF134EF922B1118F008E659C /* niuniuRobotBackgroundSetting.m */,
+				DF134EFA22B1118F008E659C /* tema.h */,
+				DF134EFB22B1118F008E659C /* niuniuRobotMembers.h */,
+				DF134EFC22B1118F008E659C /* niuniuRobot.m */,
+				DF134EFD22B1118F008E659C /* niuniuRobotResultSettingView.m */,
+				DF134EFE22B1118F008E659C /* niuniuRobotLashou.h */,
+				DF134EFF22B1118F008E659C /* niuniuRobotResult.m */,
+				DF134F0022B1118F008E659C /* niuniuRobotExcelHelper.h */,
+			);
+			path = wechatHook;
+			sourceTree = "<group>";
+		};
+		DF134E2922B1118D008E659C /* xlslib */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E2A22B1118D008E659C /* xlslib */,
+				DF134E7322B1118E008E659C /* xlslib.h */,
+				DF134E7422B1118E008E659C /* common */,
+				DF134E8122B1118E008E659C /* oledoc */,
+			);
+			path = xlslib;
+			sourceTree = "<group>";
+		};
+		DF134E2A22B1118D008E659C /* xlslib */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E2B22B1118D008E659C /* docsumminfo.cpp */,
+				DF134E2C22B1118D008E659C /* index.h */,
+				DF134E2D22B1118D008E659C /* workbook.h */,
+				DF134E2E22B1118D008E659C /* extformat.cpp */,
+				DF134E2F22B1118D008E659C /* err.h */,
+				DF134E3022B1118D008E659C /* merged.cpp */,
+				DF134E3122B1118D008E659C /* formula.h */,
+				DF134E3222B1118D008E659C /* err.cpp */,
+				DF134E3322B1118D008E659C /* range.cpp */,
+				DF134E3422B1118D008E659C /* formula_const.h */,
+				DF134E3522B1118D008E659C /* range.h */,
+				DF134E3622B1118D008E659C /* formula.txt */,
+				DF134E3722B1118D008E659C /* label.h */,
+				DF134E3822B1118D008E659C /* rectypes.h */,
+				DF134E3922B1118D008E659C /* format.cpp */,
+				DF134E3A22B1118D008E659C /* summinfo.h */,
+				DF134E3B22B1118D008E659C /* globalrec.h */,
+				DF134E3C22B1118D008E659C /* cell.h */,
+				DF134E3D22B1118D008E659C /* summinfo.cpp */,
+				DF134E3E22B1118D008E659C /* formula_cell.h */,
+				DF134E3F22B1118D008E659C /* row.cpp */,
+				DF134E4022B1118D008E659C /* record.h */,
+				DF134E4122B1118D008E659C /* font.cpp */,
+				DF134E4222B1118D008E659C /* cell.cpp */,
+				DF134E4322B1118D008E659C /* recdef.h */,
+				DF134E4422B1118D008E659C /* biffsection.h */,
+				DF134E4522B1118D008E659C /* unit.h */,
+				DF134E4622B1118D008E659C /* colors.h */,
+				DF134E4722B1118D008E659C /* formula_expr.h */,
+				DF134E4822B1118D008E659C /* formtags.h */,
+				DF134E4922B1118D008E659C /* recdef.cpp */,
+				DF134E4A22B1118D008E659C /* assert_assist.cpp */,
+				DF134E4B22B1118D008E659C /* boolean.h */,
+				DF134E4C22B1118D008E659C /* formula.cpp */,
+				DF134E4D22B1118D008E659C /* formula_estimate.h */,
+				DF134E4E22B1118D008E659C /* label.cpp */,
+				DF134E4F22B1118D008E659C /* common.h */,
+				DF134E5022B1118D008E659C /* blank.cpp */,
+				DF134E5122B1118D008E659C /* cbridge.h */,
+				DF134E5222B1118D008E659C /* merged.h */,
+				DF134E5322B1118D008E659C /* unit.cpp */,
+				DF134E5422B1118D008E659C /* extformat.h */,
+				DF134E5522B1118D008E659C /* colinfo.h */,
+				DF134E5622B1118D008E659C /* sheetrec.cpp */,
+				DF134E5722B1118D008E659C /* tostr.h */,
+				DF134E5822B1118D008E659C /* font.h */,
+				DF134E5922B1118D008E659C /* workbook.cpp */,
+				DF134E5A22B1118D008E659C /* colors.cpp */,
+				DF134E5B22B1118D008E659C /* number.h */,
+				DF134E5C22B1118D008E659C /* continue.h */,
+				DF134E5D22B1118E008E659C /* record.cpp */,
+				DF134E5E22B1118E008E659C /* docsumminfo.h */,
+				DF134E5F22B1118E008E659C /* boolean.cpp */,
+				DF134E6022B1118E008E659C /* datast.cpp */,
+				DF134E6122B1118E008E659C /* globalrec.cpp */,
+				DF134E6222B1118E008E659C /* HPSF.h */,
+				DF134E6322B1118E008E659C /* format.h */,
+				DF134E6422B1118E008E659C /* colinfo.cpp */,
+				DF134E6522B1118E008E659C /* blank.h */,
+				DF134E6622B1118E008E659C /* formula_cell.cpp */,
+				DF134E6722B1118E008E659C /* datast.h */,
+				DF134E6822B1118E008E659C /* formula_expr.cpp */,
+				DF134E6922B1118E008E659C /* HPSF.cpp */,
+				DF134E6A22B1118E008E659C /* sheetrec.h */,
+				DF134E6B22B1118E008E659C /* formula_estimate.cpp */,
+				DF134E6C22B1118E008E659C /* cbridge.cpp */,
+				DF134E6D22B1118E008E659C /* note.h */,
+				DF134E6E22B1118E008E659C /* number.cpp */,
+				DF134E6F22B1118E008E659C /* index.cpp */,
+				DF134E7022B1118E008E659C /* row.h */,
+				DF134E7122B1118E008E659C /* note.cpp */,
+				DF134E7222B1118E008E659C /* continue.cpp */,
+			);
+			path = xlslib;
+			sourceTree = "<group>";
+		};
+		DF134E7422B1118E008E659C /* common */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E7522B1118E008E659C /* overnew.h */,
+				DF134E7622B1118E008E659C /* xlstypes.h */,
+				DF134E7722B1118E008E659C /* xls_pshpack4.h */,
+				DF134E7822B1118E008E659C /* overnew.cpp */,
+				DF134E7922B1118E008E659C /* systype.h */,
+				DF134E7A22B1118E008E659C /* stringtok.h */,
+				DF134E7B22B1118E008E659C /* xls_poppack.h */,
+				DF134E7C22B1118E008E659C /* xls_pshpack1.h */,
+				DF134E7D22B1118E008E659C /* xlsys.h */,
+				DF134E7E22B1118E008E659C /* xlconfig.h */,
+				DF134E7F22B1118E008E659C /* timespan.h */,
+				DF134E8022B1118E008E659C /* xls_pshpack2.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		DF134E8122B1118E008E659C /* oledoc */ = {
+			isa = PBXGroup;
+			children = (
+				DF134E8222B1118E008E659C /* olefs.cpp */,
+				DF134E8322B1118E008E659C /* oledoc.cpp */,
+				DF134E8422B1118E008E659C /* binfile.h */,
+				DF134E8522B1118E008E659C /* oleprop.h */,
+				DF134E8622B1118E008E659C /* oleprop.cpp */,
+				DF134E8722B1118E008E659C /* oledoc.h */,
+				DF134E8822B1118E008E659C /* olefs.h */,
+				DF134E8922B1118E008E659C /* binfile.cpp */,
+			);
+			path = oledoc;
+			sourceTree = "<group>";
+		};
+		DF134EA422B1118E008E659C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				DF134EA522B1118E008E659C /* NSObject+SBJSON.m */,
+				DF134EA622B1118E008E659C /* SBJsonBase.h */,
+				DF134EA722B1118E008E659C /* SBJsonWriter.h */,
+				DF134EA822B1118E008E659C /* SBJsonParser.m */,
+				DF134EA922B1118E008E659C /* SBJSON.m */,
+				DF134EAA22B1118E008E659C /* NSString+SBJSON.h */,
+				DF134EAB22B1118E008E659C /* SBJsonBase.m */,
+				DF134EAC22B1118E008E659C /* NSObject+SBJSON.h */,
+				DF134EAD22B1118E008E659C /* JSON.h */,
+				DF134EAE22B1118E008E659C /* SBJsonWriter.m */,
+				DF134EAF22B1118E008E659C /* SBJsonParser.h */,
+				DF134EB022B1118E008E659C /* NSString+SBJSON.m */,
+				DF134EB122B1118E008E659C /* SBJSON.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		DF134EB822B1118E008E659C /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				DF134EB922B1118E008E659C /* ZipArchive.h */,
+				DF134EBA22B1118E008E659C /* minizip */,
+				DF134EC422B1118E008E659C /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		DF134EBA22B1118E008E659C /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				DF134EBB22B1118E008E659C /* unzip.c */,
+				DF134EBC22B1118E008E659C /* zip.c */,
+				DF134EBD22B1118E008E659C /* ioapi.c */,
+				DF134EBE22B1118E008E659C /* mztools.c */,
+				DF134EBF22B1118E008E659C /* crypt.h */,
+				DF134EC022B1118E008E659C /* zip.h */,
+				DF134EC122B1118E008E659C /* unzip.h */,
+				DF134EC222B1118E008E659C /* mztools.h */,
+				DF134EC322B1118E008E659C /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		DF134EC722B1118E008E659C /* asi */ = {
+			isa = PBXGroup;
+			children = (
+				DF134EC822B1118E008E659C /* ASIDataCompressor.m */,
+				DF134EC922B1118E008E659C /* ASIHTTPRequest.m */,
+				DF134ECA22B1118E008E659C /* ASIHTTPRequestDelegate.h */,
+				DF134ECB22B1118E008E659C /* ASINetworkQueue.h */,
+				DF134ECC22B1118E008E659C /* ASIFormDataRequest.m */,
+				DF134ECD22B1118E008E659C /* ASIHTTPRequestConfig.h */,
+				DF134ECE22B1118E008E659C /* ASIDataDecompressor.m */,
+				DF134ECF22B1118E008E659C /* ASIAuthenticationDialog.m */,
+				DF134ED022B1118E008E659C /* ASIInputStream.m */,
+				DF134ED122B1118E008E659C /* ASIDownloadCache.h */,
+				DF134ED222B1118E008E659C /* ASIHTTPRequest.h */,
+				DF134ED322B1118E008E659C /* ASICacheDelegate.h */,
+				DF134ED422B1118E008E659C /* ASIDataCompressor.h */,
+				DF134ED522B1118E008E659C /* ASIProgressDelegate.h */,
+				DF134ED622B1118E008E659C /* ASIFormDataRequest.h */,
+				DF134ED722B1118E008E659C /* ASINetworkQueue.m */,
+				DF134ED822B1118E008E659C /* ASIDataDecompressor.h */,
+				DF134ED922B1118E008E659C /* ASIDownloadCache.m */,
+				DF134EDA22B1118E008E659C /* ASIInputStream.h */,
+				DF134EDB22B1118E008E659C /* ASIAuthenticationDialog.h */,
+			);
+			path = asi;
+			sourceTree = "<group>";
+		};
+		DF134EDC22B1118E008E659C /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DF134EDD22B1118E008E659C /* Reachability.m */,
+				DF134EDE22B1118E008E659C /* Reachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF1346A922B103B8008E659C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF134FC522B11192008E659C /* ASIDownloadCache.h in Headers */,
+				DF134FE622B11193008E659C /* niuniuSupportDragView.h in Headers */,
+				DF134FD822B11192008E659C /* niuniu.h in Headers */,
+				DF134F7F22B11191008E659C /* oledoc.h in Headers */,
+				DF134F3622B11190008E659C /* cell.h in Headers */,
+				DF134FB822B11192008E659C /* ioapi.h in Headers */,
+				DF134F0A22B1118F008E659C /* niuniuRobotFuliBankerSettingView.h in Headers */,
+				DF134F2722B11190008E659C /* index.h in Headers */,
+				DF134F4222B11190008E659C /* formtags.h in Headers */,
+				DF134F7222B11191008E659C /* systype.h in Headers */,
+				DF134F6F22B11191008E659C /* xlstypes.h in Headers */,
+				DF134FBF22B11192008E659C /* ASINetworkQueue.h in Headers */,
+				DF134F7722B11191008E659C /* xlconfig.h in Headers */,
+				DF134F4C22B11190008E659C /* merged.h in Headers */,
+				DF134F1A22B11190008E659C /* wechatHeaders.h in Headers */,
+				DF134F1522B11190008E659C /* niuniuRobotLashouHead.h in Headers */,
+				DF134F8422B11191008E659C /* niuniuRobotPlayerCmd.h in Headers */,
+				DF134F3D22B11190008E659C /* recdef.h in Headers */,
+				DF1346C122B103B8008E659C /* MDCycriptManager.h in Headers */,
+				DF134F5622B11191008E659C /* continue.h in Headers */,
+				DF1346C522B103B8008E659C /* MDMethodTrace.h in Headers */,
+				DF134F7D22B11191008E659C /* oleprop.h in Headers */,
+				DF134FD222B11192008E659C /* robotSettingView.h in Headers */,
+				DF134F7922B11191008E659C /* xls_pshpack2.h in Headers */,
+				DF134F9B22B11191008E659C /* wechatHook-Prefix.pch in Headers */,
+				DF134F7522B11191008E659C /* xls_pshpack1.h in Headers */,
+				DF134F4022B11190008E659C /* colors.h in Headers */,
+				DF134F7322B11191008E659C /* stringtok.h in Headers */,
+				DF134F3422B11190008E659C /* summinfo.h in Headers */,
+				DF134F1222B11190008E659C /* ycFunction.h in Headers */,
+				DF134FDA22B11192008E659C /* ForgeIdentifier.h in Headers */,
+				DF1346EE22B103B8008E659C /* fishhook.h in Headers */,
+				DF134FA322B11192008E659C /* NSObject+SBJSON.h in Headers */,
+				DF134FC922B11192008E659C /* ASIProgressDelegate.h in Headers */,
+				DF134F9122B11191008E659C /* niuniuRobotChatRoomInviteCheck.h in Headers */,
+				DF134FCE22B11192008E659C /* ASIInputStream.h in Headers */,
+				DF134F5D22B11191008E659C /* format.h in Headers */,
+				DF134F0722B1118F008E659C /* niuniuRobotCommand.h in Headers */,
+				DF1346F022B103B8008E659C /* weichatHahaDylib.h in Headers */,
+				DF134F1C22B11190008E659C /* niuniuMembersGroupView.h in Headers */,
+				DF134F1022B11190008E659C /* toolManager.h in Headers */,
+				DF134FEA22B11193008E659C /* niuniuRobotBetView.h in Headers */,
+				DF134F8C22B11191008E659C /* ycDefine.h in Headers */,
+				DF134F8622B11191008E659C /* niuniuRobotTuoVC.h in Headers */,
+				DF134FE022B11192008E659C /* niuniuRobotMembersVC.h in Headers */,
+				DF134FBE22B11192008E659C /* ASIHTTPRequestDelegate.h in Headers */,
+				DF134F8822B11191008E659C /* niuniuRobotResultSettingView.h in Headers */,
+				DF134FF322B11193008E659C /* niuniuRobotExcelHelper.h in Headers */,
+				DF134F7622B11191008E659C /* xlsys.h in Headers */,
+				DF134FAC22B11192008E659C /* niuniuRobotGameViewController.h in Headers */,
+				DF134FE222B11192008E659C /* niuniuRobotSendMsg.h in Headers */,
+				DF134F7022B11191008E659C /* xls_pshpack4.h in Headers */,
+				DF134F4F22B11190008E659C /* colinfo.h in Headers */,
+				DF134F3E22B11190008E659C /* biffsection.h in Headers */,
+				DF134F8E22B11191008E659C /* niuniuRobotBackgroundSetting.h in Headers */,
+				DF134FD122B11192008E659C /* Reachability.h in Headers */,
+				DF134FDF22B11192008E659C /* niuniuRobotAdmins.h in Headers */,
+				DF134FDE22B11192008E659C /* robotSettingVC.h in Headers */,
+				DF134F9D22B11192008E659C /* SBJsonBase.h in Headers */,
+				DF134F3522B11190008E659C /* globalrec.h in Headers */,
+				DF134F6122B11191008E659C /* datast.h in Headers */,
+				DF134F9E22B11192008E659C /* SBJsonWriter.h in Headers */,
+				DF134F7C22B11191008E659C /* binfile.h in Headers */,
+				DF134F0C22B1118F008E659C /* niuniuRobotNormalView.h in Headers */,
+				DF134FAF22B11192008E659C /* ZipArchive.h in Headers */,
+				DF134F4522B11190008E659C /* boolean.h in Headers */,
+				DF134FEB22B11193008E659C /* niuniuRobotTimer.h in Headers */,
+				DF134F2822B11190008E659C /* workbook.h in Headers */,
+				DF134FEE22B11193008E659C /* niuniuRobotMembers.h in Headers */,
+				DF134F0922B1118F008E659C /* toolWindows.h in Headers */,
+				DF134F6422B11191008E659C /* sheetrec.h in Headers */,
+				DF134FCC22B11192008E659C /* ASIDataDecompressor.h in Headers */,
+				DF134F2C22B11190008E659C /* formula.h in Headers */,
+				DF134F4122B11190008E659C /* formula_expr.h in Headers */,
+				DF134FE122B11192008E659C /* niuniuRobotTuos.h in Headers */,
+				DF134FB422B11192008E659C /* crypt.h in Headers */,
+				DF134F1822B11190008E659C /* niuniuRobotResultView.h in Headers */,
+				DF134F7822B11191008E659C /* timespan.h in Headers */,
+				DF134F0422B1118F008E659C /* niuniuRobotAdminsVC.h in Headers */,
+				DF134FCF22B11192008E659C /* ASIAuthenticationDialog.h in Headers */,
+				DF134F5522B11191008E659C /* number.h in Headers */,
+				DF134FA822B11192008E659C /* SBJSON.h in Headers */,
+				DF134FAE22B11192008E659C /* niuniuRobotDayInfos.h in Headers */,
+				DF134F1B22B11190008E659C /* baijiale.h in Headers */,
+				DF134F4922B11190008E659C /* common.h in Headers */,
+				DF134FC722B11192008E659C /* ASICacheDelegate.h in Headers */,
+				DF1346E222B103B8008E659C /* LLDBTools.h in Headers */,
+				DF134F4722B11190008E659C /* formula_estimate.h in Headers */,
+				DF134F9922B11191008E659C /* longhu.h in Headers */,
+				DF134F5222B11190008E659C /* font.h in Headers */,
+				DF134F4B22B11190008E659C /* cbridge.h in Headers */,
+				DF134FD522B11192008E659C /* robotSettingBillColorView.h in Headers */,
+				DF134FC822B11192008E659C /* ASIDataCompressor.h in Headers */,
+				DF134F8522B11191008E659C /* niuniuRobotBet.h in Headers */,
+				DF134FC122B11192008E659C /* ASIHTTPRequestConfig.h in Headers */,
+				DF134F9722B11191008E659C /* niuniuRobotMemberDetailView.h in Headers */,
+				DF134F8722B11191008E659C /* niuniuRobotResult.h in Headers */,
+				DF134F6E22B11191008E659C /* overnew.h in Headers */,
+				DF134F4E22B11190008E659C /* extformat.h in Headers */,
+				DF134F3A22B11190008E659C /* record.h in Headers */,
+				DF134FB522B11192008E659C /* zip.h in Headers */,
+				DF134FAD22B11192008E659C /* niuniuRobotData.h in Headers */,
+				DF134FE722B11193008E659C /* niuniuRobotLashousVC.h in Headers */,
+				DF134F5822B11191008E659C /* docsumminfo.h in Headers */,
+				DF1346BD22B103B8008E659C /* MDConfigManager.h in Headers */,
+				DF134FB622B11192008E659C /* unzip.h in Headers */,
+				DF134F6D22B11191008E659C /* xlslib.h in Headers */,
+				DF134FD422B11192008E659C /* niuniuRobotRework.h in Headers */,
+				DF134F8022B11191008E659C /* olefs.h in Headers */,
+				DF134F0522B1118F008E659C /* wxFunction.h in Headers */,
+				DF134F6A22B11191008E659C /* row.h in Headers */,
+				DF134FB722B11192008E659C /* mztools.h in Headers */,
+				DF134F5F22B11191008E659C /* blank.h in Headers */,
+				DF1346DC22B103B8008E659C /* OCSelectorTrampolines.h in Headers */,
+				DF134F8B22B11191008E659C /* niuniuRobot.h in Headers */,
+				DF134FED22B11193008E659C /* tema.h in Headers */,
+				DF134FA422B11192008E659C /* JSON.h in Headers */,
+				DF134F5C22B11191008E659C /* HPSF.h in Headers */,
+				DF134FA622B11192008E659C /* SBJsonParser.h in Headers */,
+				DF134F2422B11190008E659C /* niuniuRobotBackroundVC.h in Headers */,
+				DF134FAB22B11192008E659C /* ycButtonView.h in Headers */,
+				DF134F0122B1118F008E659C /* CaptainHook.h in Headers */,
+				DF134F2A22B11190008E659C /* err.h in Headers */,
+				DF134F0D22B1118F008E659C /* niuniuRobotViewController.h in Headers */,
+				DF134FD622B11192008E659C /* niuniuRobotLashouHeadsVC.h in Headers */,
+				DF134FC622B11192008E659C /* ASIHTTPRequest.h in Headers */,
+				DF134FE522B11193008E659C /* niuniuRobotResultBill.h in Headers */,
+				DF134F0E22B11190008E659C /* ycInputView.h in Headers */,
+				DF1346D822B103B8008E659C /* OCMethodTrace.h in Headers */,
+				DF134FCA22B11192008E659C /* ASIFormDataRequest.h in Headers */,
+				DF134F7422B11191008E659C /* xls_poppack.h in Headers */,
+				DF134FF122B11193008E659C /* niuniuRobotLashou.h in Headers */,
+				DF134FA122B11192008E659C /* NSString+SBJSON.h in Headers */,
+				DF134F3122B11190008E659C /* label.h in Headers */,
+				DF134F9022B11191008E659C /* niuniuRobotAdminPowerView.h in Headers */,
+				DF134F2F22B11190008E659C /* formula_const.h in Headers */,
+				DF134F3F22B11190008E659C /* unit.h in Headers */,
+				DF134F3222B11190008E659C /* rectypes.h in Headers */,
+				DF134F5122B11190008E659C /* tostr.h in Headers */,
+				DF134F3022B11190008E659C /* range.h in Headers */,
+				DF134F6722B11191008E659C /* note.h in Headers */,
+				DF134F3822B11190008E659C /* formula_cell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF13469922B103B8008E659C /* weichatHaha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1346F822B103B8008E659C /* Build configuration list for PBXNativeTarget "weichatHaha" */;
+			buildPhases = (
+				DF13469322B103B8008E659C /* Sources */,
+				DF13469422B103B8008E659C /* Frameworks */,
+				DF13469522B103B8008E659C /* ShellScript */,
+				DF13469622B103B8008E659C /* Resources */,
+				DF13469722B103B8008E659C /* CopyFiles */,
+				DF13469822B103B8008E659C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1346AE22B103B8008E659C /* PBXTargetDependency */,
+			);
+			name = weichatHaha;
+			productName = weichatHaha;
+			productReference = DF13469A22B103B8008E659C /* weichatHaha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF1346AA22B103B8008E659C /* weichatHahaDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1346F522B103B8008E659C /* Build configuration list for PBXNativeTarget "weichatHahaDylib" */;
+			buildPhases = (
+				DF1346A622B103B8008E659C /* ShellScript */,
+				DF1346A722B103B8008E659C /* Sources */,
+				DF1346A822B103B8008E659C /* Frameworks */,
+				DF1346A922B103B8008E659C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weichatHahaDylib;
+			productName = weichatHahaDylib;
+			productReference = DF1346AB22B103B8008E659C /* libweichatHahaDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF13468F22B103B8008E659C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DF13469922B103B8008E659C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DF1346AA22B103B8008E659C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DF13469222B103B8008E659C /* Build configuration list for PBXProject "weichatHaha" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF13468E22B103B8008E659C;
+			productRefGroup = DF13469B22B103B8008E659C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF13469922B103B8008E659C /* weichatHaha */,
+				DF1346AA22B103B8008E659C /* weichatHahaDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF13469622B103B8008E659C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1346A222B103B8008E659C /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF13469522B103B8008E659C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DF13469822B103B8008E659C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DF1346A622B103B8008E659C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF13469322B103B8008E659C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1346A722B103B8008E659C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF134F6022B11191008E659C /* formula_cell.cpp in Sources */,
+				DF134F2122B11190008E659C /* niuniuSupportDragView.m in Sources */,
+				DF134F5B22B11191008E659C /* globalrec.cpp in Sources */,
+				DF134F0B22B1118F008E659C /* niuniuRobotMemberDetailView.m in Sources */,
+				DF134F9322B11191008E659C /* ycInputView.m in Sources */,
+				DF134F6C22B11191008E659C /* continue.cpp in Sources */,
+				DF1346C322B103B8008E659C /* MDCycriptManager.m in Sources */,
+				DF134F8322B11191008E659C /* niuniuRobotAdmins.m in Sources */,
+				DF134FCD22B11192008E659C /* ASIDownloadCache.m in Sources */,
+				DF134F3922B11190008E659C /* row.cpp in Sources */,
+				DF134FD022B11192008E659C /* Reachability.m in Sources */,
+				DF134FA222B11192008E659C /* SBJsonBase.m in Sources */,
+				DF134F4422B11190008E659C /* assert_assist.cpp in Sources */,
+				DF134F4322B11190008E659C /* recdef.cpp in Sources */,
+				DF134FB022B11192008E659C /* unzip.c in Sources */,
+				DF134FC222B11192008E659C /* ASIDataDecompressor.m in Sources */,
+				DF134F6622B11191008E659C /* cbridge.cpp in Sources */,
+				DF1346CC22B103B8008E659C /* a1a2-selectortramps-arm64.s in Sources */,
+				DF1346CA22B103B8008E659C /* a1a2-selectortramps-arm.s in Sources */,
+				DF134F0322B1118F008E659C /* ycButtonView.m in Sources */,
+				DF1346D022B103B8008E659C /* a1a2-selectortramps-x86_64.s in Sources */,
+				DF134F5722B11191008E659C /* record.cpp in Sources */,
+				DF134FA022B11192008E659C /* SBJSON.m in Sources */,
+				DF134FA922B11192008E659C /* wxFunction.m in Sources */,
+				DF134F4A22B11190008E659C /* blank.cpp in Sources */,
+				DF134FC422B11192008E659C /* ASIInputStream.m in Sources */,
+				DF134F1D22B11190008E659C /* niuniuRobotData.mm in Sources */,
+				DF134F1722B11190008E659C /* niuniuRobotRework.m in Sources */,
+				DF134F6B22B11191008E659C /* note.cpp in Sources */,
+				DF134F5422B11190008E659C /* colors.cpp in Sources */,
+				DF134FA722B11192008E659C /* NSString+SBJSON.m in Sources */,
+				DF134F0F22B11190008E659C /* ForgeIdentifier.m in Sources */,
+				DF134F8922B11191008E659C /* niuniuRobotLashou.m in Sources */,
+				DF134F1322B11190008E659C /* niuniuRobotLashouHeadsVC.m in Sources */,
+				DF134F9822B11191008E659C /* niuniuRobotCommand.m in Sources */,
+				DF134FE422B11192008E659C /* niuniuRobotBackroundVC.m in Sources */,
+				DF134F3722B11190008E659C /* summinfo.cpp in Sources */,
+				DF134FDB22B11192008E659C /* niuniuRobotTuoVC.m in Sources */,
+				DF134FBD22B11192008E659C /* ASIHTTPRequest.m in Sources */,
+				DF1346DA22B103B8008E659C /* OCMethodTrace.m in Sources */,
+				DF134F2022B11190008E659C /* niuniuRobotLashousVC.m in Sources */,
+				DF134FBC22B11192008E659C /* ASIDataCompressor.m in Sources */,
+				DF134FB322B11192008E659C /* mztools.c in Sources */,
+				DF134FDD22B11192008E659C /* niuniuRobotPlayerCmd.m in Sources */,
+				DF1346BF22B103B8008E659C /* MDConfigManager.m in Sources */,
+				DF1346EC22B103B8008E659C /* fishhook.c in Sources */,
+				DF134F3322B11190008E659C /* format.cpp in Sources */,
+				DF134F2B22B11190008E659C /* merged.cpp in Sources */,
+				DF134F9F22B11192008E659C /* SBJsonParser.m in Sources */,
+				DF134FB922B11192008E659C /* ZipArchive.mm in Sources */,
+				DF1346E922B103B8008E659C /* AntiAntiDebug.m in Sources */,
+				DF134F1E22B11190008E659C /* niuniuRobotDayInfos.m in Sources */,
+				DF134F5922B11191008E659C /* boolean.cpp in Sources */,
+				DF134F2522B11190008E659C /* niuniuRobotMembersVC.m in Sources */,
+				DF134FEF22B11193008E659C /* niuniuRobot.m in Sources */,
+				DF134FF222B11193008E659C /* niuniuRobotResult.m in Sources */,
+				DF1346DE22B103B8008E659C /* OCSelectorTrampolines.mm in Sources */,
+				DF134FC322B11192008E659C /* ASIAuthenticationDialog.m in Sources */,
+				DF134F9622B11191008E659C /* niuniuRobotFuliBankerSettingView.m in Sources */,
+				DF1346F222B103B8008E659C /* weichatHahaDylib.m in Sources */,
+				DF134FEC22B11193008E659C /* niuniuRobotBackgroundSetting.m in Sources */,
+				DF134F6822B11191008E659C /* number.cpp in Sources */,
+				DF134F1922B11190008E659C /* robotSettingView.m in Sources */,
+				DF134FF022B11193008E659C /* niuniuRobotResultSettingView.m in Sources */,
+				DF134F2222B11190008E659C /* niuniuRobotTuos.m in Sources */,
+				DF134F8D22B11191008E659C /* tema.m in Sources */,
+				DF134F4622B11190008E659C /* formula.cpp in Sources */,
+				DF134F8F22B11191008E659C /* niuniuRobotTimer.m in Sources */,
+				DF134F1F22B11190008E659C /* niuniuRobotResultBill.m in Sources */,
+				DF134F6522B11191008E659C /* formula_estimate.cpp in Sources */,
+				DF134F8A22B11191008E659C /* niuniuRobotMembers.m in Sources */,
+				DF134F7E22B11191008E659C /* oleprop.cpp in Sources */,
+				DF1346CE22B103B8008E659C /* a1a2-selectortramps-i386.s in Sources */,
+				DF134F3B22B11190008E659C /* font.cpp in Sources */,
+				DF134F7B22B11191008E659C /* oledoc.cpp in Sources */,
+				DF134F7A22B11191008E659C /* olefs.cpp in Sources */,
+				DF134F7122B11191008E659C /* overnew.cpp in Sources */,
+				DF134FA522B11192008E659C /* SBJsonWriter.m in Sources */,
+				DF134F0222B1118F008E659C /* niuniuRobotGameViewController.m in Sources */,
+				DF134FE822B11193008E659C /* niuniuRobotChatRoomInviteCheck.m in Sources */,
+				DF1346D422B103B8008E659C /* a2a3-selectortramps-i386.s in Sources */,
+				DF1346D222B103B8008E659C /* a2a3-selectortramps-arm.s in Sources */,
+				DF134F9A22B11191008E659C /* wechatHook.mm in Sources */,
+				DF134F0622B1118F008E659C /* toolManager.mm in Sources */,
+				DF134FCB22B11192008E659C /* ASINetworkQueue.m in Sources */,
+				DF134F6322B11191008E659C /* HPSF.cpp in Sources */,
+				DF134FD722B11192008E659C /* niuniuRobotLashouHead.m in Sources */,
+				DF134FAA22B11192008E659C /* niuniuRobotAdminsVC.m in Sources */,
+				DF134F5322B11190008E659C /* workbook.cpp in Sources */,
+				DF134FE922B11193008E659C /* niuniuRobotAdminPowerView.m in Sources */,
+				DF1346BA22B103B8008E659C /* weichatHahaDylib.mm in Sources */,
+				DF1346E422B103B8008E659C /* LLDBTools.mm in Sources */,
+				DF134F4D22B11190008E659C /* unit.cpp in Sources */,
+				DF134F2E22B11190008E659C /* range.cpp in Sources */,
+				DF134F0822B1118F008E659C /* longhu.m in Sources */,
+				DF134FE322B11192008E659C /* niuniuRobotExcelHelper.mm in Sources */,
+				DF134F1622B11190008E659C /* niuniu.m in Sources */,
+				DF134F5E22B11191008E659C /* colinfo.cpp in Sources */,
+				DF134F9522B11191008E659C /* niuniuRobotNormalView.m in Sources */,
+				DF134F6222B11191008E659C /* formula_expr.cpp in Sources */,
+				DF134F5A22B11191008E659C /* datast.cpp in Sources */,
+				DF134F2922B11190008E659C /* extformat.cpp in Sources */,
+				DF134FDC22B11192008E659C /* niuniuRobotBet.m in Sources */,
+				DF134FD922B11192008E659C /* ycFunction.m in Sources */,
+				DF134FC022B11192008E659C /* ASIFormDataRequest.m in Sources */,
+				DF134FB122B11192008E659C /* zip.c in Sources */,
+				DF134FBB22B11192008E659C /* baijiale.m in Sources */,
+				DF134F9C22B11191008E659C /* NSObject+SBJSON.m in Sources */,
+				DF134F2622B11190008E659C /* docsumminfo.cpp in Sources */,
+				DF134F2D22B11190008E659C /* err.cpp in Sources */,
+				DF1346D622B103B8008E659C /* a2a3-selectortramps-x86_64.s in Sources */,
+				DF134F1422B11190008E659C /* robotSettingBillColorView.m in Sources */,
+				DF134F5022B11190008E659C /* sheetrec.cpp in Sources */,
+				DF134F8222B11191008E659C /* robotSettingVC.m in Sources */,
+				DF134F9422B11191008E659C /* niuniuRobotViewController.m in Sources */,
+				DF134F6922B11191008E659C /* index.cpp in Sources */,
+				DF1346C722B103B8008E659C /* MDMethodTrace.m in Sources */,
+				DF134F2322B11190008E659C /* niuniuRobotSendMsg.m in Sources */,
+				DF134F9222B11191008E659C /* niuniuRobotBetView.m in Sources */,
+				DF134F1122B11190008E659C /* toolWindows.mm in Sources */,
+				DF134F3C22B11190008E659C /* cell.cpp in Sources */,
+				DF134FB222B11192008E659C /* ioapi.c in Sources */,
+				DF134F8122B11191008E659C /* binfile.cpp in Sources */,
+				DF134FBA22B11192008E659C /* niuniuMembersGroupView.m in Sources */,
+				DF134F4822B11190008E659C /* label.cpp in Sources */,
+				DF134FD322B11192008E659C /* niuniuRobotResultView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF1346AE22B103B8008E659C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF1346AA22B103B8008E659C /* weichatHahaDylib */;
+			targetProxy = DF1346AD22B103B8008E659C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF1346F322B103B8008E659C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF1346F422B103B8008E659C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF1346F622B103B8008E659C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weichatHahaDylib/weichatHahaDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(SRCROOT)/weichatHahaDylib/wechatHook/xlslib/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libweichatHahaDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/weichatHahaDylib/wechatHook/Package/usr/lib",
+					"$(PROJECT_DIR)",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"weichatHahaDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DF1346F722B103B8008E659C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "weichatHahaDylib/weichatHahaDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(SRCROOT)/weichatHahaDylib/wechatHook/xlslib/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libweichatHahaDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/weichatHahaDylib/wechatHook/Package/usr/lib",
+					"$(PROJECT_DIR)",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"weichatHahaDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF1346F922B103B8008E659C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				INFOPLIST_FILE = weichatHaha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiuxiaovip.apphome.weichatHaha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF1346FA22B103B8008E659C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				INFOPLIST_FILE = weichatHaha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiuxiaovip.apphome.weichatHaha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF13469222B103B8008E659C /* Build configuration list for PBXProject "weichatHaha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1346F322B103B8008E659C /* Debug */,
+				DF1346F422B103B8008E659C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1346F522B103B8008E659C /* Build configuration list for PBXNativeTarget "weichatHahaDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1346F622B103B8008E659C /* Debug */,
+				DF1346F722B103B8008E659C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1346F822B103B8008E659C /* Build configuration list for PBXNativeTarget "weichatHaha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1346F922B103B8008E659C /* Debug */,
+				DF1346FA22B103B8008E659C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF13468F22B103B8008E659C /* Project object */;
+}

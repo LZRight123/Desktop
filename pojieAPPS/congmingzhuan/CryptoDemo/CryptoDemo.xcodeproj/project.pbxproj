@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19940CB6E2D62267C7F8817F /* Pods_CryptoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8526C26D01BE593A201704C /* Pods_CryptoDemo.framework */; };
+		DF1DEA25231664350083828D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1DEA24231664350083828D /* AppDelegate.swift */; };
+		DF1DEA27231664350083828D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1DEA26231664350083828D /* ViewController.swift */; };
+		DF1DEA2A231664350083828D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1DEA28231664350083828D /* Main.storyboard */; };
+		DF1DEA2C231664360083828D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1DEA2B231664360083828D /* Assets.xcassets */; };
+		DF1DEA2F231664360083828D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1DEA2D231664360083828D /* LaunchScreen.storyboard */; };
+		DF1DEA41231664880083828D /* GMEllipticCurveCrypto+hash.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DEA3B231664880083828D /* GMEllipticCurveCrypto+hash.m */; };
+		DF1DEA42231664880083828D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DF1DEA3D231664880083828D /* README.md */; };
+		DF1DEA43231664880083828D /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DEA3F231664880083828D /* test.m */; };
+		DF1DEA44231664880083828D /* GMEllipticCurveCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = DF1DEA40231664880083828D /* GMEllipticCurveCrypto.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		747BEF10DB7E942AFDCDD051 /* Pods-CryptoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoDemo.release.xcconfig"; path = "Target Support Files/Pods-CryptoDemo/Pods-CryptoDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A8526C26D01BE593A201704C /* Pods_CryptoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1DEA21231664350083828D /* CryptoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1DEA24231664350083828D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF1DEA26231664350083828D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF1DEA29231664350083828D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF1DEA2B231664360083828D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF1DEA2E231664360083828D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF1DEA30231664360083828D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1DEA36231664720083828D /* CryptoDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CryptoDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF1DEA3B231664880083828D /* GMEllipticCurveCrypto+hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GMEllipticCurveCrypto+hash.m"; sourceTree = "<group>"; };
+		DF1DEA3C231664880083828D /* GMEllipticCurveCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMEllipticCurveCrypto.h; sourceTree = "<group>"; };
+		DF1DEA3D231664880083828D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DF1DEA3E231664880083828D /* GMEllipticCurveCrypto+hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMEllipticCurveCrypto+hash.h"; sourceTree = "<group>"; };
+		DF1DEA3F231664880083828D /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		DF1DEA40231664880083828D /* GMEllipticCurveCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMEllipticCurveCrypto.m; sourceTree = "<group>"; };
+		ED243F4F317C317CB79BE463 /* Pods-CryptoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoDemo.debug.xcconfig"; path = "Target Support Files/Pods-CryptoDemo/Pods-CryptoDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF1DEA1E231664350083828D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19940CB6E2D62267C7F8817F /* Pods_CryptoDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FCBF0FD487B83103E582830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8526C26D01BE593A201704C /* Pods_CryptoDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6203ECFC46740BC642517137 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED243F4F317C317CB79BE463 /* Pods-CryptoDemo.debug.xcconfig */,
+				747BEF10DB7E942AFDCDD051 /* Pods-CryptoDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF1DEA18231664350083828D = {
+			isa = PBXGroup;
+			children = (
+				DF1DEA23231664350083828D /* CryptoDemo */,
+				DF1DEA22231664350083828D /* Products */,
+				6203ECFC46740BC642517137 /* Pods */,
+				4FCBF0FD487B83103E582830 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF1DEA22231664350083828D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF1DEA21231664350083828D /* CryptoDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF1DEA23231664350083828D /* CryptoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DF1DEA36231664720083828D /* CryptoDemo-Bridging-Header.h */,
+				DF1DEA3A231664880083828D /* GMEllipticCurveCrypto */,
+				DF1DEA24231664350083828D /* AppDelegate.swift */,
+				DF1DEA26231664350083828D /* ViewController.swift */,
+				DF1DEA28231664350083828D /* Main.storyboard */,
+				DF1DEA2B231664360083828D /* Assets.xcassets */,
+				DF1DEA2D231664360083828D /* LaunchScreen.storyboard */,
+				DF1DEA30231664360083828D /* Info.plist */,
+			);
+			path = CryptoDemo;
+			sourceTree = "<group>";
+		};
+		DF1DEA3A231664880083828D /* GMEllipticCurveCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				DF1DEA3B231664880083828D /* GMEllipticCurveCrypto+hash.m */,
+				DF1DEA3C231664880083828D /* GMEllipticCurveCrypto.h */,
+				DF1DEA3D231664880083828D /* README.md */,
+				DF1DEA3E231664880083828D /* GMEllipticCurveCrypto+hash.h */,
+				DF1DEA3F231664880083828D /* test.m */,
+				DF1DEA40231664880083828D /* GMEllipticCurveCrypto.m */,
+			);
+			path = GMEllipticCurveCrypto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF1DEA20231664350083828D /* CryptoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1DEA33231664360083828D /* Build configuration list for PBXNativeTarget "CryptoDemo" */;
+			buildPhases = (
+				788CE2F0329E82B8CCD829C9 /* [CP] Check Pods Manifest.lock */,
+				DF1DEA1D231664350083828D /* Sources */,
+				DF1DEA1E231664350083828D /* Frameworks */,
+				DF1DEA1F231664350083828D /* Resources */,
+				7927C8A2C863BAC07F5E76FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoDemo;
+			productName = CryptoDemo;
+			productReference = DF1DEA21231664350083828D /* CryptoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF1DEA19231664350083828D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DF1DEA20231664350083828D = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+				};
+			};
+			buildConfigurationList = DF1DEA1C231664350083828D /* Build configuration list for PBXProject "CryptoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF1DEA18231664350083828D;
+			productRefGroup = DF1DEA22231664350083828D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF1DEA20231664350083828D /* CryptoDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF1DEA1F231664350083828D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1DEA2F231664360083828D /* LaunchScreen.storyboard in Resources */,
+				DF1DEA2C231664360083828D /* Assets.xcassets in Resources */,
+				DF1DEA42231664880083828D /* README.md in Resources */,
+				DF1DEA2A231664350083828D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		788CE2F0329E82B8CCD829C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7927C8A2C863BAC07F5E76FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoDemo/Pods-CryptoDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoDemo/Pods-CryptoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF1DEA1D231664350083828D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1DEA44231664880083828D /* GMEllipticCurveCrypto.m in Sources */,
+				DF1DEA27231664350083828D /* ViewController.swift in Sources */,
+				DF1DEA43231664880083828D /* test.m in Sources */,
+				DF1DEA25231664350083828D /* AppDelegate.swift in Sources */,
+				DF1DEA41231664880083828D /* GMEllipticCurveCrypto+hash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF1DEA28231664350083828D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1DEA29231664350083828D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF1DEA2D231664360083828D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1DEA2E231664360083828D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF1DEA31231664360083828D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF1DEA32231664360083828D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF1DEA34231664360083828D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED243F4F317C317CB79BE463 /* Pods-CryptoDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				INFOPLIST_FILE = CryptoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CryptoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoDemo/CryptoDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF1DEA35231664360083828D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747BEF10DB7E942AFDCDD051 /* Pods-CryptoDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				INFOPLIST_FILE = CryptoDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CryptoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CryptoDemo/CryptoDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF1DEA1C231664350083828D /* Build configuration list for PBXProject "CryptoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1DEA31231664360083828D /* Debug */,
+				DF1DEA32231664360083828D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1DEA33231664360083828D /* Build configuration list for PBXNativeTarget "CryptoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1DEA34231664360083828D /* Debug */,
+				DF1DEA35231664360083828D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF1DEA19231664350083828D /* Project object */;
+}

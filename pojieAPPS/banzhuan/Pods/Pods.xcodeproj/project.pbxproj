@@ -1,0 +1,1300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015E4778FDF18471243E25238880DC33 /* FLEXArgumentInputNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 942A089E46827432BA75D67EC7B2A12C /* FLEXArgumentInputNumberView.m */; };
+		017158669CEE64D632706E0ABF7D9C5C /* FLEXObjectRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CF32F517B24756431D281AD58AA9F /* FLEXObjectRef.m */; };
+		020D0806D448B7FE6E246BD63A392CE1 /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4F12B65F190AA6561B6B781EC9E2E8 /* FLEXArgumentInputFontsPickerView.m */; };
+		021BB654A56A506DCF19F62856E21CB8 /* FLEXDefaultEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E1DBDF24F43342F8C8E60921D39F85 /* FLEXDefaultEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		024F8A2E31F4083D3EF9564A3E9D0CE8 /* FLEXExplorerToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DDDF0916DE8B5E533AE6F4305ED95A0 /* FLEXExplorerToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		028B2A92799D020D7FF2F222AD5C1286 /* FLEXSQLiteDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 918A1BC394734898AB9D5A0CC7FD0988 /* FLEXSQLiteDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03BD595E626E5FEAD2B308E4BD6267C2 /* FLEXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 952BDC96CC478C81ECDA540F775AB8B0 /* FLEXWindow.m */; };
+		0EB184E5A7C453F130EB9955B83FA081 /* FLEXPropertyEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99408A380F663296ACFEF104A50C3F48 /* FLEXPropertyEditorViewController.m */; };
+		0FB385A8FA5C14F1AB4768CF1C2DA191 /* FLEXTableContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D88E74FBC05588B60BB643F69B228424 /* FLEXTableContentCell.m */; };
+		0FEBB78609AB8BD65A6B73326472EB75 /* FLEXMethodCallingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 839D978B0527CE87DF477305F93ED264 /* FLEXMethodCallingViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		117715785CC116972FB2F65BBAE65026 /* FLEXColorExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EBED826FA01479494652B7DF66FF1E /* FLEXColorExplorerViewController.m */; };
+		127DCF769332742A764E3E3FA99C4135 /* FLEXRealmDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C64A0890E9E81599FC138E606E5C34F /* FLEXRealmDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		12B74D945A5A096DE04831F99A9A605D /* FLEXMultiColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 202A07CFB0D86E50BF43DE39EA9E5FEB /* FLEXMultiColumnTableView.m */; };
+		15F7B65F5647294A5DEC78C49C04BBEC /* FLEXTableContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF88D55A55C6060227E17A8D8A6DADC /* FLEXTableContentViewController.m */; };
+		16098B27B2CF7C7CC28E7704A5E33756 /* FLEXToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B87FFD6A4B894037FAC37A637B14F2FF /* FLEXToolbarItem.m */; };
+		166AB11DFB34D63D12F1016EDBA5D3EB /* FLEXInstancesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9F21ABAC559B6937C6DD42DFBDC2D0 /* FLEXInstancesTableViewController.m */; };
+		16B5CEEF252D6F300D7A203B5D1900A6 /* FLEXMultilineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DCF8A4A77D9136E33EDF0AE547A1EF /* FLEXMultilineTableViewCell.m */; };
+		1724E69A1613EBA9A523F0CB9E7E2B0E /* FLEXNetworkSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694FDC242573D79968318C04BDB219E7 /* FLEXNetworkSettingsTableViewController.m */; };
+		17F17655EEDC4D69FABCB1CC036AEF5F /* FLEXArgumentInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B03E2F31FEFCB2AE13CF66DB4F849A /* FLEXArgumentInputTextView.m */; };
+		1CAAEE1EC319F7DFC9EE9DF4339FF26D /* FLEXNetworkHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0643B1A0FF48BD0F9F489D5995290FF /* FLEXNetworkHistoryTableViewController.m */; };
+		1D010F9DE5265DCE16C2503FC097456E /* FLEXHeapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E35D5138B38B44E0777FE1B56D136E9 /* FLEXHeapEnumerator.m */; };
+		1E61FFB465E19F983AA4864DC81EC4C8 /* FLEXOSLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01EC0E125EC56582BCF1C577799CD97 /* FLEXOSLogController.m */; };
+		1FE3EFE86B032797E0927F1183EB04AF /* FLEXColorExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B1D0442F02764FD87B4F5B8EEC0EC811 /* FLEXColorExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21278A1CC7F0D975DF3AC280E04436E1 /* FLEXFieldEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BC3362C37B93887794EB4B22D81F4 /* FLEXFieldEditorView.m */; };
+		240D31EC42777E79DB12946E90718302 /* FLEXArgumentInputStringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5766BF1637B751DFC43B1D7C87FE2E99 /* FLEXArgumentInputStringView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		24A128E40E1EBA847C8B2A877865B604 /* FLEXSystemLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5F555DFA702D78333138B16743CA9A /* FLEXSystemLogTableViewCell.m */; };
+		26DE5788661E85FEDA1ABCA5B6214836 /* FLEXArgumentInputTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C3DCD31B7F2D5581373DC6351DDB41 /* FLEXArgumentInputTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26EA67698092DE4CD92A854F8D3B2EC0 /* FLEXWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 44606F0C63D2CCE358BF197B8DC6EE86 /* FLEXWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C071BA61A2CF71D3F81D72477D461DE /* FLEXGlobalsTableViewControllerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = D074B0ABC35DBA812DE2D2CAA33EBE03 /* FLEXGlobalsTableViewControllerEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		304815754D526B127B93677DDECF2718 /* FLEXIvarEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ABB1E2423B4D898B950CE0C99D8B8 /* FLEXIvarEditorViewController.m */; };
+		30680F8B1122BE8595EF3C66FC9E6102 /* FLEXTableColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4AFECE91AA97CC687CB31C619DC2C7 /* FLEXTableColumnHeader.m */; };
+		32E0201A6E2709E8EDB7A2C25964B9FE /* FLEXKeyboardHelpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 58754661198D9EB850D643209CE3B797 /* FLEXKeyboardHelpViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3744D532C908A791C5A7F9744B5FAA15 /* FLEXImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D35365CF085BD796A577C26B82404A /* FLEXImagePreviewViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39E4EEB6BBDBC71E7262E8DB0E8AAEEE /* FLEXClassExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE738C01AF1B77778D317DBE3CA649B /* FLEXClassExplorerViewController.m */; };
+		3B985173BC1E34FBB77F5577517A9C35 /* FLEXSystemLogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC2B8166FC569B19722FE73A41309C /* FLEXSystemLogMessage.m */; };
+		3DD8C6706A0F6203B430FCB3847DF271 /* FLEXTableContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FAC8B1DFD6C3836E269186500A7D3E4 /* FLEXTableContentViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E99D4C2E86DF5EE02EC7410E5735AF3 /* FLEXLayerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B815CEE6672F872885A9E4D24C8355 /* FLEXLayerExplorerViewController.m */; };
+		3F6FE008054D6770DC12FFE816D46365 /* FLEXViewControllerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B01A8FF4AE2E5BFD8B307A475CB01EC /* FLEXViewControllerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		408973F458217A8503095AE3F69AF157 /* FLEXArgumentInputNotSupportedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A98D9EFFE75F639D69D0086CA541E /* FLEXArgumentInputNotSupportedView.m */; };
+		40C4B705B28310EAD92E0FD8E2A2C28A /* FLEXArgumentInputViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0524F7D681B74C7BFE0B393FCCDB0907 /* FLEXArgumentInputViewFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4129FDCF7E8A23AA417F74F73779E435 /* FLEXHierarchyTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 86005FB13524EB35A135D240D7986D3E /* FLEXHierarchyTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4140C34C0689258EFC92B38C39119ACB /* FLEXViewExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 572A467876496EFD1DB18E81E8328607 /* FLEXViewExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		43633C6C5D1E23A29A65FB5DFA360CEF /* FLEXExplorerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE98DF5DBCC586F985CA986EDC71A655 /* FLEXExplorerToolbar.m */; };
+		437445695874BA8954EB269A6183CD91 /* FLEXNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F41B8242E1FD55267E2029866E5DCF8 /* FLEXNetworkObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		44CCE644BFDB5B97EF14834D8D046569 /* FLEXInstancesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BAA903F2B36F63786C9D2E6386C5B555 /* FLEXInstancesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		467167AAAB25E89F0DB083C5C8428578 /* FLEXSystemLogTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB84CDB2EBF3A6064611A4F55AB6B7D /* FLEXSystemLogTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		470FC6FB2CD25AE04A25E84D920A9FDC /* FLEXArgumentInputFontsPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ECF2C1186DFD5C61684F9B5B6F5A642 /* FLEXArgumentInputFontsPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		490FD35BE2B32ADA4341EDFA850146A3 /* FLEXObjectExplorerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47766F84C44944C7A134ED7B692AE799 /* FLEXObjectExplorerFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A5A7982714CC9712B277F1DC0647823 /* FLEXCookiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F2AD7C4CAAE8215ACA7DC256DD440C /* FLEXCookiesTableViewController.m */; };
+		4A8C6F213457E5D75468C5EC8F8A7FBA /* FLEXRuntimeUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 059A86FC4B23EECC4D4FEF2C507C67CC /* FLEXRuntimeUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DF37E04FB4BD0F76D923A5DC8F7D841 /* FLEXHierarchyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B65F570FF33BBCFCD1FAC8BCAEA35F /* FLEXHierarchyTableViewController.m */; };
+		4E84F6B7DF9BEEC71FE50675BDB51AAC /* FLEXKeyboardShortcutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7D55DB5086918BD1ADE174F48D13AE /* FLEXKeyboardShortcutManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		514F2B8AD8D764E9E370368AE3517B6D /* FLEXIvarEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA20C2A13181EFAA277C44E66423651B /* FLEXIvarEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51C381CC576FCEACB1B096A89EB1BD0A /* FLEXLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A748CF6C442605500A91EC7549FFCE34 /* FLEXLibrariesTableViewController.m */; };
+		53606927982E01C3049437BEB08AE2E1 /* FLEXTableLeftCell.h in Headers */ = {isa = PBXBuildFile; fileRef = ED52C5138E3F3F9983A388422A49B16B /* FLEXTableLeftCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		536DED69883B3019BD8673B68D26263F /* FLEXMutableFieldEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A546BE4A3DA0095341CF4474437575 /* FLEXMutableFieldEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		557FEE2B48CA5AE2C9A7BD4C62A6FD09 /* FLEXTableListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0644777CA1410509411F1CF1AF931576 /* FLEXTableListViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55978E92B4AE1FFEF6AD5B88173D171F /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EC8D406502A49DF9EE5EA80A629D014 /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5619F2B92FD7B7E688E046A15B45C0A5 /* FLEXTableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0053B7074F0E33CBF97CA4698D352558 /* FLEXTableListViewController.m */; };
+		56FDD924AA4C009F4312AA065C80C546 /* FLEXGlobalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0E36E66069A62A27D3E5FFBBD84EA9 /* FLEXGlobalsTableViewController.m */; };
+		578EDD3A0653F87140657B3B506BDEC1 /* FLEXArgumentInputStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = F574892F0C6812019798FED39E4C4417 /* FLEXArgumentInputStringView.m */; };
+		5CAFFC1ED522A70B9C092BF5C76CBF98 /* FLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A06DCB0B5BA03F57B80768F720B2459B /* FLEXManager.m */; };
+		5E5FDE5DB0DED3279636A8E196704634 /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B08B35BA7848D33F97F448CAE1D672C /* FLEXArgumentInputFontView.m */; };
+		5F1D9E00439CFAFFFB25F65384677EE4 /* FLEXTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 59EA8CC77BD8639E80111B2CBF3D49C0 /* FLEXTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FD7D9B94B468FAA854071C696617B47 /* FLEXArgumentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D4A5A713A8AE5BB43266C99358AAA8 /* FLEXArgumentInputView.m */; };
+		5FF2E9D3D51AB877DC049BE69CC729A7 /* FLEXUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 195158DBB643A6C7DCC2072F18DFF36E /* FLEXUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61496C03D44026B1F519DEBEEDD436C4 /* FLEXFileBrowserFileOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE2668E66344294EF905C0F9FBFA2CA /* FLEXFileBrowserFileOperationController.m */; };
+		614ED9A2E2C5A92C37120E93153323BB /* FLEXFileBrowserFileOperationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 745679354557F8850CB1BF218343E0A7 /* FLEXFileBrowserFileOperationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61751D468E6F16D4477FED745D750363 /* FLEXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58B97BFE5DB430DD8F8F3AFD56A2D0D /* FLEXWebViewController.m */; };
+		622620CF9DBA570C93EC3481015A2116 /* FLEXNetworkCurlLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 19267BACD183BBA33729C328A191E181 /* FLEXNetworkCurlLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62B3A0D6854D231AF9F83912BE3844B8 /* FLEXNetworkTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F0318FF054CA0C008B0392B2CEE97E /* FLEXNetworkTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6391047289E2D97354D09A4B56A0F7BA /* FLEXSystemLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E9DF1076BE3D63CBB94DF65EF1875 /* FLEXSystemLogTableViewController.m */; };
+		63D066E9BF1B57B8DE41C68FF31CA664 /* FLEXObjectExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 482DC3E83295255589564AE1DAF7E6CF /* FLEXObjectExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66C96754ED708FD9B6D17625CB860814 /* FLEXArrayExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAB517A9235C4812F2F5C3418D45667 /* FLEXArrayExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68727199946721A688C638D68903D4C9 /* FLEXFieldEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1700235285AC4A4F4DFF133AE5A2B8BD /* FLEXFieldEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6AA19A02933E0DACC1BF3B743B867F29 /* FLEXExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AAE2C0B4FBB38B606DDD70FAB91614 /* FLEXExplorerViewController.m */; };
+		6AE35EF3FE9DD4FF8227A53B85169C19 /* FLEXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F992A3E561888F8F581FA8B6FD9FAA7C /* FLEXNetworkTransaction.m */; };
+		6AF8F5AB68E72A58C4C0C90BD749E13F /* FLEXMutableFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B934B67882E5040391B60F69DEB0FFC4 /* FLEXMutableFieldEditorViewController.m */; };
+		6B40230C7133B994B8855807CB46572D /* FLEXMethodCallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E60ECAC1F0129483ED0ED5BE6CF23 /* FLEXMethodCallingViewController.m */; };
+		6EC62045402B0E7C82E621EFA28B119A /* FLEXObjectExplorerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBD085370596ED264DC1A9D59FEA792 /* FLEXObjectExplorerFactory.m */; };
+		70B7C1CCF262AB087D03FCB58FE9731E /* FLEXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8D8A5DC947BCA918F5AE5A72EB6A8 /* FLEXTableView.m */; };
+		748B138C44EDEF1222085F34A1A3B9F6 /* FLEXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD59BAC2D17B8EBAEF8489D9AD6F32B /* FLEXResources.m */; };
+		79428518BD82C88839456AB22791623B /* FLEXSetExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7E3D6A2E655EE727AC423072724FA0 /* FLEXSetExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7B4501107A0A6978DD952C34113CFCB9 /* FLEXDefaultEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3006CB60199D93BC979DD0C1B16D69 /* FLEXDefaultEditorViewController.m */; };
+		7ED063AAE24BC624FD6677A3F6CF2873 /* FLEXArgumentInputView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C737F81E9BB86FCEC49B65CD68E6042 /* FLEXArgumentInputView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		82FFCF96AEC647DFE7CBC93B28612062 /* FLEXDictionaryExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C532F888B7DE5BF4A76C65F35329286B /* FLEXDictionaryExplorerViewController.m */; };
+		83909600B981FAA949DA6A442528D731 /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D61EC0CE0098F59A59B960E4841D48B /* FLEXArgumentInputColorView.m */; };
+		841133B88E1E3930EBDE60F344A8F862 /* FLEXTableColumnHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECEB66F8B465B4CF2602D4BED3F6771 /* FLEXTableColumnHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84B37AC7AF9C4D822D8EE4DDBA16A7CD /* FLEXViewExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E62B4D71416C754CA90208C5B4D2AC4 /* FLEXViewExplorerViewController.m */; };
+		860672DF3F8C25C7F81FC4513B85113B /* FLEXArgumentInputSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D59602E877C3994DF96B7B09CFD68027 /* FLEXArgumentInputSwitchView.m */; };
+		8876C7C6D69C21E6A73C7632B1540007 /* FLEXLibrariesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E95BEEB5D562A6536D8FD63494F1F61 /* FLEXLibrariesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B30DE50A76536618559EA7043DBEE4E /* FLEXViewControllerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 756A58F667B615F4DC983E0F7C732D78 /* FLEXViewControllerExplorerViewController.m */; };
+		8C2B2359D885FD170A895DA68EF96A5C /* FLEXExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDCF267BD26DD1482ADBE12374C2879 /* FLEXExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8C3327A3A40382F81EF9355056F6AC80 /* FLEXKeyboardHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5BEF6E0631B3EA1C9B99787E91E1E0 /* FLEXKeyboardHelpViewController.m */; };
+		8E0C992FF9C114C0EB6888B5D13BCECC /* FLEXImageExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E460A5CFFE0B7E4CE0D4EC3B9966F5 /* FLEXImageExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E86964B00D6153D25C5C5A1DA472798 /* FLEXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAECD15C2124CD52C601AD0A2802E9B /* FLEXManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8F9A10FBD66CEF488F6397AEFDF8A448 /* FLEXClassesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A99ECAA6D94B91B4CD787F3F7E077A3E /* FLEXClassesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		94D912520DE03BFC56AB7D0B3C2322EA /* FLEXFileBrowserTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A644ECFC68DEC1A10D3761A843091828 /* FLEXFileBrowserTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		970C51956D54F20485EF1E2D82419938 /* Pods-banzhuan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B690B76DF94E1118958C02267C84CD3 /* Pods-banzhuan-dummy.m */; };
+		9733948F20CE643FCE42036BA2D9772A /* FLEXSubtitleTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 033387506090DFDE9B83684619B0ED0E /* FLEXSubtitleTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9736608960F1751E258B3D63D9C49F8B /* FLEXRealmDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 790F94EE4D502E4FB85D116E20C1D8A5 /* FLEXRealmDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		984EFF91FA9484EC2E66BC044BD502CE /* FLEXFileBrowserSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F1AEDAAD7F38FE3B46A1CA93F5F6 /* FLEXFileBrowserSearchOperation.m */; };
+		990D4ADC1E49FA305336C429D388A165 /* FLEXArgumentInputJSONObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BD4930C777B9523E399F93432EE8E1F /* FLEXArgumentInputJSONObjectView.m */; };
+		9BD16074669B74217ABB1011CFF761E7 /* FLEXNetworkHistoryTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA8E090A4C7F7FC235ACA6936A8A4C3A /* FLEXNetworkHistoryTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BE57B6FA0812814616A6C88E032F667 /* FLEXObjcInternal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C428904A816396CB133EEBE500092 /* FLEXObjcInternal.mm */; };
+		9D03C0A6DA2F258F06CC382D0396E182 /* FLEXArgumentInputJSONObjectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 480BC79F5DB0B3F9C7E2955FD82F50D3 /* FLEXArgumentInputJSONObjectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D28439D3E6EF1AFDF1F1D0DB0387891 /* FLEXImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DDBE7360F0F80BEBD64678F245A87 /* FLEXImagePreviewViewController.m */; };
+		9E5A4AA925A929C08B6F45BC192B0A36 /* FLEXArgumentInputStructView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1037F92CBBAF331ACBF8D26C9C54EE9E /* FLEXArgumentInputStructView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9EF3B948E43AF72F7BEA45113AF5FA04 /* FLEXSystemLogTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F06D99FCC55E5A3B2360E6F1895199F6 /* FLEXSystemLogTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F1FD62C01BDD02D45A0BC9870C1DB2A /* FLEXResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D73AEA4445FE706E831E8DEBF23664E /* FLEXResources.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FE5D89E24E5839DE0C4779649D06C6D /* FLEXNetworkTransactionDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F40B5C29DF69FF95B58A66F76CB2464F /* FLEXNetworkTransactionDetailTableViewController.m */; };
+		A0D0650DEFE9A6B71DCD86FBDEEEBAFE /* FLEXObjcInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 130A071E8596BB97E8DB6642551A1F8B /* FLEXObjcInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1A6BB77B86796EC592FB4AA40826B0C /* FLEXMultilineTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = FC3F2F49010BA47BEF2C0DAC3CB93DDD /* FLEXMultilineTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2A6141316D2979711198CBA1C320557 /* FLEXArgumentInputNotSupportedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F650965805A08AE9667C79EBB17DE5B /* FLEXArgumentInputNotSupportedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A33D9450BDAA401CB7A7BC80EF1636C2 /* FLEXClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E967942A83764ECC8C66EB19ECEFC4 /* FLEXClassesTableViewController.m */; };
+		A57DEB3DD42469F054AA726DB3B893AC /* FLEXWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 7429C35E04903D008C9EBC74544D7D95 /* FLEXWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6634175015A08A4596A458E7208F93A /* FLEXSetExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A443071CDDA9707759985AB4DDFA468 /* FLEXSetExplorerViewController.m */; };
+		A71029FCEE39C108A255D27131AA674D /* FLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D13B361E8C3FE7E3430A6D3429F9049 /* FLEXNetworkObserver.m */; };
+		A774082E520EA776B9A383E9690DF675 /* Pods-banzhuanDylib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2512307DC1FB527E702A503494889961 /* Pods-banzhuanDylib-dummy.m */; };
+		AB41883FAE30F6F113BF6EFFF9E8D775 /* FLEXImageExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C9CFB74F6FEA83E72015E07DDE6DB2 /* FLEXImageExplorerViewController.m */; };
+		AF6A4536C7F73FC3EEEE4636A623351F /* FLEXSystemLogMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C7344B0357611386A763DF3D72C40A2 /* FLEXSystemLogMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AFA2B985B8674DE0B197A8C97E16600E /* FLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E0A174E604490A36C1C18866FA249F /* FLEX-dummy.m */; };
+		B0383D2284396BCB979B413E88180654 /* FLEXLiveObjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484DE8051A4C9A7A8463FB2D83BDEF8 /* FLEXLiveObjectsTableViewController.m */; };
+		B2DC2D9870C94ED91C14457FC926EF82 /* FLEXArgumentInputFontView.h in Headers */ = {isa = PBXBuildFile; fileRef = D8A3D0DCB5B9B7473934850880C8DF6D /* FLEXArgumentInputFontView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3B87C99EAF21AAE4ED93B5BA5970A18 /* FLEXManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 40EF49E8FA0A975BA0A2F7BB8C7157E0 /* FLEXManager+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B41F3C600C965CCD825C6A5D0EEB3B47 /* FLEXNetworkTransactionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC198B78A4632B38D56015BBEA15728 /* FLEXNetworkTransactionTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9FC25E0E0089485D6C60C0373E4C26F /* FLEXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C79CE977B6430853BA703C5B8E9B76 /* FLEXNetworkRecorder.m */; };
+		BA3252AD2B1A11BEA68FEF07E24A7D63 /* FLEXObjectRef.h in Headers */ = {isa = PBXBuildFile; fileRef = BC1B7F432664288825C54261C3E042E6 /* FLEXObjectRef.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD0BFC1A84B921D598F63E5726728BD5 /* FLEXTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D82BBF8FB1445F7895C3090B7AF3BE17 /* FLEXTableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BDCA8A4D1C3F5DE04666162CCD4B53C6 /* FLEXDictionaryExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D00FFE66DFC012F4D617F8AA2228E3 /* FLEXDictionaryExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BDD3FE42A951E8937DE2D7B1B4FEB93C /* FLEXSubtitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1E664D76341EA34780A260891CF58 /* FLEXSubtitleTableViewCell.m */; };
+		BE232D312BA626D41EE5029CF31AD491 /* FLEXArgumentInputViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F88C3C9319D342D790626D2C26392FE8 /* FLEXArgumentInputViewFactory.m */; };
+		BFED830A04A72391889F77D116A8FFAE /* FLEXLogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49906E42456AE7EE0BB68165F64421B4 /* FLEXLogController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C07DAC45881AD7337FA7380B7CF4166D /* FLEXFileBrowserSearchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6090AE67E7F77470D7B09B9C18BBBD8D /* FLEXFileBrowserSearchOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C10AB0A6A6B9FE65B14DDDDED9B6ADB1 /* FLEXHierarchyTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B0EDBAD8EC303CFFA438879EC3D5CE8A /* FLEXHierarchyTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2635B2F4891CE8F4E3FFEC4A9522814 /* ActivityStreamAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9D8091733D76834D59A752104D6CD4 /* ActivityStreamAPI.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C38781CCEB7F36572453C7EBD56F8356 /* FLEXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C9FD0BEC7DEF97C3FD0417D96ECD18 /* FLEXTableViewCell.m */; };
+		C3FBB4C1871A8883A3EF301B3DFB95AE /* FLEXDefaultsExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7684E61588D83C45503FC202FF36F3C2 /* FLEXDefaultsExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C70B708DD6C2A3603DD62EF57F4948C0 /* FLEXArrayExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19492D06CECFB7EA19215D762209887F /* FLEXArrayExplorerViewController.m */; };
+		C71CE96D0C0343BB11061FEEDA31B5A3 /* FLEXCookiesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AC1A18CF7A4CC3408ABC6BEE316CCC1D /* FLEXCookiesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8137EF2C2637D18035EAB6BA3BFB144 /* FLEXFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC279277813253AB352018795B0DEE /* FLEXFieldEditorViewController.m */; };
+		C87B8C939D885AC59A5E46695D702937 /* FLEXDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A2DC797C89358DA17FCB477D343358E5 /* FLEXDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C8FE127F35C2F6BBFFE64D54F769EE67 /* FLEXASLLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = D483C19771B7FD6768B9483D9BE15EBD /* FLEXASLLogController.m */; };
+		C940500518110D1ABBB6ADE9848EB324 /* FLEXLiveObjectsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E46A0FF3DC9A19FD20DDB9965EC6DF60 /* FLEXLiveObjectsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CC479007E8E7E5C73AAC45AC0FDDAA6A /* FLEXRealmDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 857F90ACABA8AFD608B0FA4E8E68780D /* FLEXRealmDatabaseManager.m */; };
+		CCC91DCE8DD8CB984F8AF6F1DCFC2988 /* FLEXNetworkSettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7910496439D9E95057644DC1429F7CB6 /* FLEXNetworkSettingsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE3A95AC35411F8C03C8D2B7DC6AA92B /* FLEXNetworkRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE9DE522BEC145AC5C35C74BBCD2752 /* FLEXNetworkRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4BBF3E09363A8D7F809433F9B36397C /* FLEXArgumentInputSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = B62157A1386E764A1967577735F3E380 /* FLEXArgumentInputSwitchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4CD559E6422C942C41485E4C27361EA /* FLEXTableContentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD65CD8842E25975E16E3FE2750A06F /* FLEXTableContentCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D634129A497001F1ED5D62A98543654F /* FLEXToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F64EA88ED3CA169E30FB857B2F6C012 /* FLEXToolbarItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D706A8532A9152A6D80F01CB47143CDC /* FLEXASLLogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 096933985C9371861D05F7240F9D8334 /* FLEXASLLogController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D913A91C4E2CBBE92BAD9624E8F6E462 /* FLEXArgumentInputStructView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DDAA662E84D60396B9CCA413A61FAD /* FLEXArgumentInputStructView.m */; };
+		D93540BA477773432CA247DBA3C31BA2 /* FLEXFileBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478D9AAFE107BA4A9A434A0C43D2B2DF /* FLEXFileBrowserTableViewController.m */; };
+		DA53E639BDCC0A866F634D1C86FC9092 /* FLEXClassExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C3CC2A702311E27E80C036E354CD60E /* FLEXClassExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DD9F0E9AD63F4B2EFF0884EB6E560296 /* FLEXTableLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC6D0170174C06E1D0641EBA17EC87 /* FLEXTableLeftCell.m */; };
+		DE420B5D0C41E93452935750DC051AFD /* FLEXNetworkTransactionDetailTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CF559B67C5C8369F92589DBD973CFB /* FLEXNetworkTransactionDetailTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF70242423B7BBE6408BBE6FFD8B0102 /* FLEXSQLiteDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 833D2D0ED05922A4476FE5B651EDA3C7 /* FLEXSQLiteDatabaseManager.m */; };
+		E2DA3BC9DDDB40A3BADCE1E4D370F1B0 /* FLEXOSLogController.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FAF2324CE6A5F772C13BC123796CB8 /* FLEXOSLogController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3E359D5EE0C30437531E716C6A69418 /* FLEXHierarchyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E895959B135CFB4F8FD16FFC0474DDD /* FLEXHierarchyTableViewCell.m */; };
+		E71FB5805E40114263B839AED26AAFEE /* FLEXGlobalsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C04F89335A851C6802203BA46B7B95EB /* FLEXGlobalsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E836FE77691B671F737D336205D61225 /* FLEXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B22EFC4789072DCF70A05129506EFFE /* FLEXUtility.m */; };
+		E8D35A2A67FD607FCE8927338F8DBD30 /* FLEXKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A13E3F0F2AA156BF4F19A9CE5300321 /* FLEXKeyboardShortcutManager.m */; };
+		E985F36BBFB399759BB74784EBE21137 /* FLEXNetworkCurlLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D145C97EE81C2F5CA842CD14A08B906F /* FLEXNetworkCurlLogger.m */; };
+		EB31AA4A56AF7025D094D276D749ADF9 /* FLEXGlobalsTableViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = F367F6C16FC3B9C243A9373371DE5965 /* FLEXGlobalsTableViewControllerEntry.m */; };
+		EC55E0CBEA23F08BE7348359F2FA6067 /* FLEXObjectExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E17B9E105BC2A9BF548B38231F58A9F6 /* FLEXObjectExplorerViewController.m */; };
+		EEFFDBC9F2609F209A56E8D55623B45A /* FLEXArgumentInputColorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C750CE2E13F32773B467705D20EDE6C /* FLEXArgumentInputColorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0D199F0129534BA5610C0F602D5DE5C /* FLEXDefaultsExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8BF6BCD9941104A85F049E5A7827886 /* FLEXDefaultsExplorerViewController.m */; };
+		F275A70D059883CB593F616F60ED808E /* FLEXLayerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F8780EBCDC9BD1C3B7D408E550EBC90 /* FLEXLayerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F34624A0F7A52095833B02DE28597123 /* FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 03915763078E9ACDD42B29E267B0F76F /* FLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8B90ECE8F92F2E795D7B3DC0AC82DD1 /* FLEXMultiColumnTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52ED1C25C1D4855298EED03915442DF3 /* FLEXMultiColumnTableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA40AAAC4224D07DDF1089F5B6CFFB2D /* FLEXPropertyEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B072E6CE8C851CB7D537D1BD339ECF9 /* FLEXPropertyEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FAA259CF695C3C38641F268281C9A987 /* FLEXNetworkTransactionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C44AD08AD9A1C0B931D6DC4C128A0ADD /* FLEXNetworkTransactionTableViewCell.m */; };
+		FAD351BE5E0AC1E5B3C0AD9354A66641 /* FLEXArgumentInputNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5141874CC196967E7A0BB88A56C0B179 /* FLEXArgumentInputNumberView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FBD55F93F3027861ECAFDA7D430CC692 /* FLEXArgumentInputDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = F100BFA92D1747F6E7FBA03DCEEE541C /* FLEXArgumentInputDateView.m */; };
+		FC22D1F05C6E057A88DFDF15775E8F30 /* FLEXRuntimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3869EA7C334B69E4D0FC2E28A8F80DAB /* FLEXRuntimeUtility.m */; };
+		FC8C7DA5C650B4DEC437751E8B815261 /* FLEXFieldEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9A52E4CE50DEC0DC6D4E1EF58FCF91 /* FLEXFieldEditorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FE3ECBAC719936B21766A1D054A5C28E /* FLEXHeapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = D36CDC758642B89102ED94C6AED707C8 /* FLEXHeapEnumerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A4D035FD196035EE93C7DF1B983BBC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2118323B990804522A46665B42C81135;
+			remoteInfo = FLEX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0053B7074F0E33CBF97CA4698D352558 /* FLEXTableListViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableListViewController.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableListViewController.m; sourceTree = "<group>"; };
+		00AAE2C0B4FBB38B606DDD70FAB91614 /* FLEXExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXExplorerViewController.m; path = Classes/ExplorerInterface/FLEXExplorerViewController.m; sourceTree = "<group>"; };
+		033387506090DFDE9B83684619B0ED0E /* FLEXSubtitleTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSubtitleTableViewCell.h; path = Classes/ObjectExplorers/Views/FLEXSubtitleTableViewCell.h; sourceTree = "<group>"; };
+		03915763078E9ACDD42B29E267B0F76F /* FLEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEX.h; path = Classes/FLEX.h; sourceTree = "<group>"; };
+		0484DE8051A4C9A7A8463FB2D83BDEF8 /* FLEXLiveObjectsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLiveObjectsTableViewController.m; path = Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.m; sourceTree = "<group>"; };
+		0524F7D681B74C7BFE0B393FCCDB0907 /* FLEXArgumentInputViewFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputViewFactory.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.h; sourceTree = "<group>"; };
+		059A86FC4B23EECC4D4FEF2C507C67CC /* FLEXRuntimeUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRuntimeUtility.h; path = Classes/Utility/FLEXRuntimeUtility.h; sourceTree = "<group>"; };
+		0644777CA1410509411F1CF1AF931576 /* FLEXTableListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableListViewController.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableListViewController.h; sourceTree = "<group>"; };
+		06B815CEE6672F872885A9E4D24C8355 /* FLEXLayerExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLayerExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXLayerExplorerViewController.m; sourceTree = "<group>"; };
+		096933985C9371861D05F7240F9D8334 /* FLEXASLLogController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXASLLogController.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXASLLogController.h; sourceTree = "<group>"; };
+		0C7344B0357611386A763DF3D72C40A2 /* FLEXSystemLogMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogMessage.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.h; sourceTree = "<group>"; };
+		0C7D55DB5086918BD1ADE174F48D13AE /* FLEXKeyboardShortcutManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyboardShortcutManager.h; path = Classes/Utility/FLEXKeyboardShortcutManager.h; sourceTree = "<group>"; };
+		0CDCF267BD26DD1482ADBE12374C2879 /* FLEXExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXExplorerViewController.h; path = Classes/ExplorerInterface/FLEXExplorerViewController.h; sourceTree = "<group>"; };
+		0ECF2C1186DFD5C61684F9B5B6F5A642 /* FLEXArgumentInputFontsPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputFontsPickerView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.h; sourceTree = "<group>"; };
+		0F41B8242E1FD55267E2029866E5DCF8 /* FLEXNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkObserver.h; path = Classes/Network/PonyDebugger/FLEXNetworkObserver.h; sourceTree = "<group>"; };
+		0F650965805A08AE9667C79EBB17DE5B /* FLEXArgumentInputNotSupportedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputNotSupportedView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.h; sourceTree = "<group>"; };
+		1037F92CBBAF331ACBF8D26C9C54EE9E /* FLEXArgumentInputStructView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputStructView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.h; sourceTree = "<group>"; };
+		12E967942A83764ECC8C66EB19ECEFC4 /* FLEXClassesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXClassesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXClassesTableViewController.m; sourceTree = "<group>"; };
+		130A071E8596BB97E8DB6642551A1F8B /* FLEXObjcInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjcInternal.h; path = Classes/Utility/FLEXObjcInternal.h; sourceTree = "<group>"; };
+		1700235285AC4A4F4DFF133AE5A2B8BD /* FLEXFieldEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFieldEditorViewController.h; path = Classes/Editing/FLEXFieldEditorViewController.h; sourceTree = "<group>"; };
+		19267BACD183BBA33729C328A191E181 /* FLEXNetworkCurlLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkCurlLogger.h; path = Classes/Network/FLEXNetworkCurlLogger.h; sourceTree = "<group>"; };
+		19492D06CECFB7EA19215D762209887F /* FLEXArrayExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArrayExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXArrayExplorerViewController.m; sourceTree = "<group>"; };
+		195158DBB643A6C7DCC2072F18DFF36E /* FLEXUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXUtility.h; path = Classes/Utility/FLEXUtility.h; sourceTree = "<group>"; };
+		1A7C428904A816396CB133EEBE500092 /* FLEXObjcInternal.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = FLEXObjcInternal.mm; path = Classes/Utility/FLEXObjcInternal.mm; sourceTree = "<group>"; };
+		1B08B35BA7848D33F97F448CAE1D672C /* FLEXArgumentInputFontView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputFontView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.m; sourceTree = "<group>"; };
+		1B690B76DF94E1118958C02267C84CD3 /* Pods-banzhuan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-banzhuan-dummy.m"; sourceTree = "<group>"; };
+		1BB84CDB2EBF3A6064611A4F55AB6B7D /* FLEXSystemLogTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogTableViewCell.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.h; sourceTree = "<group>"; };
+		1C3CC2A702311E27E80C036E354CD60E /* FLEXClassExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXClassExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXClassExplorerViewController.h; sourceTree = "<group>"; };
+		1C64A0890E9E81599FC138E606E5C34F /* FLEXRealmDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRealmDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDatabaseManager.h; sourceTree = "<group>"; };
+		1D13B361E8C3FE7E3430A6D3429F9049 /* FLEXNetworkObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkObserver.m; path = Classes/Network/PonyDebugger/FLEXNetworkObserver.m; sourceTree = "<group>"; };
+		202A07CFB0D86E50BF43DE39EA9E5FEB /* FLEXMultiColumnTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMultiColumnTableView.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXMultiColumnTableView.m; sourceTree = "<group>"; };
+		2512307DC1FB527E702A503494889961 /* Pods-banzhuanDylib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-banzhuanDylib-dummy.m"; sourceTree = "<group>"; };
+		26C3DCD31B7F2D5581373DC6351DDB41 /* FLEXArgumentInputTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputTextView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.h; sourceTree = "<group>"; };
+		2CBC6D0170174C06E1D0641EBA17EC87 /* FLEXTableLeftCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableLeftCell.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableLeftCell.m; sourceTree = "<group>"; };
+		2DD65CD8842E25975E16E3FE2750A06F /* FLEXTableContentCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableContentCell.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentCell.h; sourceTree = "<group>"; };
+		2ED20CD028705CA405D4BD25C4A8B09F /* Pods-banzhuanDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-banzhuanDylib.release.xcconfig"; sourceTree = "<group>"; };
+		36DCF8A4A77D9136E33EDF0AE547A1EF /* FLEXMultilineTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMultilineTableViewCell.m; path = Classes/ObjectExplorers/Views/FLEXMultilineTableViewCell.m; sourceTree = "<group>"; };
+		3869EA7C334B69E4D0FC2E28A8F80DAB /* FLEXRuntimeUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXRuntimeUtility.m; path = Classes/Utility/FLEXRuntimeUtility.m; sourceTree = "<group>"; };
+		3C7DDBE7360F0F80BEBD64678F245A87 /* FLEXImagePreviewViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXImagePreviewViewController.m; path = Classes/ViewHierarchy/FLEXImagePreviewViewController.m; sourceTree = "<group>"; };
+		3CEC2B8166FC569B19722FE73A41309C /* FLEXSystemLogMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogMessage.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogMessage.m; sourceTree = "<group>"; };
+		3E95BEEB5D562A6536D8FD63494F1F61 /* FLEXLibrariesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLibrariesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.h; sourceTree = "<group>"; };
+		408A65CE96B1814AE921665FADB03849 /* Pods-banzhuanDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-banzhuanDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		40EF49E8FA0A975BA0A2F7BB8C7157E0 /* FLEXManager+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FLEXManager+Private.h"; path = "Classes/Manager/FLEXManager+Private.h"; sourceTree = "<group>"; };
+		436E9DF1076BE3D63CBB94DF65EF1875 /* FLEXSystemLogTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogTableViewController.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewController.m; sourceTree = "<group>"; };
+		43E1DBDF24F43342F8C8E60921D39F85 /* FLEXDefaultEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDefaultEditorViewController.h; path = Classes/Editing/FLEXDefaultEditorViewController.h; sourceTree = "<group>"; };
+		44606F0C63D2CCE358BF197B8DC6EE86 /* FLEXWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXWebViewController.h; path = Classes/GlobalStateExplorers/FLEXWebViewController.h; sourceTree = "<group>"; };
+		47766F84C44944C7A134ED7B692AE799 /* FLEXObjectExplorerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectExplorerFactory.h; path = Classes/ObjectExplorers/FLEXObjectExplorerFactory.h; sourceTree = "<group>"; };
+		478D9AAFE107BA4A9A434A0C43D2B2DF /* FLEXFileBrowserTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserTableViewController.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.m; sourceTree = "<group>"; };
+		480BC79F5DB0B3F9C7E2955FD82F50D3 /* FLEXArgumentInputJSONObjectView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputJSONObjectView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.h; sourceTree = "<group>"; };
+		482DC3E83295255589564AE1DAF7E6CF /* FLEXObjectExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXObjectExplorerViewController.h; sourceTree = "<group>"; };
+		49906E42456AE7EE0BB68165F64421B4 /* FLEXLogController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLogController.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXLogController.h; sourceTree = "<group>"; };
+		49D00FFE66DFC012F4D617F8AA2228E3 /* FLEXDictionaryExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDictionaryExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXDictionaryExplorerViewController.h; sourceTree = "<group>"; };
+		4A3ABB1E2423B4D898B950CE0C99D8B8 /* FLEXIvarEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXIvarEditorViewController.m; path = Classes/Editing/FLEXIvarEditorViewController.m; sourceTree = "<group>"; };
+		4BF88D55A55C6060227E17A8D8A6DADC /* FLEXTableContentViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableContentViewController.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.m; sourceTree = "<group>"; };
+		4D4AFECE91AA97CC687CB31C619DC2C7 /* FLEXTableColumnHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableColumnHeader.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableColumnHeader.m; sourceTree = "<group>"; };
+		4D61EC0CE0098F59A59B960E4841D48B /* FLEXArgumentInputColorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputColorView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.m; sourceTree = "<group>"; };
+		4DC8F1AEDAAD7F38FE3B46A1CA93F5F6 /* FLEXFileBrowserSearchOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserSearchOperation.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.m; sourceTree = "<group>"; };
+		4EC8D406502A49DF9EE5EA80A629D014 /* FLEXArgumentInputDateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputDateView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.h; sourceTree = "<group>"; };
+		5121CD1880CE7A4512848E2C227E6AD4 /* Pods-banzhuanDylib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-banzhuanDylib-acknowledgements.plist"; sourceTree = "<group>"; };
+		5141874CC196967E7A0BB88A56C0B179 /* FLEXArgumentInputNumberView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputNumberView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.h; sourceTree = "<group>"; };
+		52ED1C25C1D4855298EED03915442DF3 /* FLEXMultiColumnTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMultiColumnTableView.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXMultiColumnTableView.h; sourceTree = "<group>"; };
+		55B1E664D76341EA34780A260891CF58 /* FLEXSubtitleTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSubtitleTableViewCell.m; path = Classes/ObjectExplorers/Views/FLEXSubtitleTableViewCell.m; sourceTree = "<group>"; };
+		572A467876496EFD1DB18E81E8328607 /* FLEXViewExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXViewExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXViewExplorerViewController.h; sourceTree = "<group>"; };
+		5766BF1637B751DFC43B1D7C87FE2E99 /* FLEXArgumentInputStringView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputStringView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.h; sourceTree = "<group>"; };
+		58754661198D9EB850D643209CE3B797 /* FLEXKeyboardHelpViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXKeyboardHelpViewController.h; path = Classes/Utility/FLEXKeyboardHelpViewController.h; sourceTree = "<group>"; };
+		58918FE10C1A7D5C99010017484BEFDE /* Pods-banzhuan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-banzhuan.release.xcconfig"; sourceTree = "<group>"; };
+		59EA8CC77BD8639E80111B2CBF3D49C0 /* FLEXTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableViewCell.h; path = Classes/ObjectExplorers/Views/FLEXTableViewCell.h; sourceTree = "<group>"; };
+		5A443071CDDA9707759985AB4DDFA468 /* FLEXSetExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSetExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXSetExplorerViewController.m; sourceTree = "<group>"; };
+		5B01A8FF4AE2E5BFD8B307A475CB01EC /* FLEXViewControllerExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXViewControllerExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXViewControllerExplorerViewController.h; sourceTree = "<group>"; };
+		5B22EFC4789072DCF70A05129506EFFE /* FLEXUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXUtility.m; path = Classes/Utility/FLEXUtility.m; sourceTree = "<group>"; };
+		5CAB517A9235C4812F2F5C3418D45667 /* FLEXArrayExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArrayExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXArrayExplorerViewController.h; sourceTree = "<group>"; };
+		5FAC8B1DFD6C3836E269186500A7D3E4 /* FLEXTableContentViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableContentViewController.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentViewController.h; sourceTree = "<group>"; };
+		6090AE67E7F77470D7B09B9C18BBBD8D /* FLEXFileBrowserSearchOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserSearchOperation.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserSearchOperation.h; sourceTree = "<group>"; };
+		620BC3362C37B93887794EB4B22D81F4 /* FLEXFieldEditorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFieldEditorView.m; path = Classes/Editing/FLEXFieldEditorView.m; sourceTree = "<group>"; };
+		64E0A174E604490A36C1C18866FA249F /* FLEX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FLEX-dummy.m"; sourceTree = "<group>"; };
+		66C9CFB74F6FEA83E72015E07DDE6DB2 /* FLEXImageExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXImageExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXImageExplorerViewController.m; sourceTree = "<group>"; };
+		67EBED826FA01479494652B7DF66FF1E /* FLEXColorExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXColorExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXColorExplorerViewController.m; sourceTree = "<group>"; };
+		694FDC242573D79968318C04BDB219E7 /* FLEXNetworkSettingsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkSettingsTableViewController.m; path = Classes/Network/FLEXNetworkSettingsTableViewController.m; sourceTree = "<group>"; };
+		6A13E3F0F2AA156BF4F19A9CE5300321 /* FLEXKeyboardShortcutManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXKeyboardShortcutManager.m; path = Classes/Utility/FLEXKeyboardShortcutManager.m; sourceTree = "<group>"; };
+		6B5BEF6E0631B3EA1C9B99787E91E1E0 /* FLEXKeyboardHelpViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXKeyboardHelpViewController.m; path = Classes/Utility/FLEXKeyboardHelpViewController.m; sourceTree = "<group>"; };
+		6C750CE2E13F32773B467705D20EDE6C /* FLEXArgumentInputColorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputColorView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputColorView.h; sourceTree = "<group>"; };
+		6EE738C01AF1B77778D317DBE3CA649B /* FLEXClassExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXClassExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXClassExplorerViewController.m; sourceTree = "<group>"; };
+		6F0CF32F517B24756431D281AD58AA9F /* FLEXObjectRef.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectRef.m; path = Classes/GlobalStateExplorers/FLEXObjectRef.m; sourceTree = "<group>"; };
+		6FD59BAC2D17B8EBAEF8489D9AD6F32B /* FLEXResources.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXResources.m; path = Classes/Utility/FLEXResources.m; sourceTree = "<group>"; };
+		70FAF2324CE6A5F772C13BC123796CB8 /* FLEXOSLogController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXOSLogController.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXOSLogController.h; sourceTree = "<group>"; };
+		71B65F570FF33BBCFCD1FAC8BCAEA35F /* FLEXHierarchyTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHierarchyTableViewController.m; path = Classes/ViewHierarchy/FLEXHierarchyTableViewController.m; sourceTree = "<group>"; };
+		71F0318FF054CA0C008B0392B2CEE97E /* FLEXNetworkTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransaction.h; path = Classes/Network/FLEXNetworkTransaction.h; sourceTree = "<group>"; };
+		7208D22F781523178BA0175868C97404 /* Pods-banzhuan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-banzhuan.debug.xcconfig"; sourceTree = "<group>"; };
+		7429C35E04903D008C9EBC74544D7D95 /* FLEXWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXWindow.h; path = Classes/ExplorerInterface/FLEXWindow.h; sourceTree = "<group>"; };
+		745679354557F8850CB1BF218343E0A7 /* FLEXFileBrowserFileOperationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserFileOperationController.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.h; sourceTree = "<group>"; };
+		756A58F667B615F4DC983E0F7C732D78 /* FLEXViewControllerExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXViewControllerExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXViewControllerExplorerViewController.m; sourceTree = "<group>"; };
+		7684E61588D83C45503FC202FF36F3C2 /* FLEXDefaultsExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDefaultsExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXDefaultsExplorerViewController.h; sourceTree = "<group>"; };
+		790F94EE4D502E4FB85D116E20C1D8A5 /* FLEXRealmDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXRealmDefines.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDefines.h; sourceTree = "<group>"; };
+		7910496439D9E95057644DC1429F7CB6 /* FLEXNetworkSettingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkSettingsTableViewController.h; path = Classes/Network/FLEXNetworkSettingsTableViewController.h; sourceTree = "<group>"; };
+		79C79CE977B6430853BA703C5B8E9B76 /* FLEXNetworkRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkRecorder.m; path = Classes/Network/FLEXNetworkRecorder.m; sourceTree = "<group>"; };
+		7B9A52E4CE50DEC0DC6D4E1EF58FCF91 /* FLEXFieldEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFieldEditorView.h; path = Classes/Editing/FLEXFieldEditorView.h; sourceTree = "<group>"; };
+		7BD4930C777B9523E399F93432EE8E1F /* FLEXArgumentInputJSONObjectView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputJSONObjectView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputJSONObjectView.m; sourceTree = "<group>"; };
+		7C737F81E9BB86FCEC49B65CD68E6042 /* FLEXArgumentInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.h; sourceTree = "<group>"; };
+		7D5F555DFA702D78333138B16743CA9A /* FLEXSystemLogTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSystemLogTableViewCell.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewCell.m; sourceTree = "<group>"; };
+		7DDDF0916DE8B5E533AE6F4305ED95A0 /* FLEXExplorerToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXExplorerToolbar.h; path = Classes/Toolbar/FLEXExplorerToolbar.h; sourceTree = "<group>"; };
+		7E62B4D71416C754CA90208C5B4D2AC4 /* FLEXViewExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXViewExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXViewExplorerViewController.m; sourceTree = "<group>"; };
+		7E895959B135CFB4F8FD16FFC0474DDD /* FLEXHierarchyTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHierarchyTableViewCell.m; path = Classes/ViewHierarchy/FLEXHierarchyTableViewCell.m; sourceTree = "<group>"; };
+		7F8780EBCDC9BD1C3B7D408E550EBC90 /* FLEXLayerExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLayerExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXLayerExplorerViewController.h; sourceTree = "<group>"; };
+		833D2D0ED05922A4476FE5B651EDA3C7 /* FLEXSQLiteDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXSQLiteDatabaseManager.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLiteDatabaseManager.m; sourceTree = "<group>"; };
+		839D978B0527CE87DF477305F93ED264 /* FLEXMethodCallingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMethodCallingViewController.h; path = Classes/Editing/FLEXMethodCallingViewController.h; sourceTree = "<group>"; };
+		857F90ACABA8AFD608B0FA4E8E68780D /* FLEXRealmDatabaseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXRealmDatabaseManager.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXRealmDatabaseManager.m; sourceTree = "<group>"; };
+		85D4A5A713A8AE5BB43266C99358AAA8 /* FLEXArgumentInputView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputView.m; sourceTree = "<group>"; };
+		86005FB13524EB35A135D240D7986D3E /* FLEXHierarchyTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHierarchyTableViewCell.h; path = Classes/ViewHierarchy/FLEXHierarchyTableViewCell.h; sourceTree = "<group>"; };
+		86C9FD0BEC7DEF97C3FD0417D96ECD18 /* FLEXTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableViewCell.m; path = Classes/ObjectExplorers/Views/FLEXTableViewCell.m; sourceTree = "<group>"; };
+		87A546BE4A3DA0095341CF4474437575 /* FLEXMutableFieldEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMutableFieldEditorViewController.h; path = Classes/Editing/FLEXMutableFieldEditorViewController.h; sourceTree = "<group>"; };
+		8B072E6CE8C851CB7D537D1BD339ECF9 /* FLEXPropertyEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXPropertyEditorViewController.h; path = Classes/Editing/FLEXPropertyEditorViewController.h; sourceTree = "<group>"; };
+		8CBD085370596ED264DC1A9D59FEA792 /* FLEXObjectExplorerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectExplorerFactory.m; path = Classes/ObjectExplorers/FLEXObjectExplorerFactory.m; sourceTree = "<group>"; };
+		8D73AEA4445FE706E831E8DEBF23664E /* FLEXResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXResources.h; path = Classes/Utility/FLEXResources.h; sourceTree = "<group>"; };
+		8E35D5138B38B44E0777FE1B56D136E9 /* FLEXHeapEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXHeapEnumerator.m; path = Classes/Utility/FLEXHeapEnumerator.m; sourceTree = "<group>"; };
+		8F64EA88ED3CA169E30FB857B2F6C012 /* FLEXToolbarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXToolbarItem.h; path = Classes/Toolbar/FLEXToolbarItem.h; sourceTree = "<group>"; };
+		8FAECD15C2124CD52C601AD0A2802E9B /* FLEXManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXManager.h; path = Classes/FLEXManager.h; sourceTree = "<group>"; };
+		9092874106090BE6ACD4DDE59EF750CA /* libPods-banzhuan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-banzhuan.a"; path = "libPods-banzhuan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		918A1BC394734898AB9D5A0CC7FD0988 /* FLEXSQLiteDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSQLiteDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXSQLiteDatabaseManager.h; sourceTree = "<group>"; };
+		926B42CB6F492A0E060B7025DF4EFE6D /* Pods-banzhuan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-banzhuan-acknowledgements.plist"; sourceTree = "<group>"; };
+		942A089E46827432BA75D67EC7B2A12C /* FLEXArgumentInputNumberView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputNumberView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNumberView.m; sourceTree = "<group>"; };
+		952BDC96CC478C81ECDA540F775AB8B0 /* FLEXWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXWindow.m; path = Classes/ExplorerInterface/FLEXWindow.m; sourceTree = "<group>"; };
+		98F2AD7C4CAAE8215ACA7DC256DD440C /* FLEXCookiesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXCookiesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXCookiesTableViewController.m; sourceTree = "<group>"; };
+		98F2B2C38992902A20EAF01D1D6ACE7C /* FLEX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FLEX-prefix.pch"; sourceTree = "<group>"; };
+		99408A380F663296ACFEF104A50C3F48 /* FLEXPropertyEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXPropertyEditorViewController.m; path = Classes/Editing/FLEXPropertyEditorViewController.m; sourceTree = "<group>"; };
+		9CC198B78A4632B38D56015BBEA15728 /* FLEXNetworkTransactionTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransactionTableViewCell.h; path = Classes/Network/FLEXNetworkTransactionTableViewCell.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ECEB66F8B465B4CF2602D4BED3F6771 /* FLEXTableColumnHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableColumnHeader.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableColumnHeader.h; sourceTree = "<group>"; };
+		A06DCB0B5BA03F57B80768F720B2459B /* FLEXManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXManager.m; path = Classes/Manager/FLEXManager.m; sourceTree = "<group>"; };
+		A2DC797C89358DA17FCB477D343358E5 /* FLEXDatabaseManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXDatabaseManager.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXDatabaseManager.h; sourceTree = "<group>"; };
+		A2E460A5CFFE0B7E4CE0D4EC3B9966F5 /* FLEXImageExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXImageExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXImageExplorerViewController.h; sourceTree = "<group>"; };
+		A5D35365CF085BD796A577C26B82404A /* FLEXImagePreviewViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXImagePreviewViewController.h; path = Classes/ViewHierarchy/FLEXImagePreviewViewController.h; sourceTree = "<group>"; };
+		A644ECFC68DEC1A10D3761A843091828 /* FLEXFileBrowserTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXFileBrowserTableViewController.h; path = Classes/GlobalStateExplorers/FLEXFileBrowserTableViewController.h; sourceTree = "<group>"; };
+		A748CF6C442605500A91EC7549FFCE34 /* FLEXLibrariesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXLibrariesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXLibrariesTableViewController.m; sourceTree = "<group>"; };
+		A99ECAA6D94B91B4CD787F3F7E077A3E /* FLEXClassesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXClassesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXClassesTableViewController.h; sourceTree = "<group>"; };
+		AA8E090A4C7F7FC235ACA6936A8A4C3A /* FLEXNetworkHistoryTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkHistoryTableViewController.h; path = Classes/Network/FLEXNetworkHistoryTableViewController.h; sourceTree = "<group>"; };
+		AC1A18CF7A4CC3408ABC6BEE316CCC1D /* FLEXCookiesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXCookiesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXCookiesTableViewController.h; sourceTree = "<group>"; };
+		B01EC0E125EC56582BCF1C577799CD97 /* FLEXOSLogController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXOSLogController.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXOSLogController.m; sourceTree = "<group>"; };
+		B0EDBAD8EC303CFFA438879EC3D5CE8A /* FLEXHierarchyTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHierarchyTableViewController.h; path = Classes/ViewHierarchy/FLEXHierarchyTableViewController.h; sourceTree = "<group>"; };
+		B1D0442F02764FD87B4F5B8EEC0EC811 /* FLEXColorExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXColorExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXColorExplorerViewController.h; sourceTree = "<group>"; };
+		B59A98D9EFFE75F639D69D0086CA541E /* FLEXArgumentInputNotSupportedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputNotSupportedView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputNotSupportedView.m; sourceTree = "<group>"; };
+		B62157A1386E764A1967577735F3E380 /* FLEXArgumentInputSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputSwitchView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.h; sourceTree = "<group>"; };
+		B6DDAA662E84D60396B9CCA413A61FAD /* FLEXArgumentInputStructView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputStructView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStructView.m; sourceTree = "<group>"; };
+		B87FFD6A4B894037FAC37A637B14F2FF /* FLEXToolbarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXToolbarItem.m; path = Classes/Toolbar/FLEXToolbarItem.m; sourceTree = "<group>"; };
+		B8BF6BCD9941104A85F049E5A7827886 /* FLEXDefaultsExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDefaultsExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXDefaultsExplorerViewController.m; sourceTree = "<group>"; };
+		B934B67882E5040391B60F69DEB0FFC4 /* FLEXMutableFieldEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMutableFieldEditorViewController.m; path = Classes/Editing/FLEXMutableFieldEditorViewController.m; sourceTree = "<group>"; };
+		BA20C2A13181EFAA277C44E66423651B /* FLEXIvarEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXIvarEditorViewController.h; path = Classes/Editing/FLEXIvarEditorViewController.h; sourceTree = "<group>"; };
+		BA3006CB60199D93BC979DD0C1B16D69 /* FLEXDefaultEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDefaultEditorViewController.m; path = Classes/Editing/FLEXDefaultEditorViewController.m; sourceTree = "<group>"; };
+		BA4F12B65F190AA6561B6B781EC9E2E8 /* FLEXArgumentInputFontsPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputFontsPickerView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontsPickerView.m; sourceTree = "<group>"; };
+		BAA903F2B36F63786C9D2E6386C5B555 /* FLEXInstancesTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXInstancesTableViewController.h; path = Classes/GlobalStateExplorers/FLEXInstancesTableViewController.h; sourceTree = "<group>"; };
+		BC1B7F432664288825C54261C3E042E6 /* FLEXObjectRef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXObjectRef.h; path = Classes/GlobalStateExplorers/FLEXObjectRef.h; sourceTree = "<group>"; };
+		BEC207304F74605DCC261E23DA0004B0 /* Pods-banzhuanDylib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-banzhuanDylib-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C04F89335A851C6802203BA46B7B95EB /* FLEXGlobalsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXGlobalsTableViewController.h; path = Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.h; sourceTree = "<group>"; };
+		C44AD08AD9A1C0B931D6DC4C128A0ADD /* FLEXNetworkTransactionTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransactionTableViewCell.m; path = Classes/Network/FLEXNetworkTransactionTableViewCell.m; sourceTree = "<group>"; };
+		C532F888B7DE5BF4A76C65F35329286B /* FLEXDictionaryExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXDictionaryExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXDictionaryExplorerViewController.m; sourceTree = "<group>"; };
+		C626AB1060D7FBEE8DDDA8B508B679A2 /* libFLEX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFLEX.a; path = libFLEX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0643B1A0FF48BD0F9F489D5995290FF /* FLEXNetworkHistoryTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkHistoryTableViewController.m; path = Classes/Network/FLEXNetworkHistoryTableViewController.m; sourceTree = "<group>"; };
+		D074B0ABC35DBA812DE2D2CAA33EBE03 /* FLEXGlobalsTableViewControllerEntry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXGlobalsTableViewControllerEntry.h; path = Classes/ObjectExplorers/Controllers/FLEXGlobalsTableViewControllerEntry.h; sourceTree = "<group>"; };
+		D145C97EE81C2F5CA842CD14A08B906F /* FLEXNetworkCurlLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkCurlLogger.m; path = Classes/Network/FLEXNetworkCurlLogger.m; sourceTree = "<group>"; };
+		D2C8D8A5DC947BCA918F5AE5A72EB6A8 /* FLEXTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableView.m; path = Classes/ObjectExplorers/Views/FLEXTableView.m; sourceTree = "<group>"; };
+		D36CDC758642B89102ED94C6AED707C8 /* FLEXHeapEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXHeapEnumerator.h; path = Classes/Utility/FLEXHeapEnumerator.h; sourceTree = "<group>"; };
+		D483C19771B7FD6768B9483D9BE15EBD /* FLEXASLLogController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXASLLogController.m; path = Classes/GlobalStateExplorers/SystemLog/FLEXASLLogController.m; sourceTree = "<group>"; };
+		D58B97BFE5DB430DD8F8F3AFD56A2D0D /* FLEXWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXWebViewController.m; path = Classes/GlobalStateExplorers/FLEXWebViewController.m; sourceTree = "<group>"; };
+		D59602E877C3994DF96B7B09CFD68027 /* FLEXArgumentInputSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputSwitchView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputSwitchView.m; sourceTree = "<group>"; };
+		D82BBF8FB1445F7895C3090B7AF3BE17 /* FLEXTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableView.h; path = Classes/ObjectExplorers/Views/FLEXTableView.h; sourceTree = "<group>"; };
+		D88E74FBC05588B60BB643F69B228424 /* FLEXTableContentCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXTableContentCell.m; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableContentCell.m; sourceTree = "<group>"; };
+		D8A3D0DCB5B9B7473934850880C8DF6D /* FLEXArgumentInputFontView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXArgumentInputFontView.h; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputFontView.h; sourceTree = "<group>"; };
+		D955A44C2BE1100A0CDC4DC870B6F034 /* libPods-banzhuanDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-banzhuanDylib.a"; path = "libPods-banzhuanDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE9DE522BEC145AC5C35C74BBCD2752 /* FLEXNetworkRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkRecorder.h; path = Classes/Network/FLEXNetworkRecorder.h; sourceTree = "<group>"; };
+		DCA32CECBC31FEDEED872DE403E7B297 /* FLEX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FLEX.xcconfig; sourceTree = "<group>"; };
+		DD9D8091733D76834D59A752104D6CD4 /* ActivityStreamAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActivityStreamAPI.h; path = Classes/GlobalStateExplorers/SystemLog/ActivityStreamAPI.h; sourceTree = "<group>"; };
+		DEFC279277813253AB352018795B0DEE /* FLEXFieldEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFieldEditorViewController.m; path = Classes/Editing/FLEXFieldEditorViewController.m; sourceTree = "<group>"; };
+		E17B9E105BC2A9BF548B38231F58A9F6 /* FLEXObjectExplorerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXObjectExplorerViewController.m; path = Classes/ObjectExplorers/Controllers/FLEXObjectExplorerViewController.m; sourceTree = "<group>"; };
+		E46A0FF3DC9A19FD20DDB9965EC6DF60 /* FLEXLiveObjectsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXLiveObjectsTableViewController.h; path = Classes/GlobalStateExplorers/FLEXLiveObjectsTableViewController.h; sourceTree = "<group>"; };
+		E9B03E2F31FEFCB2AE13CF66DB4F849A /* FLEXArgumentInputTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputTextView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputTextView.m; sourceTree = "<group>"; };
+		EC0E36E66069A62A27D3E5FFBBD84EA9 /* FLEXGlobalsTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXGlobalsTableViewController.m; path = Classes/GlobalStateExplorers/FLEXGlobalsTableViewController.m; sourceTree = "<group>"; };
+		ED52C5138E3F3F9983A388422A49B16B /* FLEXTableLeftCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXTableLeftCell.h; path = Classes/GlobalStateExplorers/DatabaseBrowser/FLEXTableLeftCell.h; sourceTree = "<group>"; };
+		EF9F21ABAC559B6937C6DD42DFBDC2D0 /* FLEXInstancesTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXInstancesTableViewController.m; path = Classes/GlobalStateExplorers/FLEXInstancesTableViewController.m; sourceTree = "<group>"; };
+		F06D99FCC55E5A3B2360E6F1895199F6 /* FLEXSystemLogTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSystemLogTableViewController.h; path = Classes/GlobalStateExplorers/SystemLog/FLEXSystemLogTableViewController.h; sourceTree = "<group>"; };
+		F100BFA92D1747F6E7FBA03DCEEE541C /* FLEXArgumentInputDateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputDateView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputDateView.m; sourceTree = "<group>"; };
+		F367F6C16FC3B9C243A9373371DE5965 /* FLEXGlobalsTableViewControllerEntry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXGlobalsTableViewControllerEntry.m; path = Classes/ObjectExplorers/Controllers/FLEXGlobalsTableViewControllerEntry.m; sourceTree = "<group>"; };
+		F40B5C29DF69FF95B58A66F76CB2464F /* FLEXNetworkTransactionDetailTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransactionDetailTableViewController.m; path = Classes/Network/FLEXNetworkTransactionDetailTableViewController.m; sourceTree = "<group>"; };
+		F48E60ECAC1F0129483ED0ED5BE6CF23 /* FLEXMethodCallingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXMethodCallingViewController.m; path = Classes/Editing/FLEXMethodCallingViewController.m; sourceTree = "<group>"; };
+		F574892F0C6812019798FED39E4C4417 /* FLEXArgumentInputStringView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputStringView.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputStringView.m; sourceTree = "<group>"; };
+		F88C3C9319D342D790626D2C26392FE8 /* FLEXArgumentInputViewFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXArgumentInputViewFactory.m; path = Classes/Editing/ArgumentInputViews/FLEXArgumentInputViewFactory.m; sourceTree = "<group>"; };
+		F8CF559B67C5C8369F92589DBD973CFB /* FLEXNetworkTransactionDetailTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXNetworkTransactionDetailTableViewController.h; path = Classes/Network/FLEXNetworkTransactionDetailTableViewController.h; sourceTree = "<group>"; };
+		F992A3E561888F8F581FA8B6FD9FAA7C /* FLEXNetworkTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXNetworkTransaction.m; path = Classes/Network/FLEXNetworkTransaction.m; sourceTree = "<group>"; };
+		FA8B1584F1A72CB3A32E38AB03EAEC7A /* Pods-banzhuan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-banzhuan-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC3F2F49010BA47BEF2C0DAC3CB93DDD /* FLEXMultilineTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXMultilineTableViewCell.h; path = Classes/ObjectExplorers/Views/FLEXMultilineTableViewCell.h; sourceTree = "<group>"; };
+		FE98DF5DBCC586F985CA986EDC71A655 /* FLEXExplorerToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXExplorerToolbar.m; path = Classes/Toolbar/FLEXExplorerToolbar.m; sourceTree = "<group>"; };
+		FF7E3D6A2E655EE727AC423072724FA0 /* FLEXSetExplorerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLEXSetExplorerViewController.h; path = Classes/ObjectExplorers/Controllers/FLEXSetExplorerViewController.h; sourceTree = "<group>"; };
+		FFE2668E66344294EF905C0F9FBFA2CA /* FLEXFileBrowserFileOperationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLEXFileBrowserFileOperationController.m; path = Classes/GlobalStateExplorers/FLEXFileBrowserFileOperationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB3530B8E1C4FA44CD8AB0F32B11BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61D52655F9CE480DD54A4D367D35BAF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FDC1C2002FFF1C86E4B8DB8B102E93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E862CF4B3F6AE9198C011CCDD75472 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1CDA39873242AD364F24CC0BE3CBAF3 /* Pods-banzhuan */,
+				B311EBC938D1AE10483290249A5C8606 /* Pods-banzhuanDylib */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		32B58BE0EB061CA8CB76D488A25E1A17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78C843F69C7063BEF4ECE07048AE85E5 /* FLEX */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78C843F69C7063BEF4ECE07048AE85E5 /* FLEX */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D8091733D76834D59A752104D6CD4 /* ActivityStreamAPI.h */,
+				03915763078E9ACDD42B29E267B0F76F /* FLEX.h */,
+				6C750CE2E13F32773B467705D20EDE6C /* FLEXArgumentInputColorView.h */,
+				4D61EC0CE0098F59A59B960E4841D48B /* FLEXArgumentInputColorView.m */,
+				4EC8D406502A49DF9EE5EA80A629D014 /* FLEXArgumentInputDateView.h */,
+				F100BFA92D1747F6E7FBA03DCEEE541C /* FLEXArgumentInputDateView.m */,
+				0ECF2C1186DFD5C61684F9B5B6F5A642 /* FLEXArgumentInputFontsPickerView.h */,
+				BA4F12B65F190AA6561B6B781EC9E2E8 /* FLEXArgumentInputFontsPickerView.m */,
+				D8A3D0DCB5B9B7473934850880C8DF6D /* FLEXArgumentInputFontView.h */,
+				1B08B35BA7848D33F97F448CAE1D672C /* FLEXArgumentInputFontView.m */,
+				480BC79F5DB0B3F9C7E2955FD82F50D3 /* FLEXArgumentInputJSONObjectView.h */,
+				7BD4930C777B9523E399F93432EE8E1F /* FLEXArgumentInputJSONObjectView.m */,
+				0F650965805A08AE9667C79EBB17DE5B /* FLEXArgumentInputNotSupportedView.h */,
+				B59A98D9EFFE75F639D69D0086CA541E /* FLEXArgumentInputNotSupportedView.m */,
+				5141874CC196967E7A0BB88A56C0B179 /* FLEXArgumentInputNumberView.h */,
+				942A089E46827432BA75D67EC7B2A12C /* FLEXArgumentInputNumberView.m */,
+				5766BF1637B751DFC43B1D7C87FE2E99 /* FLEXArgumentInputStringView.h */,
+				F574892F0C6812019798FED39E4C4417 /* FLEXArgumentInputStringView.m */,
+				1037F92CBBAF331ACBF8D26C9C54EE9E /* FLEXArgumentInputStructView.h */,
+				B6DDAA662E84D60396B9CCA413A61FAD /* FLEXArgumentInputStructView.m */,
+				B62157A1386E764A1967577735F3E380 /* FLEXArgumentInputSwitchView.h */,
+				D59602E877C3994DF96B7B09CFD68027 /* FLEXArgumentInputSwitchView.m */,
+				26C3DCD31B7F2D5581373DC6351DDB41 /* FLEXArgumentInputTextView.h */,
+				E9B03E2F31FEFCB2AE13CF66DB4F849A /* FLEXArgumentInputTextView.m */,
+				7C737F81E9BB86FCEC49B65CD68E6042 /* FLEXArgumentInputView.h */,
+				85D4A5A713A8AE5BB43266C99358AAA8 /* FLEXArgumentInputView.m */,
+				0524F7D681B74C7BFE0B393FCCDB0907 /* FLEXArgumentInputViewFactory.h */,
+				F88C3C9319D342D790626D2C26392FE8 /* FLEXArgumentInputViewFactory.m */,
+				5CAB517A9235C4812F2F5C3418D45667 /* FLEXArrayExplorerViewController.h */,
+				19492D06CECFB7EA19215D762209887F /* FLEXArrayExplorerViewController.m */,
+				096933985C9371861D05F7240F9D8334 /* FLEXASLLogController.h */,
+				D483C19771B7FD6768B9483D9BE15EBD /* FLEXASLLogController.m */,
+				A99ECAA6D94B91B4CD787F3F7E077A3E /* FLEXClassesTableViewController.h */,
+				12E967942A83764ECC8C66EB19ECEFC4 /* FLEXClassesTableViewController.m */,
+				1C3CC2A702311E27E80C036E354CD60E /* FLEXClassExplorerViewController.h */,
+				6EE738C01AF1B77778D317DBE3CA649B /* FLEXClassExplorerViewController.m */,
+				B1D0442F02764FD87B4F5B8EEC0EC811 /* FLEXColorExplorerViewController.h */,
+				67EBED826FA01479494652B7DF66FF1E /* FLEXColorExplorerViewController.m */,
+				AC1A18CF7A4CC3408ABC6BEE316CCC1D /* FLEXCookiesTableViewController.h */,
+				98F2AD7C4CAAE8215ACA7DC256DD440C /* FLEXCookiesTableViewController.m */,
+				A2DC797C89358DA17FCB477D343358E5 /* FLEXDatabaseManager.h */,
+				43E1DBDF24F43342F8C8E60921D39F85 /* FLEXDefaultEditorViewController.h */,
+				BA3006CB60199D93BC979DD0C1B16D69 /* FLEXDefaultEditorViewController.m */,
+				7684E61588D83C45503FC202FF36F3C2 /* FLEXDefaultsExplorerViewController.h */,
+				B8BF6BCD9941104A85F049E5A7827886 /* FLEXDefaultsExplorerViewController.m */,
+				49D00FFE66DFC012F4D617F8AA2228E3 /* FLEXDictionaryExplorerViewController.h */,
+				C532F888B7DE5BF4A76C65F35329286B /* FLEXDictionaryExplorerViewController.m */,
+				7DDDF0916DE8B5E533AE6F4305ED95A0 /* FLEXExplorerToolbar.h */,
+				FE98DF5DBCC586F985CA986EDC71A655 /* FLEXExplorerToolbar.m */,
+				0CDCF267BD26DD1482ADBE12374C2879 /* FLEXExplorerViewController.h */,
+				00AAE2C0B4FBB38B606DDD70FAB91614 /* FLEXExplorerViewController.m */,
+				7B9A52E4CE50DEC0DC6D4E1EF58FCF91 /* FLEXFieldEditorView.h */,
+				620BC3362C37B93887794EB4B22D81F4 /* FLEXFieldEditorView.m */,
+				1700235285AC4A4F4DFF133AE5A2B8BD /* FLEXFieldEditorViewController.h */,
+				DEFC279277813253AB352018795B0DEE /* FLEXFieldEditorViewController.m */,
+				745679354557F8850CB1BF218343E0A7 /* FLEXFileBrowserFileOperationController.h */,
+				FFE2668E66344294EF905C0F9FBFA2CA /* FLEXFileBrowserFileOperationController.m */,
+				6090AE67E7F77470D7B09B9C18BBBD8D /* FLEXFileBrowserSearchOperation.h */,
+				4DC8F1AEDAAD7F38FE3B46A1CA93F5F6 /* FLEXFileBrowserSearchOperation.m */,
+				A644ECFC68DEC1A10D3761A843091828 /* FLEXFileBrowserTableViewController.h */,
+				478D9AAFE107BA4A9A434A0C43D2B2DF /* FLEXFileBrowserTableViewController.m */,
+				C04F89335A851C6802203BA46B7B95EB /* FLEXGlobalsTableViewController.h */,
+				EC0E36E66069A62A27D3E5FFBBD84EA9 /* FLEXGlobalsTableViewController.m */,
+				D074B0ABC35DBA812DE2D2CAA33EBE03 /* FLEXGlobalsTableViewControllerEntry.h */,
+				F367F6C16FC3B9C243A9373371DE5965 /* FLEXGlobalsTableViewControllerEntry.m */,
+				D36CDC758642B89102ED94C6AED707C8 /* FLEXHeapEnumerator.h */,
+				8E35D5138B38B44E0777FE1B56D136E9 /* FLEXHeapEnumerator.m */,
+				86005FB13524EB35A135D240D7986D3E /* FLEXHierarchyTableViewCell.h */,
+				7E895959B135CFB4F8FD16FFC0474DDD /* FLEXHierarchyTableViewCell.m */,
+				B0EDBAD8EC303CFFA438879EC3D5CE8A /* FLEXHierarchyTableViewController.h */,
+				71B65F570FF33BBCFCD1FAC8BCAEA35F /* FLEXHierarchyTableViewController.m */,
+				A2E460A5CFFE0B7E4CE0D4EC3B9966F5 /* FLEXImageExplorerViewController.h */,
+				66C9CFB74F6FEA83E72015E07DDE6DB2 /* FLEXImageExplorerViewController.m */,
+				A5D35365CF085BD796A577C26B82404A /* FLEXImagePreviewViewController.h */,
+				3C7DDBE7360F0F80BEBD64678F245A87 /* FLEXImagePreviewViewController.m */,
+				BAA903F2B36F63786C9D2E6386C5B555 /* FLEXInstancesTableViewController.h */,
+				EF9F21ABAC559B6937C6DD42DFBDC2D0 /* FLEXInstancesTableViewController.m */,
+				BA20C2A13181EFAA277C44E66423651B /* FLEXIvarEditorViewController.h */,
+				4A3ABB1E2423B4D898B950CE0C99D8B8 /* FLEXIvarEditorViewController.m */,
+				58754661198D9EB850D643209CE3B797 /* FLEXKeyboardHelpViewController.h */,
+				6B5BEF6E0631B3EA1C9B99787E91E1E0 /* FLEXKeyboardHelpViewController.m */,
+				0C7D55DB5086918BD1ADE174F48D13AE /* FLEXKeyboardShortcutManager.h */,
+				6A13E3F0F2AA156BF4F19A9CE5300321 /* FLEXKeyboardShortcutManager.m */,
+				7F8780EBCDC9BD1C3B7D408E550EBC90 /* FLEXLayerExplorerViewController.h */,
+				06B815CEE6672F872885A9E4D24C8355 /* FLEXLayerExplorerViewController.m */,
+				3E95BEEB5D562A6536D8FD63494F1F61 /* FLEXLibrariesTableViewController.h */,
+				A748CF6C442605500A91EC7549FFCE34 /* FLEXLibrariesTableViewController.m */,
+				E46A0FF3DC9A19FD20DDB9965EC6DF60 /* FLEXLiveObjectsTableViewController.h */,
+				0484DE8051A4C9A7A8463FB2D83BDEF8 /* FLEXLiveObjectsTableViewController.m */,
+				49906E42456AE7EE0BB68165F64421B4 /* FLEXLogController.h */,
+				8FAECD15C2124CD52C601AD0A2802E9B /* FLEXManager.h */,
+				A06DCB0B5BA03F57B80768F720B2459B /* FLEXManager.m */,
+				40EF49E8FA0A975BA0A2F7BB8C7157E0 /* FLEXManager+Private.h */,
+				839D978B0527CE87DF477305F93ED264 /* FLEXMethodCallingViewController.h */,
+				F48E60ECAC1F0129483ED0ED5BE6CF23 /* FLEXMethodCallingViewController.m */,
+				52ED1C25C1D4855298EED03915442DF3 /* FLEXMultiColumnTableView.h */,
+				202A07CFB0D86E50BF43DE39EA9E5FEB /* FLEXMultiColumnTableView.m */,
+				FC3F2F49010BA47BEF2C0DAC3CB93DDD /* FLEXMultilineTableViewCell.h */,
+				36DCF8A4A77D9136E33EDF0AE547A1EF /* FLEXMultilineTableViewCell.m */,
+				87A546BE4A3DA0095341CF4474437575 /* FLEXMutableFieldEditorViewController.h */,
+				B934B67882E5040391B60F69DEB0FFC4 /* FLEXMutableFieldEditorViewController.m */,
+				19267BACD183BBA33729C328A191E181 /* FLEXNetworkCurlLogger.h */,
+				D145C97EE81C2F5CA842CD14A08B906F /* FLEXNetworkCurlLogger.m */,
+				AA8E090A4C7F7FC235ACA6936A8A4C3A /* FLEXNetworkHistoryTableViewController.h */,
+				D0643B1A0FF48BD0F9F489D5995290FF /* FLEXNetworkHistoryTableViewController.m */,
+				0F41B8242E1FD55267E2029866E5DCF8 /* FLEXNetworkObserver.h */,
+				1D13B361E8C3FE7E3430A6D3429F9049 /* FLEXNetworkObserver.m */,
+				DAE9DE522BEC145AC5C35C74BBCD2752 /* FLEXNetworkRecorder.h */,
+				79C79CE977B6430853BA703C5B8E9B76 /* FLEXNetworkRecorder.m */,
+				7910496439D9E95057644DC1429F7CB6 /* FLEXNetworkSettingsTableViewController.h */,
+				694FDC242573D79968318C04BDB219E7 /* FLEXNetworkSettingsTableViewController.m */,
+				71F0318FF054CA0C008B0392B2CEE97E /* FLEXNetworkTransaction.h */,
+				F992A3E561888F8F581FA8B6FD9FAA7C /* FLEXNetworkTransaction.m */,
+				F8CF559B67C5C8369F92589DBD973CFB /* FLEXNetworkTransactionDetailTableViewController.h */,
+				F40B5C29DF69FF95B58A66F76CB2464F /* FLEXNetworkTransactionDetailTableViewController.m */,
+				9CC198B78A4632B38D56015BBEA15728 /* FLEXNetworkTransactionTableViewCell.h */,
+				C44AD08AD9A1C0B931D6DC4C128A0ADD /* FLEXNetworkTransactionTableViewCell.m */,
+				130A071E8596BB97E8DB6642551A1F8B /* FLEXObjcInternal.h */,
+				1A7C428904A816396CB133EEBE500092 /* FLEXObjcInternal.mm */,
+				47766F84C44944C7A134ED7B692AE799 /* FLEXObjectExplorerFactory.h */,
+				8CBD085370596ED264DC1A9D59FEA792 /* FLEXObjectExplorerFactory.m */,
+				482DC3E83295255589564AE1DAF7E6CF /* FLEXObjectExplorerViewController.h */,
+				E17B9E105BC2A9BF548B38231F58A9F6 /* FLEXObjectExplorerViewController.m */,
+				BC1B7F432664288825C54261C3E042E6 /* FLEXObjectRef.h */,
+				6F0CF32F517B24756431D281AD58AA9F /* FLEXObjectRef.m */,
+				70FAF2324CE6A5F772C13BC123796CB8 /* FLEXOSLogController.h */,
+				B01EC0E125EC56582BCF1C577799CD97 /* FLEXOSLogController.m */,
+				8B072E6CE8C851CB7D537D1BD339ECF9 /* FLEXPropertyEditorViewController.h */,
+				99408A380F663296ACFEF104A50C3F48 /* FLEXPropertyEditorViewController.m */,
+				1C64A0890E9E81599FC138E606E5C34F /* FLEXRealmDatabaseManager.h */,
+				857F90ACABA8AFD608B0FA4E8E68780D /* FLEXRealmDatabaseManager.m */,
+				790F94EE4D502E4FB85D116E20C1D8A5 /* FLEXRealmDefines.h */,
+				8D73AEA4445FE706E831E8DEBF23664E /* FLEXResources.h */,
+				6FD59BAC2D17B8EBAEF8489D9AD6F32B /* FLEXResources.m */,
+				059A86FC4B23EECC4D4FEF2C507C67CC /* FLEXRuntimeUtility.h */,
+				3869EA7C334B69E4D0FC2E28A8F80DAB /* FLEXRuntimeUtility.m */,
+				FF7E3D6A2E655EE727AC423072724FA0 /* FLEXSetExplorerViewController.h */,
+				5A443071CDDA9707759985AB4DDFA468 /* FLEXSetExplorerViewController.m */,
+				918A1BC394734898AB9D5A0CC7FD0988 /* FLEXSQLiteDatabaseManager.h */,
+				833D2D0ED05922A4476FE5B651EDA3C7 /* FLEXSQLiteDatabaseManager.m */,
+				033387506090DFDE9B83684619B0ED0E /* FLEXSubtitleTableViewCell.h */,
+				55B1E664D76341EA34780A260891CF58 /* FLEXSubtitleTableViewCell.m */,
+				0C7344B0357611386A763DF3D72C40A2 /* FLEXSystemLogMessage.h */,
+				3CEC2B8166FC569B19722FE73A41309C /* FLEXSystemLogMessage.m */,
+				1BB84CDB2EBF3A6064611A4F55AB6B7D /* FLEXSystemLogTableViewCell.h */,
+				7D5F555DFA702D78333138B16743CA9A /* FLEXSystemLogTableViewCell.m */,
+				F06D99FCC55E5A3B2360E6F1895199F6 /* FLEXSystemLogTableViewController.h */,
+				436E9DF1076BE3D63CBB94DF65EF1875 /* FLEXSystemLogTableViewController.m */,
+				9ECEB66F8B465B4CF2602D4BED3F6771 /* FLEXTableColumnHeader.h */,
+				4D4AFECE91AA97CC687CB31C619DC2C7 /* FLEXTableColumnHeader.m */,
+				2DD65CD8842E25975E16E3FE2750A06F /* FLEXTableContentCell.h */,
+				D88E74FBC05588B60BB643F69B228424 /* FLEXTableContentCell.m */,
+				5FAC8B1DFD6C3836E269186500A7D3E4 /* FLEXTableContentViewController.h */,
+				4BF88D55A55C6060227E17A8D8A6DADC /* FLEXTableContentViewController.m */,
+				ED52C5138E3F3F9983A388422A49B16B /* FLEXTableLeftCell.h */,
+				2CBC6D0170174C06E1D0641EBA17EC87 /* FLEXTableLeftCell.m */,
+				0644777CA1410509411F1CF1AF931576 /* FLEXTableListViewController.h */,
+				0053B7074F0E33CBF97CA4698D352558 /* FLEXTableListViewController.m */,
+				D82BBF8FB1445F7895C3090B7AF3BE17 /* FLEXTableView.h */,
+				D2C8D8A5DC947BCA918F5AE5A72EB6A8 /* FLEXTableView.m */,
+				59EA8CC77BD8639E80111B2CBF3D49C0 /* FLEXTableViewCell.h */,
+				86C9FD0BEC7DEF97C3FD0417D96ECD18 /* FLEXTableViewCell.m */,
+				8F64EA88ED3CA169E30FB857B2F6C012 /* FLEXToolbarItem.h */,
+				B87FFD6A4B894037FAC37A637B14F2FF /* FLEXToolbarItem.m */,
+				195158DBB643A6C7DCC2072F18DFF36E /* FLEXUtility.h */,
+				5B22EFC4789072DCF70A05129506EFFE /* FLEXUtility.m */,
+				5B01A8FF4AE2E5BFD8B307A475CB01EC /* FLEXViewControllerExplorerViewController.h */,
+				756A58F667B615F4DC983E0F7C732D78 /* FLEXViewControllerExplorerViewController.m */,
+				572A467876496EFD1DB18E81E8328607 /* FLEXViewExplorerViewController.h */,
+				7E62B4D71416C754CA90208C5B4D2AC4 /* FLEXViewExplorerViewController.m */,
+				44606F0C63D2CCE358BF197B8DC6EE86 /* FLEXWebViewController.h */,
+				D58B97BFE5DB430DD8F8F3AFD56A2D0D /* FLEXWebViewController.m */,
+				7429C35E04903D008C9EBC74544D7D95 /* FLEXWindow.h */,
+				952BDC96CC478C81ECDA540F775AB8B0 /* FLEXWindow.m */,
+				7F4A3FCDB867A90E2467B4A5AF60EDB1 /* Support Files */,
+			);
+			name = FLEX;
+			path = FLEX;
+			sourceTree = "<group>";
+		};
+		7F4A3FCDB867A90E2467B4A5AF60EDB1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCA32CECBC31FEDEED872DE403E7B297 /* FLEX.xcconfig */,
+				64E0A174E604490A36C1C18866FA249F /* FLEX-dummy.m */,
+				98F2B2C38992902A20EAF01D1D6ACE7C /* FLEX-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FLEX";
+			sourceTree = "<group>";
+		};
+		B311EBC938D1AE10483290249A5C8606 /* Pods-banzhuanDylib */ = {
+			isa = PBXGroup;
+			children = (
+				BEC207304F74605DCC261E23DA0004B0 /* Pods-banzhuanDylib-acknowledgements.markdown */,
+				5121CD1880CE7A4512848E2C227E6AD4 /* Pods-banzhuanDylib-acknowledgements.plist */,
+				2512307DC1FB527E702A503494889961 /* Pods-banzhuanDylib-dummy.m */,
+				408A65CE96B1814AE921665FADB03849 /* Pods-banzhuanDylib.debug.xcconfig */,
+				2ED20CD028705CA405D4BD25C4A8B09F /* Pods-banzhuanDylib.release.xcconfig */,
+			);
+			name = "Pods-banzhuanDylib";
+			path = "Target Support Files/Pods-banzhuanDylib";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				32B58BE0EB061CA8CB76D488A25E1A17 /* Pods */,
+				FD1200362E88615827B4A6EB169345FC /* Products */,
+				01E862CF4B3F6AE9198C011CCDD75472 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1CDA39873242AD364F24CC0BE3CBAF3 /* Pods-banzhuan */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B1584F1A72CB3A32E38AB03EAEC7A /* Pods-banzhuan-acknowledgements.markdown */,
+				926B42CB6F492A0E060B7025DF4EFE6D /* Pods-banzhuan-acknowledgements.plist */,
+				1B690B76DF94E1118958C02267C84CD3 /* Pods-banzhuan-dummy.m */,
+				7208D22F781523178BA0175868C97404 /* Pods-banzhuan.debug.xcconfig */,
+				58918FE10C1A7D5C99010017484BEFDE /* Pods-banzhuan.release.xcconfig */,
+			);
+			name = "Pods-banzhuan";
+			path = "Target Support Files/Pods-banzhuan";
+			sourceTree = "<group>";
+		};
+		FD1200362E88615827B4A6EB169345FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C626AB1060D7FBEE8DDDA8B508B679A2 /* libFLEX.a */,
+				9092874106090BE6ACD4DDE59EF750CA /* libPods-banzhuan.a */,
+				D955A44C2BE1100A0CDC4DC870B6F034 /* libPods-banzhuanDylib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13808314C02E259C71324CD51C5C01B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44859C6F4F2592BA3A066F73DD3A0A0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2635B2F4891CE8F4E3FFEC4A9522814 /* ActivityStreamAPI.h in Headers */,
+				F34624A0F7A52095833B02DE28597123 /* FLEX.h in Headers */,
+				EEFFDBC9F2609F209A56E8D55623B45A /* FLEXArgumentInputColorView.h in Headers */,
+				55978E92B4AE1FFEF6AD5B88173D171F /* FLEXArgumentInputDateView.h in Headers */,
+				470FC6FB2CD25AE04A25E84D920A9FDC /* FLEXArgumentInputFontsPickerView.h in Headers */,
+				B2DC2D9870C94ED91C14457FC926EF82 /* FLEXArgumentInputFontView.h in Headers */,
+				9D03C0A6DA2F258F06CC382D0396E182 /* FLEXArgumentInputJSONObjectView.h in Headers */,
+				A2A6141316D2979711198CBA1C320557 /* FLEXArgumentInputNotSupportedView.h in Headers */,
+				FAD351BE5E0AC1E5B3C0AD9354A66641 /* FLEXArgumentInputNumberView.h in Headers */,
+				240D31EC42777E79DB12946E90718302 /* FLEXArgumentInputStringView.h in Headers */,
+				9E5A4AA925A929C08B6F45BC192B0A36 /* FLEXArgumentInputStructView.h in Headers */,
+				D4BBF3E09363A8D7F809433F9B36397C /* FLEXArgumentInputSwitchView.h in Headers */,
+				26DE5788661E85FEDA1ABCA5B6214836 /* FLEXArgumentInputTextView.h in Headers */,
+				7ED063AAE24BC624FD6677A3F6CF2873 /* FLEXArgumentInputView.h in Headers */,
+				40C4B705B28310EAD92E0FD8E2A2C28A /* FLEXArgumentInputViewFactory.h in Headers */,
+				66C96754ED708FD9B6D17625CB860814 /* FLEXArrayExplorerViewController.h in Headers */,
+				D706A8532A9152A6D80F01CB47143CDC /* FLEXASLLogController.h in Headers */,
+				8F9A10FBD66CEF488F6397AEFDF8A448 /* FLEXClassesTableViewController.h in Headers */,
+				DA53E639BDCC0A866F634D1C86FC9092 /* FLEXClassExplorerViewController.h in Headers */,
+				1FE3EFE86B032797E0927F1183EB04AF /* FLEXColorExplorerViewController.h in Headers */,
+				C71CE96D0C0343BB11061FEEDA31B5A3 /* FLEXCookiesTableViewController.h in Headers */,
+				C87B8C939D885AC59A5E46695D702937 /* FLEXDatabaseManager.h in Headers */,
+				021BB654A56A506DCF19F62856E21CB8 /* FLEXDefaultEditorViewController.h in Headers */,
+				C3FBB4C1871A8883A3EF301B3DFB95AE /* FLEXDefaultsExplorerViewController.h in Headers */,
+				BDCA8A4D1C3F5DE04666162CCD4B53C6 /* FLEXDictionaryExplorerViewController.h in Headers */,
+				024F8A2E31F4083D3EF9564A3E9D0CE8 /* FLEXExplorerToolbar.h in Headers */,
+				8C2B2359D885FD170A895DA68EF96A5C /* FLEXExplorerViewController.h in Headers */,
+				FC8C7DA5C650B4DEC437751E8B815261 /* FLEXFieldEditorView.h in Headers */,
+				68727199946721A688C638D68903D4C9 /* FLEXFieldEditorViewController.h in Headers */,
+				614ED9A2E2C5A92C37120E93153323BB /* FLEXFileBrowserFileOperationController.h in Headers */,
+				C07DAC45881AD7337FA7380B7CF4166D /* FLEXFileBrowserSearchOperation.h in Headers */,
+				94D912520DE03BFC56AB7D0B3C2322EA /* FLEXFileBrowserTableViewController.h in Headers */,
+				E71FB5805E40114263B839AED26AAFEE /* FLEXGlobalsTableViewController.h in Headers */,
+				2C071BA61A2CF71D3F81D72477D461DE /* FLEXGlobalsTableViewControllerEntry.h in Headers */,
+				FE3ECBAC719936B21766A1D054A5C28E /* FLEXHeapEnumerator.h in Headers */,
+				4129FDCF7E8A23AA417F74F73779E435 /* FLEXHierarchyTableViewCell.h in Headers */,
+				C10AB0A6A6B9FE65B14DDDDED9B6ADB1 /* FLEXHierarchyTableViewController.h in Headers */,
+				8E0C992FF9C114C0EB6888B5D13BCECC /* FLEXImageExplorerViewController.h in Headers */,
+				3744D532C908A791C5A7F9744B5FAA15 /* FLEXImagePreviewViewController.h in Headers */,
+				44CCE644BFDB5B97EF14834D8D046569 /* FLEXInstancesTableViewController.h in Headers */,
+				514F2B8AD8D764E9E370368AE3517B6D /* FLEXIvarEditorViewController.h in Headers */,
+				32E0201A6E2709E8EDB7A2C25964B9FE /* FLEXKeyboardHelpViewController.h in Headers */,
+				4E84F6B7DF9BEEC71FE50675BDB51AAC /* FLEXKeyboardShortcutManager.h in Headers */,
+				F275A70D059883CB593F616F60ED808E /* FLEXLayerExplorerViewController.h in Headers */,
+				8876C7C6D69C21E6A73C7632B1540007 /* FLEXLibrariesTableViewController.h in Headers */,
+				C940500518110D1ABBB6ADE9848EB324 /* FLEXLiveObjectsTableViewController.h in Headers */,
+				BFED830A04A72391889F77D116A8FFAE /* FLEXLogController.h in Headers */,
+				B3B87C99EAF21AAE4ED93B5BA5970A18 /* FLEXManager+Private.h in Headers */,
+				8E86964B00D6153D25C5C5A1DA472798 /* FLEXManager.h in Headers */,
+				0FEBB78609AB8BD65A6B73326472EB75 /* FLEXMethodCallingViewController.h in Headers */,
+				F8B90ECE8F92F2E795D7B3DC0AC82DD1 /* FLEXMultiColumnTableView.h in Headers */,
+				A1A6BB77B86796EC592FB4AA40826B0C /* FLEXMultilineTableViewCell.h in Headers */,
+				536DED69883B3019BD8673B68D26263F /* FLEXMutableFieldEditorViewController.h in Headers */,
+				622620CF9DBA570C93EC3481015A2116 /* FLEXNetworkCurlLogger.h in Headers */,
+				9BD16074669B74217ABB1011CFF761E7 /* FLEXNetworkHistoryTableViewController.h in Headers */,
+				437445695874BA8954EB269A6183CD91 /* FLEXNetworkObserver.h in Headers */,
+				CE3A95AC35411F8C03C8D2B7DC6AA92B /* FLEXNetworkRecorder.h in Headers */,
+				CCC91DCE8DD8CB984F8AF6F1DCFC2988 /* FLEXNetworkSettingsTableViewController.h in Headers */,
+				62B3A0D6854D231AF9F83912BE3844B8 /* FLEXNetworkTransaction.h in Headers */,
+				DE420B5D0C41E93452935750DC051AFD /* FLEXNetworkTransactionDetailTableViewController.h in Headers */,
+				B41F3C600C965CCD825C6A5D0EEB3B47 /* FLEXNetworkTransactionTableViewCell.h in Headers */,
+				A0D0650DEFE9A6B71DCD86FBDEEEBAFE /* FLEXObjcInternal.h in Headers */,
+				490FD35BE2B32ADA4341EDFA850146A3 /* FLEXObjectExplorerFactory.h in Headers */,
+				63D066E9BF1B57B8DE41C68FF31CA664 /* FLEXObjectExplorerViewController.h in Headers */,
+				BA3252AD2B1A11BEA68FEF07E24A7D63 /* FLEXObjectRef.h in Headers */,
+				E2DA3BC9DDDB40A3BADCE1E4D370F1B0 /* FLEXOSLogController.h in Headers */,
+				FA40AAAC4224D07DDF1089F5B6CFFB2D /* FLEXPropertyEditorViewController.h in Headers */,
+				127DCF769332742A764E3E3FA99C4135 /* FLEXRealmDatabaseManager.h in Headers */,
+				9736608960F1751E258B3D63D9C49F8B /* FLEXRealmDefines.h in Headers */,
+				9F1FD62C01BDD02D45A0BC9870C1DB2A /* FLEXResources.h in Headers */,
+				4A8C6F213457E5D75468C5EC8F8A7FBA /* FLEXRuntimeUtility.h in Headers */,
+				79428518BD82C88839456AB22791623B /* FLEXSetExplorerViewController.h in Headers */,
+				028B2A92799D020D7FF2F222AD5C1286 /* FLEXSQLiteDatabaseManager.h in Headers */,
+				9733948F20CE643FCE42036BA2D9772A /* FLEXSubtitleTableViewCell.h in Headers */,
+				AF6A4536C7F73FC3EEEE4636A623351F /* FLEXSystemLogMessage.h in Headers */,
+				467167AAAB25E89F0DB083C5C8428578 /* FLEXSystemLogTableViewCell.h in Headers */,
+				9EF3B948E43AF72F7BEA45113AF5FA04 /* FLEXSystemLogTableViewController.h in Headers */,
+				841133B88E1E3930EBDE60F344A8F862 /* FLEXTableColumnHeader.h in Headers */,
+				D4CD559E6422C942C41485E4C27361EA /* FLEXTableContentCell.h in Headers */,
+				3DD8C6706A0F6203B430FCB3847DF271 /* FLEXTableContentViewController.h in Headers */,
+				53606927982E01C3049437BEB08AE2E1 /* FLEXTableLeftCell.h in Headers */,
+				557FEE2B48CA5AE2C9A7BD4C62A6FD09 /* FLEXTableListViewController.h in Headers */,
+				BD0BFC1A84B921D598F63E5726728BD5 /* FLEXTableView.h in Headers */,
+				5F1D9E00439CFAFFFB25F65384677EE4 /* FLEXTableViewCell.h in Headers */,
+				D634129A497001F1ED5D62A98543654F /* FLEXToolbarItem.h in Headers */,
+				5FF2E9D3D51AB877DC049BE69CC729A7 /* FLEXUtility.h in Headers */,
+				3F6FE008054D6770DC12FFE816D46365 /* FLEXViewControllerExplorerViewController.h in Headers */,
+				4140C34C0689258EFC92B38C39119ACB /* FLEXViewExplorerViewController.h in Headers */,
+				26EA67698092DE4CD92A854F8D3B2EC0 /* FLEXWebViewController.h in Headers */,
+				A57DEB3DD42469F054AA726DB3B893AC /* FLEXWindow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB35094DAB78332499AA486482DECBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		040D746267F2F2DAC180E4770E41DC0B /* Pods-banzhuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA018228027464602B8629EC8A86FC8 /* Build configuration list for PBXNativeTarget "Pods-banzhuan" */;
+			buildPhases = (
+				5BB35094DAB78332499AA486482DECBE /* Headers */,
+				2C646FA8B26CB483937D870F02C47957 /* Sources */,
+				61D52655F9CE480DD54A4D367D35BAF0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-banzhuan";
+			productName = "Pods-banzhuan";
+			productReference = 9092874106090BE6ACD4DDE59EF750CA /* libPods-banzhuan.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2118323B990804522A46665B42C81135 /* FLEX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B133CF50091887F49F48FC52F7F07B6 /* Build configuration list for PBXNativeTarget "FLEX" */;
+			buildPhases = (
+				44859C6F4F2592BA3A066F73DD3A0A0A /* Headers */,
+				4D513F7C6EEB8D7D9E55CCC63E5F0078 /* Sources */,
+				F4FDC1C2002FFF1C86E4B8DB8B102E93 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FLEX;
+			productName = FLEX;
+			productReference = C626AB1060D7FBEE8DDDA8B508B679A2 /* libFLEX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4ECBD777587891B3EB88AD940801FF67 /* Pods-banzhuanDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDCFFB41FC555381DD08084FD3E12C0 /* Build configuration list for PBXNativeTarget "Pods-banzhuanDylib" */;
+			buildPhases = (
+				13808314C02E259C71324CD51C5C01B7 /* Headers */,
+				23B81280515CA0FF6D06D715693A7E3C /* Sources */,
+				3CB3530B8E1C4FA44CD8AB0F32B11BE4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2A9B0307EAC8FA0A2844E378B2B0D10 /* PBXTargetDependency */,
+			);
+			name = "Pods-banzhuanDylib";
+			productName = "Pods-banzhuanDylib";
+			productReference = D955A44C2BE1100A0CDC4DC870B6F034 /* libPods-banzhuanDylib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FD1200362E88615827B4A6EB169345FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2118323B990804522A46665B42C81135 /* FLEX */,
+				040D746267F2F2DAC180E4770E41DC0B /* Pods-banzhuan */,
+				4ECBD777587891B3EB88AD940801FF67 /* Pods-banzhuanDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23B81280515CA0FF6D06D715693A7E3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A774082E520EA776B9A383E9690DF675 /* Pods-banzhuanDylib-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C646FA8B26CB483937D870F02C47957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970C51956D54F20485EF1E2D82419938 /* Pods-banzhuan-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D513F7C6EEB8D7D9E55CCC63E5F0078 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFA2B985B8674DE0B197A8C97E16600E /* FLEX-dummy.m in Sources */,
+				83909600B981FAA949DA6A442528D731 /* FLEXArgumentInputColorView.m in Sources */,
+				FBD55F93F3027861ECAFDA7D430CC692 /* FLEXArgumentInputDateView.m in Sources */,
+				020D0806D448B7FE6E246BD63A392CE1 /* FLEXArgumentInputFontsPickerView.m in Sources */,
+				5E5FDE5DB0DED3279636A8E196704634 /* FLEXArgumentInputFontView.m in Sources */,
+				990D4ADC1E49FA305336C429D388A165 /* FLEXArgumentInputJSONObjectView.m in Sources */,
+				408973F458217A8503095AE3F69AF157 /* FLEXArgumentInputNotSupportedView.m in Sources */,
+				015E4778FDF18471243E25238880DC33 /* FLEXArgumentInputNumberView.m in Sources */,
+				578EDD3A0653F87140657B3B506BDEC1 /* FLEXArgumentInputStringView.m in Sources */,
+				D913A91C4E2CBBE92BAD9624E8F6E462 /* FLEXArgumentInputStructView.m in Sources */,
+				860672DF3F8C25C7F81FC4513B85113B /* FLEXArgumentInputSwitchView.m in Sources */,
+				17F17655EEDC4D69FABCB1CC036AEF5F /* FLEXArgumentInputTextView.m in Sources */,
+				5FD7D9B94B468FAA854071C696617B47 /* FLEXArgumentInputView.m in Sources */,
+				BE232D312BA626D41EE5029CF31AD491 /* FLEXArgumentInputViewFactory.m in Sources */,
+				C70B708DD6C2A3603DD62EF57F4948C0 /* FLEXArrayExplorerViewController.m in Sources */,
+				C8FE127F35C2F6BBFFE64D54F769EE67 /* FLEXASLLogController.m in Sources */,
+				A33D9450BDAA401CB7A7BC80EF1636C2 /* FLEXClassesTableViewController.m in Sources */,
+				39E4EEB6BBDBC71E7262E8DB0E8AAEEE /* FLEXClassExplorerViewController.m in Sources */,
+				117715785CC116972FB2F65BBAE65026 /* FLEXColorExplorerViewController.m in Sources */,
+				4A5A7982714CC9712B277F1DC0647823 /* FLEXCookiesTableViewController.m in Sources */,
+				7B4501107A0A6978DD952C34113CFCB9 /* FLEXDefaultEditorViewController.m in Sources */,
+				F0D199F0129534BA5610C0F602D5DE5C /* FLEXDefaultsExplorerViewController.m in Sources */,
+				82FFCF96AEC647DFE7CBC93B28612062 /* FLEXDictionaryExplorerViewController.m in Sources */,
+				43633C6C5D1E23A29A65FB5DFA360CEF /* FLEXExplorerToolbar.m in Sources */,
+				6AA19A02933E0DACC1BF3B743B867F29 /* FLEXExplorerViewController.m in Sources */,
+				21278A1CC7F0D975DF3AC280E04436E1 /* FLEXFieldEditorView.m in Sources */,
+				C8137EF2C2637D18035EAB6BA3BFB144 /* FLEXFieldEditorViewController.m in Sources */,
+				61496C03D44026B1F519DEBEEDD436C4 /* FLEXFileBrowserFileOperationController.m in Sources */,
+				984EFF91FA9484EC2E66BC044BD502CE /* FLEXFileBrowserSearchOperation.m in Sources */,
+				D93540BA477773432CA247DBA3C31BA2 /* FLEXFileBrowserTableViewController.m in Sources */,
+				56FDD924AA4C009F4312AA065C80C546 /* FLEXGlobalsTableViewController.m in Sources */,
+				EB31AA4A56AF7025D094D276D749ADF9 /* FLEXGlobalsTableViewControllerEntry.m in Sources */,
+				1D010F9DE5265DCE16C2503FC097456E /* FLEXHeapEnumerator.m in Sources */,
+				E3E359D5EE0C30437531E716C6A69418 /* FLEXHierarchyTableViewCell.m in Sources */,
+				4DF37E04FB4BD0F76D923A5DC8F7D841 /* FLEXHierarchyTableViewController.m in Sources */,
+				AB41883FAE30F6F113BF6EFFF9E8D775 /* FLEXImageExplorerViewController.m in Sources */,
+				9D28439D3E6EF1AFDF1F1D0DB0387891 /* FLEXImagePreviewViewController.m in Sources */,
+				166AB11DFB34D63D12F1016EDBA5D3EB /* FLEXInstancesTableViewController.m in Sources */,
+				304815754D526B127B93677DDECF2718 /* FLEXIvarEditorViewController.m in Sources */,
+				8C3327A3A40382F81EF9355056F6AC80 /* FLEXKeyboardHelpViewController.m in Sources */,
+				E8D35A2A67FD607FCE8927338F8DBD30 /* FLEXKeyboardShortcutManager.m in Sources */,
+				3E99D4C2E86DF5EE02EC7410E5735AF3 /* FLEXLayerExplorerViewController.m in Sources */,
+				51C381CC576FCEACB1B096A89EB1BD0A /* FLEXLibrariesTableViewController.m in Sources */,
+				B0383D2284396BCB979B413E88180654 /* FLEXLiveObjectsTableViewController.m in Sources */,
+				5CAFFC1ED522A70B9C092BF5C76CBF98 /* FLEXManager.m in Sources */,
+				6B40230C7133B994B8855807CB46572D /* FLEXMethodCallingViewController.m in Sources */,
+				12B74D945A5A096DE04831F99A9A605D /* FLEXMultiColumnTableView.m in Sources */,
+				16B5CEEF252D6F300D7A203B5D1900A6 /* FLEXMultilineTableViewCell.m in Sources */,
+				6AF8F5AB68E72A58C4C0C90BD749E13F /* FLEXMutableFieldEditorViewController.m in Sources */,
+				E985F36BBFB399759BB74784EBE21137 /* FLEXNetworkCurlLogger.m in Sources */,
+				1CAAEE1EC319F7DFC9EE9DF4339FF26D /* FLEXNetworkHistoryTableViewController.m in Sources */,
+				A71029FCEE39C108A255D27131AA674D /* FLEXNetworkObserver.m in Sources */,
+				B9FC25E0E0089485D6C60C0373E4C26F /* FLEXNetworkRecorder.m in Sources */,
+				1724E69A1613EBA9A523F0CB9E7E2B0E /* FLEXNetworkSettingsTableViewController.m in Sources */,
+				6AE35EF3FE9DD4FF8227A53B85169C19 /* FLEXNetworkTransaction.m in Sources */,
+				9FE5D89E24E5839DE0C4779649D06C6D /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
+				FAA259CF695C3C38641F268281C9A987 /* FLEXNetworkTransactionTableViewCell.m in Sources */,
+				9BE57B6FA0812814616A6C88E032F667 /* FLEXObjcInternal.mm in Sources */,
+				6EC62045402B0E7C82E621EFA28B119A /* FLEXObjectExplorerFactory.m in Sources */,
+				EC55E0CBEA23F08BE7348359F2FA6067 /* FLEXObjectExplorerViewController.m in Sources */,
+				017158669CEE64D632706E0ABF7D9C5C /* FLEXObjectRef.m in Sources */,
+				1E61FFB465E19F983AA4864DC81EC4C8 /* FLEXOSLogController.m in Sources */,
+				0EB184E5A7C453F130EB9955B83FA081 /* FLEXPropertyEditorViewController.m in Sources */,
+				CC479007E8E7E5C73AAC45AC0FDDAA6A /* FLEXRealmDatabaseManager.m in Sources */,
+				748B138C44EDEF1222085F34A1A3B9F6 /* FLEXResources.m in Sources */,
+				FC22D1F05C6E057A88DFDF15775E8F30 /* FLEXRuntimeUtility.m in Sources */,
+				A6634175015A08A4596A458E7208F93A /* FLEXSetExplorerViewController.m in Sources */,
+				DF70242423B7BBE6408BBE6FFD8B0102 /* FLEXSQLiteDatabaseManager.m in Sources */,
+				BDD3FE42A951E8937DE2D7B1B4FEB93C /* FLEXSubtitleTableViewCell.m in Sources */,
+				3B985173BC1E34FBB77F5577517A9C35 /* FLEXSystemLogMessage.m in Sources */,
+				24A128E40E1EBA847C8B2A877865B604 /* FLEXSystemLogTableViewCell.m in Sources */,
+				6391047289E2D97354D09A4B56A0F7BA /* FLEXSystemLogTableViewController.m in Sources */,
+				30680F8B1122BE8595EF3C66FC9E6102 /* FLEXTableColumnHeader.m in Sources */,
+				0FB385A8FA5C14F1AB4768CF1C2DA191 /* FLEXTableContentCell.m in Sources */,
+				15F7B65F5647294A5DEC78C49C04BBEC /* FLEXTableContentViewController.m in Sources */,
+				DD9F0E9AD63F4B2EFF0884EB6E560296 /* FLEXTableLeftCell.m in Sources */,
+				5619F2B92FD7B7E688E046A15B45C0A5 /* FLEXTableListViewController.m in Sources */,
+				70B7C1CCF262AB087D03FCB58FE9731E /* FLEXTableView.m in Sources */,
+				C38781CCEB7F36572453C7EBD56F8356 /* FLEXTableViewCell.m in Sources */,
+				16098B27B2CF7C7CC28E7704A5E33756 /* FLEXToolbarItem.m in Sources */,
+				E836FE77691B671F737D336205D61225 /* FLEXUtility.m in Sources */,
+				8B30DE50A76536618559EA7043DBEE4E /* FLEXViewControllerExplorerViewController.m in Sources */,
+				84B37AC7AF9C4D822D8EE4DDBA16A7CD /* FLEXViewExplorerViewController.m in Sources */,
+				61751D468E6F16D4477FED745D750363 /* FLEXWebViewController.m in Sources */,
+				03BD595E626E5FEAD2B308E4BD6267C2 /* FLEXWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2A9B0307EAC8FA0A2844E378B2B0D10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FLEX;
+			target = 2118323B990804522A46665B42C81135 /* FLEX */;
+			targetProxy = 7A4D035FD196035EE93C7DF1B983BBC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		030B12594DEEA2D5403CB0B49B20AE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA32CECBC31FEDEED872DE403E7B297 /* FLEX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FLEX/FLEX-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FLEX;
+				PRODUCT_NAME = FLEX;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2DB6D7F4BD097C2C9C06E00696BCC693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCA32CECBC31FEDEED872DE403E7B297 /* FLEX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/FLEX/FLEX-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = FLEX;
+				PRODUCT_NAME = FLEX;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40FBDAC0FFE7F29D4DD564EB92872A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 408A65CE96B1814AE921665FADB03849 /* Pods-banzhuanDylib.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		50984CA8C142FB262EFD42D755BCA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED20CD028705CA405D4BD25C4A8B09F /* Pods-banzhuanDylib.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56DF9E50F7D15B30566CC797C6D0EAE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58918FE10C1A7D5C99010017484BEFDE /* Pods-banzhuan.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64B9C98087D9DF86A6310F59C2D3406B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7208D22F781523178BA0175868C97404 /* Pods-banzhuan.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B133CF50091887F49F48FC52F7F07B6 /* Build configuration list for PBXNativeTarget "FLEX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030B12594DEEA2D5403CB0B49B20AE68 /* Debug */,
+				2DB6D7F4BD097C2C9C06E00696BCC693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDCFFB41FC555381DD08084FD3E12C0 /* Build configuration list for PBXNativeTarget "Pods-banzhuanDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40FBDAC0FFE7F29D4DD564EB92872A60 /* Debug */,
+				50984CA8C142FB262EFD42D755BCA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA018228027464602B8629EC8A86FC8 /* Build configuration list for PBXNativeTarget "Pods-banzhuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64B9C98087D9DF86A6310F59C2D3406B /* Debug */,
+				56DF9E50F7D15B30566CC797C6D0EAE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

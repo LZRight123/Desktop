@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3AAC5047A12C15868EB5300 /* libPods-ZhiboDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB917EA476519D486673863D /* libPods-ZhiboDylib.a */; };
+		DF4F3F0922D0C7CF00BD6F53 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF4F3F0822D0C7CF00BD6F53 /* MDConfig.plist */; };
+		DF4F3F1322D0C7CF00BD6F53 /* libZhiboDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF4F3F1222D0C7CF00BD6F53 /* libZhiboDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DF4F3F1822D0C7CF00BD6F53 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4F3F1722D0C7CF00BD6F53 /* JavaScriptCore.framework */; };
+		DF4F3F1A22D0C7CF00BD6F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4F3F1922D0C7CF00BD6F53 /* Foundation.framework */; };
+		DF4F3F1C22D0C7CF00BD6F53 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4F3F1B22D0C7CF00BD6F53 /* UIKit.framework */; };
+		DF4F3F2122D0C7CF00BD6F53 /* ZhiboDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F2022D0C7CF00BD6F53 /* ZhiboDylib.mm */; };
+		DF4F3F2422D0C7CF00BD6F53 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F2322D0C7CF00BD6F53 /* MDConfigManager.h */; };
+		DF4F3F2622D0C7CF00BD6F53 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F2522D0C7CF00BD6F53 /* MDConfigManager.m */; };
+		DF4F3F2822D0C7CF00BD6F53 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F2722D0C7CF00BD6F53 /* MDCycriptManager.h */; };
+		DF4F3F2A22D0C7CF00BD6F53 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F2922D0C7CF00BD6F53 /* MDCycriptManager.m */; };
+		DF4F3F2C22D0C7CF00BD6F53 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F2B22D0C7CF00BD6F53 /* MDMethodTrace.h */; };
+		DF4F3F2E22D0C7CF00BD6F53 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F2D22D0C7CF00BD6F53 /* MDMethodTrace.m */; };
+		DF4F3F3122D0C7CF00BD6F53 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3022D0C7CF00BD6F53 /* a1a2-selectortramps-arm.s */; };
+		DF4F3F3322D0C7CF00BD6F53 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3222D0C7CF00BD6F53 /* a1a2-selectortramps-arm64.s */; };
+		DF4F3F3522D0C7CF00BD6F53 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3422D0C7CF00BD6F53 /* a1a2-selectortramps-i386.s */; };
+		DF4F3F3722D0C7CF00BD6F53 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3622D0C7CF00BD6F53 /* a1a2-selectortramps-x86_64.s */; };
+		DF4F3F3922D0C7CF00BD6F53 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3822D0C7CF00BD6F53 /* a2a3-selectortramps-arm.s */; };
+		DF4F3F3B22D0C7CF00BD6F53 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3A22D0C7CF00BD6F53 /* a2a3-selectortramps-i386.s */; };
+		DF4F3F3D22D0C7CF00BD6F53 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F3C22D0C7CF00BD6F53 /* a2a3-selectortramps-x86_64.s */; };
+		DF4F3F3F22D0C7CF00BD6F53 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F3E22D0C7CF00BD6F53 /* OCMethodTrace.h */; };
+		DF4F3F4122D0C7CF00BD6F53 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F4022D0C7CF00BD6F53 /* OCMethodTrace.m */; };
+		DF4F3F4322D0C7CF00BD6F53 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F4222D0C7CF00BD6F53 /* OCSelectorTrampolines.h */; };
+		DF4F3F4522D0C7CF00BD6F53 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F4422D0C7CF00BD6F53 /* OCSelectorTrampolines.mm */; };
+		DF4F3F4922D0C7CF00BD6F53 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F4822D0C7CF00BD6F53 /* LLDBTools.h */; };
+		DF4F3F4B22D0C7CF00BD6F53 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F4A22D0C7CF00BD6F53 /* LLDBTools.mm */; };
+		DF4F3F5022D0C7CF00BD6F53 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F4F22D0C7CF00BD6F53 /* fishhook.c */; };
+		DF4F3F5222D0C7CF00BD6F53 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F5122D0C7CF00BD6F53 /* fishhook.h */; };
+		DF4F3F5422D0C7CF00BD6F53 /* ZhiboDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DF4F3F5322D0C7CF00BD6F53 /* ZhiboDylib.h */; };
+		DF4F3F5622D0C7CF00BD6F53 /* ZhiboDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4F3F5522D0C7CF00BD6F53 /* ZhiboDylib.m */; };
+		DF59BF3B22F2F1C200E0BB46 /* TweakEmpty.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF59BF3A22F2F1C200E0BB46 /* TweakEmpty.mm */; };
+		DF59BF4122F2F2E400E0BB46 /* JZTDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DF59BF3D22F2F2E300E0BB46 /* JZTDateUtils.m */; };
+		DF59BF4222F2F2E400E0BB46 /* JZTDateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = DF59BF3E22F2F2E300E0BB46 /* JZTDateUtils.h */; };
+		DF59BF4322F2F2E400E0BB46 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = DF59BF3F22F2F2E300E0BB46 /* NSDictionary+YYAdd.h */; };
+		DF59BF4422F2F2E400E0BB46 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DF59BF4022F2F2E300E0BB46 /* NSDictionary+YYAdd.m */; };
+		DFA2A85D22D209E500A89BC6 /* CCHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA2A85822D209E500A89BC6 /* CCHelpTool.m */; };
+		DFA2A85E22D209E500A89BC6 /* CC_Object-C.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFA2A85922D209E500A89BC6 /* CC_Object-C.mm */; };
+		DFA2A85F22D209E500A89BC6 /* CC_CFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA2A85A22D209E500A89BC6 /* CC_CFunction.m */; };
+		DFA2A86022D209E500A89BC6 /* CCHelpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA2A85C22D209E500A89BC6 /* CCHelpTool.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF4F3F1422D0C7CF00BD6F53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF4F3EF622D0C7CF00BD6F53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF4F3F1122D0C7CF00BD6F53;
+			remoteInfo = ZhiboDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DF4F3EFE22D0C7CF00BD6F53 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF4F3F1322D0C7CF00BD6F53 /* libZhiboDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1AC488D8BC9F518EFA87FA31 /* Pods-ZhiboDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiboDylib.debug.xcconfig"; path = "Target Support Files/Pods-ZhiboDylib/Pods-ZhiboDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		201570960F9C107A775ADE54 /* Pods-ZhiboDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiboDylib.release.xcconfig"; path = "Target Support Files/Pods-ZhiboDylib/Pods-ZhiboDylib.release.xcconfig"; sourceTree = "<group>"; };
+		BB917EA476519D486673863D /* libPods-ZhiboDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhiboDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4F3F0122D0C7CF00BD6F53 /* Zhibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zhibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4F3F0422D0C7CF00BD6F53 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DF4F3F0622D0C7CF00BD6F53 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DF4F3F0822D0C7CF00BD6F53 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DF4F3F0B22D0C7CF00BD6F53 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DF4F3F0C22D0C7CF00BD6F53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF4F3F1222D0C7CF00BD6F53 /* libZhiboDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libZhiboDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4F3F1722D0C7CF00BD6F53 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DF4F3F1922D0C7CF00BD6F53 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF4F3F1B22D0C7CF00BD6F53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF4F3F1F22D0C7CF00BD6F53 /* ZhiboDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; name = ZhiboDylib.xm; path = Logos/ZhiboDylib.xm; sourceTree = "<group>"; };
+		DF4F3F2022D0C7CF00BD6F53 /* ZhiboDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = ZhiboDylib.mm; path = Logos/ZhiboDylib.mm; sourceTree = "<group>"; };
+		DF4F3F2322D0C7CF00BD6F53 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DF4F3F2522D0C7CF00BD6F53 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DF4F3F2722D0C7CF00BD6F53 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DF4F3F2922D0C7CF00BD6F53 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DF4F3F2B22D0C7CF00BD6F53 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DF4F3F2D22D0C7CF00BD6F53 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DF4F3F3022D0C7CF00BD6F53 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF4F3F3222D0C7CF00BD6F53 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DF4F3F3422D0C7CF00BD6F53 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF4F3F3622D0C7CF00BD6F53 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF4F3F3822D0C7CF00BD6F53 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DF4F3F3A22D0C7CF00BD6F53 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DF4F3F3C22D0C7CF00BD6F53 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DF4F3F3E22D0C7CF00BD6F53 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DF4F3F4022D0C7CF00BD6F53 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DF4F3F4222D0C7CF00BD6F53 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DF4F3F4422D0C7CF00BD6F53 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DF4F3F4622D0C7CF00BD6F53 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DF4F3F4822D0C7CF00BD6F53 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DF4F3F4A22D0C7CF00BD6F53 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DF4F3F4D22D0C7CF00BD6F53 /* ZhiboDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZhiboDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DF4F3F4F22D0C7CF00BD6F53 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DF4F3F5122D0C7CF00BD6F53 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DF4F3F5322D0C7CF00BD6F53 /* ZhiboDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiboDylib.h; sourceTree = "<group>"; };
+		DF4F3F5522D0C7CF00BD6F53 /* ZhiboDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiboDylib.m; sourceTree = "<group>"; };
+		DF59BF3922F2F1C200E0BB46 /* TweakEmpty.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = TweakEmpty.xm; sourceTree = "<group>"; };
+		DF59BF3A22F2F1C200E0BB46 /* TweakEmpty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TweakEmpty.mm; sourceTree = "<group>"; };
+		DF59BF3D22F2F2E300E0BB46 /* JZTDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTDateUtils.m; sourceTree = "<group>"; };
+		DF59BF3E22F2F2E300E0BB46 /* JZTDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTDateUtils.h; sourceTree = "<group>"; };
+		DF59BF3F22F2F2E300E0BB46 /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
+		DF59BF4022F2F2E300E0BB46 /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
+		DFA2A85822D209E500A89BC6 /* CCHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHelpTool.m; sourceTree = "<group>"; };
+		DFA2A85922D209E500A89BC6 /* CC_Object-C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CC_Object-C.mm"; sourceTree = "<group>"; };
+		DFA2A85A22D209E500A89BC6 /* CC_CFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC_CFunction.m; sourceTree = "<group>"; };
+		DFA2A85B22D209E500A89BC6 /* CC_Object-C.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = "CC_Object-C.xm"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		DFA2A85C22D209E500A89BC6 /* CCHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHelpTool.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF4F3EFB22D0C7CF00BD6F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4F3F0F22D0C7CF00BD6F53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4F3F1822D0C7CF00BD6F53 /* JavaScriptCore.framework in Frameworks */,
+				DF4F3F1C22D0C7CF00BD6F53 /* UIKit.framework in Frameworks */,
+				DF4F3F1A22D0C7CF00BD6F53 /* Foundation.framework in Frameworks */,
+				A3AAC5047A12C15868EB5300 /* libPods-ZhiboDylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F78AB5506E733A53DBAB88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AC488D8BC9F518EFA87FA31 /* Pods-ZhiboDylib.debug.xcconfig */,
+				201570960F9C107A775ADE54 /* Pods-ZhiboDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF4F3EF522D0C7CF00BD6F53 = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0322D0C7CF00BD6F53 /* Zhibo */,
+				DF4F3F1D22D0C7CF00BD6F53 /* ZhiboDylib */,
+				DF4F3F1622D0C7CF00BD6F53 /* Frameworks */,
+				DF4F3F0222D0C7CF00BD6F53 /* Products */,
+				01F78AB5506E733A53DBAB88 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DF4F3F0222D0C7CF00BD6F53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0122D0C7CF00BD6F53 /* Zhibo.app */,
+				DF4F3F1222D0C7CF00BD6F53 /* libZhiboDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF4F3F0322D0C7CF00BD6F53 /* Zhibo */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0422D0C7CF00BD6F53 /* icon.png */,
+				DF4F3F0C22D0C7CF00BD6F53 /* Info.plist */,
+				DF4F3F0522D0C7CF00BD6F53 /* Scripts */,
+				DF4F3F0722D0C7CF00BD6F53 /* Config */,
+				DF4F3F0A22D0C7CF00BD6F53 /* TargetApp */,
+			);
+			path = Zhibo;
+			sourceTree = "<group>";
+		};
+		DF4F3F0522D0C7CF00BD6F53 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0622D0C7CF00BD6F53 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DF4F3F0722D0C7CF00BD6F53 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0822D0C7CF00BD6F53 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF4F3F0A22D0C7CF00BD6F53 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F0B22D0C7CF00BD6F53 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DF4F3F1622D0C7CF00BD6F53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F1722D0C7CF00BD6F53 /* JavaScriptCore.framework */,
+				DF4F3F1922D0C7CF00BD6F53 /* Foundation.framework */,
+				DF4F3F1B22D0C7CF00BD6F53 /* UIKit.framework */,
+				BB917EA476519D486673863D /* libPods-ZhiboDylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF4F3F1D22D0C7CF00BD6F53 /* ZhiboDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DF59BF3E22F2F2E300E0BB46 /* JZTDateUtils.h */,
+				DF59BF3D22F2F2E300E0BB46 /* JZTDateUtils.m */,
+				DF59BF3F22F2F2E300E0BB46 /* NSDictionary+YYAdd.h */,
+				DF59BF4022F2F2E300E0BB46 /* NSDictionary+YYAdd.m */,
+				DF4F3F5322D0C7CF00BD6F53 /* ZhiboDylib.h */,
+				DF4F3F5522D0C7CF00BD6F53 /* ZhiboDylib.m */,
+				DFA2A85722D209E500A89BC6 /* CCTweakTool */,
+				DF4F3F1E22D0C7CF00BD6F53 /* Logos */,
+				DF4F3F2222D0C7CF00BD6F53 /* Config */,
+				DF4F3F2F22D0C7CF00BD6F53 /* Trace */,
+				DF4F3F4722D0C7CF00BD6F53 /* Tools */,
+				DF4F3F4E22D0C7CF00BD6F53 /* fishhook */,
+				DF4F3F4C22D0C7CF00BD6F53 /* Supporting Files */,
+			);
+			path = ZhiboDylib;
+			sourceTree = "<group>";
+		};
+		DF4F3F1E22D0C7CF00BD6F53 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F1F22D0C7CF00BD6F53 /* ZhiboDylib.xm */,
+				DF4F3F2022D0C7CF00BD6F53 /* ZhiboDylib.mm */,
+				DF59BF3922F2F1C200E0BB46 /* TweakEmpty.xm */,
+				DF59BF3A22F2F1C200E0BB46 /* TweakEmpty.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DF4F3F2222D0C7CF00BD6F53 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F2322D0C7CF00BD6F53 /* MDConfigManager.h */,
+				DF4F3F2522D0C7CF00BD6F53 /* MDConfigManager.m */,
+				DF4F3F2722D0C7CF00BD6F53 /* MDCycriptManager.h */,
+				DF4F3F2922D0C7CF00BD6F53 /* MDCycriptManager.m */,
+				DF4F3F2B22D0C7CF00BD6F53 /* MDMethodTrace.h */,
+				DF4F3F2D22D0C7CF00BD6F53 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DF4F3F2F22D0C7CF00BD6F53 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F3022D0C7CF00BD6F53 /* a1a2-selectortramps-arm.s */,
+				DF4F3F3222D0C7CF00BD6F53 /* a1a2-selectortramps-arm64.s */,
+				DF4F3F3422D0C7CF00BD6F53 /* a1a2-selectortramps-i386.s */,
+				DF4F3F3622D0C7CF00BD6F53 /* a1a2-selectortramps-x86_64.s */,
+				DF4F3F3822D0C7CF00BD6F53 /* a2a3-selectortramps-arm.s */,
+				DF4F3F3A22D0C7CF00BD6F53 /* a2a3-selectortramps-i386.s */,
+				DF4F3F3C22D0C7CF00BD6F53 /* a2a3-selectortramps-x86_64.s */,
+				DF4F3F3E22D0C7CF00BD6F53 /* OCMethodTrace.h */,
+				DF4F3F4022D0C7CF00BD6F53 /* OCMethodTrace.m */,
+				DF4F3F4222D0C7CF00BD6F53 /* OCSelectorTrampolines.h */,
+				DF4F3F4422D0C7CF00BD6F53 /* OCSelectorTrampolines.mm */,
+				DF4F3F4622D0C7CF00BD6F53 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DF4F3F4722D0C7CF00BD6F53 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F4822D0C7CF00BD6F53 /* LLDBTools.h */,
+				DF4F3F4A22D0C7CF00BD6F53 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DF4F3F4C22D0C7CF00BD6F53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F4D22D0C7CF00BD6F53 /* ZhiboDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF4F3F4E22D0C7CF00BD6F53 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DF4F3F4F22D0C7CF00BD6F53 /* fishhook.c */,
+				DF4F3F5122D0C7CF00BD6F53 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		DFA2A85722D209E500A89BC6 /* CCTweakTool */ = {
+			isa = PBXGroup;
+			children = (
+				DFA2A85C22D209E500A89BC6 /* CCHelpTool.h */,
+				DFA2A85822D209E500A89BC6 /* CCHelpTool.m */,
+				DFA2A85A22D209E500A89BC6 /* CC_CFunction.m */,
+				DFA2A85B22D209E500A89BC6 /* CC_Object-C.xm */,
+				DFA2A85922D209E500A89BC6 /* CC_Object-C.mm */,
+			);
+			path = CCTweakTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DF4F3F1022D0C7CF00BD6F53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4F3F2822D0C7CF00BD6F53 /* MDCycriptManager.h in Headers */,
+				DF4F3F2C22D0C7CF00BD6F53 /* MDMethodTrace.h in Headers */,
+				DF59BF4322F2F2E400E0BB46 /* NSDictionary+YYAdd.h in Headers */,
+				DF4F3F5422D0C7CF00BD6F53 /* ZhiboDylib.h in Headers */,
+				DFA2A86022D209E500A89BC6 /* CCHelpTool.h in Headers */,
+				DF4F3F5222D0C7CF00BD6F53 /* fishhook.h in Headers */,
+				DF4F3F4922D0C7CF00BD6F53 /* LLDBTools.h in Headers */,
+				DF4F3F2422D0C7CF00BD6F53 /* MDConfigManager.h in Headers */,
+				DF4F3F4322D0C7CF00BD6F53 /* OCSelectorTrampolines.h in Headers */,
+				DF4F3F3F22D0C7CF00BD6F53 /* OCMethodTrace.h in Headers */,
+				DF59BF4222F2F2E400E0BB46 /* JZTDateUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DF4F3F0022D0C7CF00BD6F53 /* Zhibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4F3F5C22D0C7CF00BD6F53 /* Build configuration list for PBXNativeTarget "Zhibo" */;
+			buildPhases = (
+				DF4F3EFA22D0C7CF00BD6F53 /* Sources */,
+				DF4F3EFB22D0C7CF00BD6F53 /* Frameworks */,
+				DF4F3EFC22D0C7CF00BD6F53 /* ShellScript */,
+				DF4F3EFD22D0C7CF00BD6F53 /* Resources */,
+				DF4F3EFE22D0C7CF00BD6F53 /* CopyFiles */,
+				DF4F3EFF22D0C7CF00BD6F53 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF4F3F1522D0C7CF00BD6F53 /* PBXTargetDependency */,
+			);
+			name = Zhibo;
+			productName = Zhibo;
+			productReference = DF4F3F0122D0C7CF00BD6F53 /* Zhibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF4F3F1122D0C7CF00BD6F53 /* ZhiboDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF4F3F5922D0C7CF00BD6F53 /* Build configuration list for PBXNativeTarget "ZhiboDylib" */;
+			buildPhases = (
+				130E3D43BCA72257D15E9C45 /* [CP] Check Pods Manifest.lock */,
+				DF4F3F0D22D0C7CF00BD6F53 /* ShellScript */,
+				DF4F3F0E22D0C7CF00BD6F53 /* Sources */,
+				DF4F3F0F22D0C7CF00BD6F53 /* Frameworks */,
+				DF4F3F1022D0C7CF00BD6F53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhiboDylib;
+			productName = ZhiboDylib;
+			productReference = DF4F3F1222D0C7CF00BD6F53 /* libZhiboDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF4F3EF622D0C7CF00BD6F53 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DF4F3F0022D0C7CF00BD6F53 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DF4F3F1122D0C7CF00BD6F53 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = DF4F3EF922D0C7CF00BD6F53 /* Build configuration list for PBXProject "Zhibo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF4F3EF522D0C7CF00BD6F53;
+			productRefGroup = DF4F3F0222D0C7CF00BD6F53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF4F3F0022D0C7CF00BD6F53 /* Zhibo */,
+				DF4F3F1122D0C7CF00BD6F53 /* ZhiboDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF4F3EFD22D0C7CF00BD6F53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4F3F0922D0C7CF00BD6F53 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130E3D43BCA72257D15E9C45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhiboDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4F3EFC22D0C7CF00BD6F53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DF4F3EFF22D0C7CF00BD6F53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DF4F3F0D22D0C7CF00BD6F53 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF4F3EFA22D0C7CF00BD6F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4F3F0E22D0C7CF00BD6F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4F3F2A22D0C7CF00BD6F53 /* MDCycriptManager.m in Sources */,
+				DF59BF4122F2F2E400E0BB46 /* JZTDateUtils.m in Sources */,
+				DF4F3F5022D0C7CF00BD6F53 /* fishhook.c in Sources */,
+				DF4F3F3322D0C7CF00BD6F53 /* a1a2-selectortramps-arm64.s in Sources */,
+				DF4F3F3122D0C7CF00BD6F53 /* a1a2-selectortramps-arm.s in Sources */,
+				DF4F3F3722D0C7CF00BD6F53 /* a1a2-selectortramps-x86_64.s in Sources */,
+				DF4F3F4122D0C7CF00BD6F53 /* OCMethodTrace.m in Sources */,
+				DF4F3F2622D0C7CF00BD6F53 /* MDConfigManager.m in Sources */,
+				DF4F3F5622D0C7CF00BD6F53 /* ZhiboDylib.m in Sources */,
+				DF4F3F4522D0C7CF00BD6F53 /* OCSelectorTrampolines.mm in Sources */,
+				DF4F3F3522D0C7CF00BD6F53 /* a1a2-selectortramps-i386.s in Sources */,
+				DF4F3F3B22D0C7CF00BD6F53 /* a2a3-selectortramps-i386.s in Sources */,
+				DF59BF4422F2F2E400E0BB46 /* NSDictionary+YYAdd.m in Sources */,
+				DFA2A85D22D209E500A89BC6 /* CCHelpTool.m in Sources */,
+				DFA2A85F22D209E500A89BC6 /* CC_CFunction.m in Sources */,
+				DF4F3F3922D0C7CF00BD6F53 /* a2a3-selectortramps-arm.s in Sources */,
+				DF4F3F2122D0C7CF00BD6F53 /* ZhiboDylib.mm in Sources */,
+				DFA2A85E22D209E500A89BC6 /* CC_Object-C.mm in Sources */,
+				DF59BF3B22F2F1C200E0BB46 /* TweakEmpty.mm in Sources */,
+				DF4F3F4B22D0C7CF00BD6F53 /* LLDBTools.mm in Sources */,
+				DF4F3F3D22D0C7CF00BD6F53 /* a2a3-selectortramps-x86_64.s in Sources */,
+				DF4F3F2E22D0C7CF00BD6F53 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF4F3F1522D0C7CF00BD6F53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF4F3F1122D0C7CF00BD6F53 /* ZhiboDylib */;
+			targetProxy = DF4F3F1422D0C7CF00BD6F53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF4F3F5722D0C7CF00BD6F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF4F3F5822D0C7CF00BD6F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF4F3F5A22D0C7CF00BD6F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AC488D8BC9F518EFA87FA31 /* Pods-ZhiboDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhiboDylib/ZhiboDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libZhiboDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ZhiboDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DF4F3F5B22D0C7CF00BD6F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201570960F9C107A775ADE54 /* Pods-ZhiboDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZhiboDylib/ZhiboDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libZhiboDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"ZhiboDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF4F3F5D22D0C7CF00BD6F53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Zhibo/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didi.Audience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF4F3F5E22D0C7CF00BD6F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Zhibo/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didi.Audience;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF4F3EF922D0C7CF00BD6F53 /* Build configuration list for PBXProject "Zhibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4F3F5722D0C7CF00BD6F53 /* Debug */,
+				DF4F3F5822D0C7CF00BD6F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4F3F5922D0C7CF00BD6F53 /* Build configuration list for PBXNativeTarget "ZhiboDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4F3F5A22D0C7CF00BD6F53 /* Debug */,
+				DF4F3F5B22D0C7CF00BD6F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF4F3F5C22D0C7CF00BD6F53 /* Build configuration list for PBXNativeTarget "Zhibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF4F3F5D22D0C7CF00BD6F53 /* Debug */,
+				DF4F3F5E22D0C7CF00BD6F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF4F3EF622D0C7CF00BD6F53 /* Project object */;
+}
