@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFC469022FADB460039CD0B /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFFC468F22FADB460039CD0B /* MDConfig.plist */; };
+		DFFC469A22FADB460039CD0B /* libDreamPDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = DFFC469922FADB460039CD0B /* libDreamPDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DFFC469F22FADB460039CD0B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFC469E22FADB460039CD0B /* JavaScriptCore.framework */; };
+		DFFC46A122FADB460039CD0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFC46A022FADB460039CD0B /* Foundation.framework */; };
+		DFFC46A322FADB460039CD0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFFC46A222FADB460039CD0B /* UIKit.framework */; };
+		DFFC46A822FADB470039CD0B /* DreamPDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46A722FADB470039CD0B /* DreamPDylib.mm */; };
+		DFFC46AB22FADB470039CD0B /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46AA22FADB470039CD0B /* MDConfigManager.h */; };
+		DFFC46AD22FADB470039CD0B /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46AC22FADB470039CD0B /* MDConfigManager.m */; };
+		DFFC46AF22FADB470039CD0B /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46AE22FADB470039CD0B /* MDCycriptManager.h */; };
+		DFFC46B122FADB470039CD0B /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46B022FADB470039CD0B /* MDCycriptManager.m */; };
+		DFFC46B322FADB470039CD0B /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46B222FADB470039CD0B /* MDMethodTrace.h */; };
+		DFFC46B522FADB470039CD0B /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46B422FADB470039CD0B /* MDMethodTrace.m */; };
+		DFFC46B822FADB470039CD0B /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46B722FADB470039CD0B /* a1a2-selectortramps-arm.s */; };
+		DFFC46BA22FADB470039CD0B /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46B922FADB470039CD0B /* a1a2-selectortramps-arm64.s */; };
+		DFFC46BC22FADB470039CD0B /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46BB22FADB470039CD0B /* a1a2-selectortramps-i386.s */; };
+		DFFC46BE22FADB470039CD0B /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46BD22FADB470039CD0B /* a1a2-selectortramps-x86_64.s */; };
+		DFFC46C022FADB470039CD0B /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46BF22FADB470039CD0B /* a2a3-selectortramps-arm.s */; };
+		DFFC46C222FADB470039CD0B /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46C122FADB470039CD0B /* a2a3-selectortramps-i386.s */; };
+		DFFC46C422FADB470039CD0B /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46C322FADB470039CD0B /* a2a3-selectortramps-x86_64.s */; };
+		DFFC46C622FADB470039CD0B /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46C522FADB470039CD0B /* OCMethodTrace.h */; };
+		DFFC46C822FADB470039CD0B /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46C722FADB470039CD0B /* OCMethodTrace.m */; };
+		DFFC46CA22FADB470039CD0B /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46C922FADB470039CD0B /* OCSelectorTrampolines.h */; };
+		DFFC46CC22FADB470039CD0B /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46CB22FADB470039CD0B /* OCSelectorTrampolines.mm */; };
+		DFFC46D022FADB470039CD0B /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46CF22FADB470039CD0B /* LLDBTools.h */; };
+		DFFC46D222FADB470039CD0B /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46D122FADB470039CD0B /* LLDBTools.mm */; };
+		DFFC46D722FADB470039CD0B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46D622FADB470039CD0B /* fishhook.c */; };
+		DFFC46D922FADB470039CD0B /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46D822FADB470039CD0B /* fishhook.h */; };
+		DFFC46DB22FADB470039CD0B /* DreamPDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46DA22FADB470039CD0B /* DreamPDylib.h */; };
+		DFFC46DD22FADB470039CD0B /* DreamPDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46DC22FADB470039CD0B /* DreamPDylib.m */; };
+		DFFC46F622FADBA00039CD0B /* CCHelpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46E722FADBA00039CD0B /* CCHelpTool.m */; };
+		DFFC46F722FADBA00039CD0B /* CC_Object-C.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46E822FADBA00039CD0B /* CC_Object-C.mm */; };
+		DFFC46F822FADBA00039CD0B /* CC_CFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46E922FADBA00039CD0B /* CC_CFunction.m */; };
+		DFFC46F922FADBA00039CD0B /* CCHelpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46EB22FADBA00039CD0B /* CCHelpTool.h */; };
+		DFFC46FA22FADBA00039CD0B /* __MCMContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46ED22FADBA00039CD0B /* __MCMContainer.h */; };
+		DFFC46FB22FADBA00039CD0B /* __AADevice.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46EE22FADBA00039CD0B /* __AADevice.h */; };
+		DFFC46FC22FADBA00039CD0B /* __LSApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = DFFC46EF22FADBA00039CD0B /* __LSApplication.h */; };
+		DFFC46FD22FADBA00039CD0B /* __LSApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46F022FADBA00039CD0B /* __LSApplication.mm */; };
+		DFFC46FE22FADBA00039CD0B /* __MCMContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46F422FADBA00039CD0B /* __MCMContainer.mm */; };
+		DFFC46FF22FADBA00039CD0B /* __AADevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFFC46F522FADBA00039CD0B /* __AADevice.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFFC469B22FADB460039CD0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFC467D22FADB460039CD0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFC469822FADB460039CD0B;
+			remoteInfo = DreamPDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFFC468522FADB460039CD0B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFFC469A22FADB460039CD0B /* libDreamPDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFFC468822FADB460039CD0B /* DreamP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFC468B22FADB460039CD0B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		DFFC468D22FADB460039CD0B /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		DFFC468F22FADB460039CD0B /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		DFFC469222FADB460039CD0B /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		DFFC469322FADB460039CD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFC469922FADB460039CD0B /* libDreamPDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDreamPDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFC469E22FADB460039CD0B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DFFC46A022FADB460039CD0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFFC46A222FADB460039CD0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFFC46A622FADB470039CD0B /* DreamPDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = DreamPDylib.xm; path = Logos/DreamPDylib.xm; sourceTree = "<group>"; };
+		DFFC46A722FADB470039CD0B /* DreamPDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DreamPDylib.mm; path = Logos/DreamPDylib.mm; sourceTree = "<group>"; };
+		DFFC46AA22FADB470039CD0B /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		DFFC46AC22FADB470039CD0B /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		DFFC46AE22FADB470039CD0B /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		DFFC46B022FADB470039CD0B /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		DFFC46B222FADB470039CD0B /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		DFFC46B422FADB470039CD0B /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		DFFC46B722FADB470039CD0B /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DFFC46B922FADB470039CD0B /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		DFFC46BB22FADB470039CD0B /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DFFC46BD22FADB470039CD0B /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DFFC46BF22FADB470039CD0B /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		DFFC46C122FADB470039CD0B /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		DFFC46C322FADB470039CD0B /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		DFFC46C522FADB470039CD0B /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		DFFC46C722FADB470039CD0B /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		DFFC46C922FADB470039CD0B /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		DFFC46CB22FADB470039CD0B /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		DFFC46CD22FADB470039CD0B /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		DFFC46CF22FADB470039CD0B /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		DFFC46D122FADB470039CD0B /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		DFFC46D422FADB470039CD0B /* DreamPDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DreamPDylib-Prefix.pch"; sourceTree = "<group>"; };
+		DFFC46D622FADB470039CD0B /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		DFFC46D822FADB470039CD0B /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		DFFC46DA22FADB470039CD0B /* DreamPDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DreamPDylib.h; sourceTree = "<group>"; };
+		DFFC46DC22FADB470039CD0B /* DreamPDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DreamPDylib.m; sourceTree = "<group>"; };
+		DFFC46E722FADBA00039CD0B /* CCHelpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHelpTool.m; sourceTree = "<group>"; };
+		DFFC46E822FADBA00039CD0B /* CC_Object-C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "CC_Object-C.mm"; sourceTree = "<group>"; };
+		DFFC46E922FADBA00039CD0B /* CC_CFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CC_CFunction.m; sourceTree = "<group>"; };
+		DFFC46EA22FADBA00039CD0B /* CC_Object-C.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CC_Object-C.xm"; sourceTree = "<group>"; };
+		DFFC46EB22FADBA00039CD0B /* CCHelpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHelpTool.h; sourceTree = "<group>"; };
+		DFFC46ED22FADBA00039CD0B /* __MCMContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __MCMContainer.h; sourceTree = "<group>"; };
+		DFFC46EE22FADBA00039CD0B /* __AADevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __AADevice.h; sourceTree = "<group>"; };
+		DFFC46EF22FADBA00039CD0B /* __LSApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = __LSApplication.h; sourceTree = "<group>"; };
+		DFFC46F022FADBA00039CD0B /* __LSApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __LSApplication.mm; sourceTree = "<group>"; };
+		DFFC46F122FADBA00039CD0B /* __AADevice.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __AADevice.xm; sourceTree = "<group>"; };
+		DFFC46F222FADBA00039CD0B /* __MCMContainer.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __MCMContainer.xm; sourceTree = "<group>"; };
+		DFFC46F322FADBA00039CD0B /* __LSApplication.xm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = __LSApplication.xm; sourceTree = "<group>"; };
+		DFFC46F422FADBA00039CD0B /* __MCMContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __MCMContainer.mm; sourceTree = "<group>"; };
+		DFFC46F522FADBA00039CD0B /* __AADevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = __AADevice.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFC468222FADB460039CD0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFC469622FADB460039CD0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFC469F22FADB460039CD0B /* JavaScriptCore.framework in Frameworks */,
+				DFFC46A322FADB460039CD0B /* UIKit.framework in Frameworks */,
+				DFFC46A122FADB460039CD0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFC467C22FADB460039CD0B = {
+			isa = PBXGroup;
+			children = (
+				DFFC468A22FADB460039CD0B /* DreamP */,
+				DFFC46A422FADB470039CD0B /* DreamPDylib */,
+				DFFC469D22FADB460039CD0B /* Frameworks */,
+				DFFC468922FADB460039CD0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFC468922FADB460039CD0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC468822FADB460039CD0B /* DreamP.app */,
+				DFFC469922FADB460039CD0B /* libDreamPDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFC468A22FADB460039CD0B /* DreamP */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC468B22FADB460039CD0B /* icon.png */,
+				DFFC469322FADB460039CD0B /* Info.plist */,
+				DFFC468C22FADB460039CD0B /* Scripts */,
+				DFFC468E22FADB460039CD0B /* Config */,
+				DFFC469122FADB460039CD0B /* TargetApp */,
+			);
+			path = DreamP;
+			sourceTree = "<group>";
+		};
+		DFFC468C22FADB460039CD0B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC468D22FADB460039CD0B /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		DFFC468E22FADB460039CD0B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC468F22FADB460039CD0B /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DFFC469122FADB460039CD0B /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC469222FADB460039CD0B /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		DFFC469D22FADB460039CD0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC469E22FADB460039CD0B /* JavaScriptCore.framework */,
+				DFFC46A022FADB460039CD0B /* Foundation.framework */,
+				DFFC46A222FADB460039CD0B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFFC46A422FADB470039CD0B /* DreamPDylib */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46E622FADBA00039CD0B /* CCTweakTool */,
+				DFFC46DA22FADB470039CD0B /* DreamPDylib.h */,
+				DFFC46DC22FADB470039CD0B /* DreamPDylib.m */,
+				DFFC46A522FADB470039CD0B /* Logos */,
+				DFFC46A922FADB470039CD0B /* Config */,
+				DFFC46B622FADB470039CD0B /* Trace */,
+				DFFC46CE22FADB470039CD0B /* Tools */,
+				DFFC46D522FADB470039CD0B /* fishhook */,
+				DFFC46D322FADB470039CD0B /* Supporting Files */,
+			);
+			path = DreamPDylib;
+			sourceTree = "<group>";
+		};
+		DFFC46A522FADB470039CD0B /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46A622FADB470039CD0B /* DreamPDylib.xm */,
+				DFFC46A722FADB470039CD0B /* DreamPDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		DFFC46A922FADB470039CD0B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46AA22FADB470039CD0B /* MDConfigManager.h */,
+				DFFC46AC22FADB470039CD0B /* MDConfigManager.m */,
+				DFFC46AE22FADB470039CD0B /* MDCycriptManager.h */,
+				DFFC46B022FADB470039CD0B /* MDCycriptManager.m */,
+				DFFC46B222FADB470039CD0B /* MDMethodTrace.h */,
+				DFFC46B422FADB470039CD0B /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DFFC46B622FADB470039CD0B /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46B722FADB470039CD0B /* a1a2-selectortramps-arm.s */,
+				DFFC46B922FADB470039CD0B /* a1a2-selectortramps-arm64.s */,
+				DFFC46BB22FADB470039CD0B /* a1a2-selectortramps-i386.s */,
+				DFFC46BD22FADB470039CD0B /* a1a2-selectortramps-x86_64.s */,
+				DFFC46BF22FADB470039CD0B /* a2a3-selectortramps-arm.s */,
+				DFFC46C122FADB470039CD0B /* a2a3-selectortramps-i386.s */,
+				DFFC46C322FADB470039CD0B /* a2a3-selectortramps-x86_64.s */,
+				DFFC46C522FADB470039CD0B /* OCMethodTrace.h */,
+				DFFC46C722FADB470039CD0B /* OCMethodTrace.m */,
+				DFFC46C922FADB470039CD0B /* OCSelectorTrampolines.h */,
+				DFFC46CB22FADB470039CD0B /* OCSelectorTrampolines.mm */,
+				DFFC46CD22FADB470039CD0B /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		DFFC46CE22FADB470039CD0B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46CF22FADB470039CD0B /* LLDBTools.h */,
+				DFFC46D122FADB470039CD0B /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		DFFC46D322FADB470039CD0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46D422FADB470039CD0B /* DreamPDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFFC46D522FADB470039CD0B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46D622FADB470039CD0B /* fishhook.c */,
+				DFFC46D822FADB470039CD0B /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		DFFC46E622FADBA00039CD0B /* CCTweakTool */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46E722FADBA00039CD0B /* CCHelpTool.m */,
+				DFFC46E822FADBA00039CD0B /* CC_Object-C.mm */,
+				DFFC46E922FADBA00039CD0B /* CC_CFunction.m */,
+				DFFC46EA22FADBA00039CD0B /* CC_Object-C.xm */,
+				DFFC46EB22FADBA00039CD0B /* CCHelpTool.h */,
+				DFFC46EC22FADBA00039CD0B /* privateApis */,
+			);
+			path = CCTweakTool;
+			sourceTree = "<group>";
+		};
+		DFFC46EC22FADBA00039CD0B /* privateApis */ = {
+			isa = PBXGroup;
+			children = (
+				DFFC46ED22FADBA00039CD0B /* __MCMContainer.h */,
+				DFFC46EE22FADBA00039CD0B /* __AADevice.h */,
+				DFFC46EF22FADBA00039CD0B /* __LSApplication.h */,
+				DFFC46F022FADBA00039CD0B /* __LSApplication.mm */,
+				DFFC46F122FADBA00039CD0B /* __AADevice.xm */,
+				DFFC46F222FADBA00039CD0B /* __MCMContainer.xm */,
+				DFFC46F322FADBA00039CD0B /* __LSApplication.xm */,
+				DFFC46F422FADBA00039CD0B /* __MCMContainer.mm */,
+				DFFC46F522FADBA00039CD0B /* __AADevice.mm */,
+			);
+			path = privateApis;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DFFC469722FADB460039CD0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFC46DB22FADB470039CD0B /* DreamPDylib.h in Headers */,
+				DFFC46AF22FADB470039CD0B /* MDCycriptManager.h in Headers */,
+				DFFC46B322FADB470039CD0B /* MDMethodTrace.h in Headers */,
+				DFFC46F922FADBA00039CD0B /* CCHelpTool.h in Headers */,
+				DFFC46FC22FADBA00039CD0B /* __LSApplication.h in Headers */,
+				DFFC46FB22FADBA00039CD0B /* __AADevice.h in Headers */,
+				DFFC46D922FADB470039CD0B /* fishhook.h in Headers */,
+				DFFC46D022FADB470039CD0B /* LLDBTools.h in Headers */,
+				DFFC46AB22FADB470039CD0B /* MDConfigManager.h in Headers */,
+				DFFC46CA22FADB470039CD0B /* OCSelectorTrampolines.h in Headers */,
+				DFFC46FA22FADBA00039CD0B /* __MCMContainer.h in Headers */,
+				DFFC46C622FADB470039CD0B /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DFFC468722FADB460039CD0B /* DreamP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFC46E322FADB470039CD0B /* Build configuration list for PBXNativeTarget "DreamP" */;
+			buildPhases = (
+				DFFC468122FADB460039CD0B /* Sources */,
+				DFFC468222FADB460039CD0B /* Frameworks */,
+				DFFC468322FADB460039CD0B /* ShellScript */,
+				DFFC468422FADB460039CD0B /* Resources */,
+				DFFC468522FADB460039CD0B /* CopyFiles */,
+				DFFC468622FADB460039CD0B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFC469C22FADB460039CD0B /* PBXTargetDependency */,
+			);
+			name = DreamP;
+			productName = DreamP;
+			productReference = DFFC468822FADB460039CD0B /* DreamP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFFC469822FADB460039CD0B /* DreamPDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFC46E022FADB470039CD0B /* Build configuration list for PBXNativeTarget "DreamPDylib" */;
+			buildPhases = (
+				DFFC469422FADB460039CD0B /* ShellScript */,
+				DFFC469522FADB460039CD0B /* Sources */,
+				DFFC469622FADB460039CD0B /* Frameworks */,
+				DFFC469722FADB460039CD0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamPDylib;
+			productName = DreamPDylib;
+			productReference = DFFC469922FADB460039CD0B /* libDreamPDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFC467D22FADB460039CD0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "梁泽";
+				TargetAttributes = {
+					DFFC468722FADB460039CD0B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					DFFC469822FADB460039CD0B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = DFFC468022FADB460039CD0B /* Build configuration list for PBXProject "DreamP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFFC467C22FADB460039CD0B;
+			productRefGroup = DFFC468922FADB460039CD0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFC468722FADB460039CD0B /* DreamP */,
+				DFFC469822FADB460039CD0B /* DreamPDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFC468422FADB460039CD0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFC469022FADB460039CD0B /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DFFC468322FADB460039CD0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		DFFC468622FADB460039CD0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		DFFC469422FADB460039CD0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFC468122FADB460039CD0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFC469522FADB460039CD0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFC46B122FADB470039CD0B /* MDCycriptManager.m in Sources */,
+				DFFC46D722FADB470039CD0B /* fishhook.c in Sources */,
+				DFFC46BA22FADB470039CD0B /* a1a2-selectortramps-arm64.s in Sources */,
+				DFFC46FD22FADBA00039CD0B /* __LSApplication.mm in Sources */,
+				DFFC46B822FADB470039CD0B /* a1a2-selectortramps-arm.s in Sources */,
+				DFFC46BE22FADB470039CD0B /* a1a2-selectortramps-x86_64.s in Sources */,
+				DFFC46DD22FADB470039CD0B /* DreamPDylib.m in Sources */,
+				DFFC46C822FADB470039CD0B /* OCMethodTrace.m in Sources */,
+				DFFC46AD22FADB470039CD0B /* MDConfigManager.m in Sources */,
+				DFFC46CC22FADB470039CD0B /* OCSelectorTrampolines.mm in Sources */,
+				DFFC46BC22FADB470039CD0B /* a1a2-selectortramps-i386.s in Sources */,
+				DFFC46C222FADB470039CD0B /* a2a3-selectortramps-i386.s in Sources */,
+				DFFC46F622FADBA00039CD0B /* CCHelpTool.m in Sources */,
+				DFFC46F822FADBA00039CD0B /* CC_CFunction.m in Sources */,
+				DFFC46C022FADB470039CD0B /* a2a3-selectortramps-arm.s in Sources */,
+				DFFC46A822FADB470039CD0B /* DreamPDylib.mm in Sources */,
+				DFFC46F722FADBA00039CD0B /* CC_Object-C.mm in Sources */,
+				DFFC46D222FADB470039CD0B /* LLDBTools.mm in Sources */,
+				DFFC46C422FADB470039CD0B /* a2a3-selectortramps-x86_64.s in Sources */,
+				DFFC46FF22FADBA00039CD0B /* __AADevice.mm in Sources */,
+				DFFC46FE22FADBA00039CD0B /* __MCMContainer.mm in Sources */,
+				DFFC46B522FADB470039CD0B /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFFC469C22FADB460039CD0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFC469822FADB460039CD0B /* DreamPDylib */;
+			targetProxy = DFFC469B22FADB460039CD0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFFC46DE22FADB470039CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFFC46DF22FADB470039CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFFC46E122FADB470039CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DreamPDylib/DreamPDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDreamPDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DreamPDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		DFFC46E222FADB470039CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DreamPDylib/DreamPDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDreamPDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DreamPDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFFC46E422FADB470039CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DreamP/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = "";
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = ns.music.dreamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFFC46E522FADB470039CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 58Y74FY8QK;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DreamP/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = "";
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = ns.music.dreamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFC468022FADB460039CD0B /* Build configuration list for PBXProject "DreamP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFC46DE22FADB470039CD0B /* Debug */,
+				DFFC46DF22FADB470039CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFC46E022FADB470039CD0B /* Build configuration list for PBXNativeTarget "DreamPDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFC46E122FADB470039CD0B /* Debug */,
+				DFFC46E222FADB470039CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFC46E322FADB470039CD0B /* Build configuration list for PBXNativeTarget "DreamP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFC46E422FADB470039CD0B /* Debug */,
+				DFFC46E522FADB470039CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFC467D22FADB460039CD0B /* Project object */;
+}
